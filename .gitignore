@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+data/
+train/out/
+train/.venv/
+game/public/models/
+__pycache__/
+*.pyc
+.DS_Store
