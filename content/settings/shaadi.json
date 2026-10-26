@@ -1,0 +1,48 @@
+{
+  "id": "shaadi",
+  "title": "The Sangeet at Haveli Rajmahal",
+  "place": "Haveli Rajmahal, a heritage haveli on Lake Pichola, Udaipur",
+  "occasion": "the sangeet night before a big fat Indian wedding",
+  "blurb": "Two families, one haveli, a dhol that hasn't stopped since eight. Somewhere between the sangeet and the DJ night, someone stopped breathing.",
+  "start": "20:00",
+  "families": ["the bride's side", "the groom's side"],
+  "rooms": [
+    { "id": "bridal", "name": "Bridal Suite", "x": 0, "y": 0, "w": 4, "h": 3, "quiet": true, "doing": ["helping the bride with her lehenga", "fixing the bride's dupatta", "sitting with the bride", "touching up makeup"] },
+    { "id": "terrace", "name": "Rooftop Terrace", "x": 4, "y": 0, "w": 5, "h": 3, "quiet": true, "doing": ["getting some fresh air", "taking a phone call", "looking out at the lake", "sitting on the parapet"] },
+    { "id": "groom", "name": "Groom's Room", "x": 9, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["helping the groom tie his safa", "sitting with the groom's friends", "looking for the groom's sherwani brooch"] },
+    { "id": "study", "name": "Old Study", "x": 0, "y": 3, "w": 3, "h": 3, "quiet": true, "doing": ["looking at old family photographs", "sitting away from the noise", "browsing the old books"] },
+    { "id": "courtyard", "name": "Courtyard", "x": 3, "y": 3, "w": 6, "h": 3, "doing": ["dancing to the dhol", "watching the performances", "clicking photos", "chatting with relatives"] },
+    { "id": "dining", "name": "Dining Hall", "x": 9, "y": 3, "w": 3, "h": 3, "doing": ["eating at the buffet", "standing at the chaat counter", "getting a plate of jalebi"] },
+    { "id": "gifts", "name": "Gift Room", "x": 0, "y": 6, "w": 3, "h": 3, "quiet": true, "doing": ["arranging the gift boxes", "looking for extra chairs", "sorting the return gifts"] },
+    { "id": "garden", "name": "Lake Garden", "x": 3, "y": 6, "w": 5, "h": 3, "doing": ["walking by the lake", "sitting near the fountain", "taking selfies under the fairy lights"] },
+    { "id": "kitchen", "name": "Kitchen", "x": 8, "y": 6, "w": 4, "h": 3, "doing": ["checking on the caterers", "grabbing ice", "arguing with the cook about the paneer"] }
+  ],
+  "events": [
+    { "from": "20:00", "to": "20:45", "room": "courtyard", "what": "the sangeet performances", "pull": 0.7 },
+    { "from": "21:00", "to": "21:45", "room": "dining", "what": "dinner", "pull": 0.5 },
+    { "from": "22:00", "to": "22:15", "room": "garden", "what": "the fireworks over the lake", "pull": 0.6 },
+    { "from": "22:15", "to": "23:00", "room": "courtyard", "what": "the DJ night", "pull": 0.5 }
+  ],
+  "weapons": [
+    { "id": "cake_knife", "name": "the cake knife", "room": "kitchen", "method": "stabbed with the cake knife", "found": "The cake knife from the kitchen, wiped clean, lay under the body." },
+    { "id": "diya_stand", "name": "the heavy brass diya stand", "room": "courtyard", "method": "hit over the head with the brass diya stand", "found": "A dented brass diya stand from the courtyard lay beside the body." },
+    { "id": "dupatta", "name": "a silk dupatta from the bride's trousseau", "room": "bridal", "method": "strangled with a silk dupatta", "found": "A torn silk dupatta from the bride's trousseau was still around the neck." },
+    { "id": "sword", "name": "the groom's ceremonial sword", "room": "groom", "method": "stabbed with the groom's ceremonial sword", "found": "The groom's ceremonial sword lay on the floor, its sheath missing." }
+  ],
+  "sounds": ["a heavy thud", "a muffled scream", "glass shattering", "a sharp cry, cut short", "furniture crashing over"],
+  "archetypes": [
+    { "id": "mamaji", "role": "the bride's wealthy maternal uncle, who is paying for half the wedding", "gender": "m", "age": [52, 64], "family": 0, "victim": true, "traits": "loud, generous in public, stingy in private, loves control", "voice": "Booming Punjabi-uncle Hinglish. Calls everyone 'beta' and 'yaar', boasts about money.", "haunts": ["courtyard", "dining", "study"] },
+    { "id": "planner", "role": "the wedding planner, running the whole show on a walkie-talkie", "gender": "f", "age": [28, 38], "victim": true, "traits": "frazzled, efficient, sarcastic under pressure", "voice": "Fast, clipped Mumbai English with 'na' and 'yaar'; always in the middle of a crisis.", "haunts": ["courtyard", "kitchen", "gifts"] },
+    { "id": "groom_friend", "role": "the groom's best friend from engineering college", "gender": "m", "age": [26, 32], "family": 1, "traits": "jokey, a little drunk, protective of the groom", "voice": "Bro-ish Hinglish, 'bhai', 'scene kya hai'; cracks jokes when nervous.", "haunts": ["groom", "terrace", "courtyard"] },
+    { "id": "bride_cousin", "role": "the bride's cousin, a Delhi fashion influencer", "gender": "f", "age": [22, 28], "family": 0, "victim": true, "traits": "dramatic, observant, always filming", "voice": "Delhi Hinglish full of 'like', 'literally' and 'oh my god'.", "haunts": ["bridal", "garden", "courtyard"] },
+    { "id": "groom_mother", "role": "the groom's mother, who disapproves of this match", "gender": "f", "age": [50, 60], "family": 1, "victim": true, "traits": "proper, cutting, notices everything", "voice": "Polite but icy Hindi-English. Says 'see, I am not saying anything, but...' and sighs a lot.", "haunts": ["groom", "dining", "study"] },
+    { "id": "pandit", "role": "the family pandit, here to plan tomorrow's pheras", "gender": "m", "age": [55, 70], "traits": "calm, superstitious, fond of sweets", "voice": "Slow, sing-song Hindi-English with Sanskrit phrases; says 'shubh' and 'Hari Om'.", "haunts": ["study", "dining", "gifts"] },
+    { "id": "photographer", "role": "the candid wedding photographer", "gender": "m", "age": [24, 34], "traits": "quiet, watches everyone through a lens, broke", "voice": "Short, mumbled Bambaiya Hindi-English; says 'boss' and 'scene'.", "haunts": ["courtyard", "garden", "terrace"] },
+    { "id": "caterer", "role": "the head caterer from Indore", "gender": "m", "age": [40, 55], "victim": true, "traits": "proud of his food, short-tempered, owed money", "voice": "Rustic, Hindi-heavy speech; 'saab', 'arre'; complains about payments.", "haunts": ["kitchen", "dining", "garden"] },
+    { "id": "bride_brother", "role": "the bride's younger brother, home from college in the US", "gender": "m", "age": [21, 26], "family": 0, "traits": "awkward, sarcastic, wants to be anywhere else", "voice": "American-accented English with the odd Hindi word; says 'dude' and 'honestly'.", "haunts": ["terrace", "groom", "garden"] },
+    { "id": "groom_sister", "role": "the groom's elder sister, a corporate lawyer", "gender": "f", "age": [30, 38], "family": 1, "victim": true, "traits": "sharp, controlled, suspicious of everyone", "voice": "Crisp, precise English; answers questions with questions.", "haunts": ["bridal", "study", "dining"] },
+    { "id": "nani", "role": "the bride's grandmother", "gender": "f", "age": [75, 85], "family": 0, "traits": "sharp-eared, stubborn, funny", "voice": "Old-school Hindi with a little English; 'arre beta'; tells you off.", "haunts": ["courtyard", "bridal", "dining"] },
+    { "id": "dj", "role": "the DJ, who also runs a sketchy events business", "gender": "m", "age": [27, 36], "victim": true, "traits": "smooth talker, nervous around police", "voice": "Hyper Mumbai slang: 'bhidu', 'ekdum', 'chill maar'.", "haunts": ["courtyard", "terrace", "kitchen"] },
+    { "id": "nri_uncle", "role": "the groom's NRI uncle from New Jersey", "gender": "m", "age": [48, 60], "family": 1, "victim": true, "traits": "show-off, nostalgic, condescending", "voice": "Desi-American English; keeps comparing everything to 'back in Jersey'.", "haunts": ["dining", "garden", "terrace"] }
+  ]
+}
