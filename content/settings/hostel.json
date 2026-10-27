@@ -1,0 +1,46 @@
+{
+  "id": "hostel",
+  "title": "Fest Night at Hostel 7",
+  "place": "Hostel 7, an old engineering-college hostel on a hill outside Pune",
+  "occasion": "the last night of the college fest, with the India-Pakistan match on TV",
+  "blurb": "The pro-show is over, the match is on, the Maggi is boiling, and the warden has given up. By midnight, one of them won't be graduating.",
+  "start": "21:00",
+  "rooms": [
+    { "id": "warden", "name": "Warden's Office", "x": 0, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["going through the attendance register", "waiting outside the office", "complaining about the noise"] },
+    { "id": "r214", "name": "Room 214", "x": 3, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["sitting on the bed scrolling", "looking for a charger", "playing cards on the floor"] },
+    { "id": "r216", "name": "Room 216", "x": 6, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["playing FIFA on a laptop", "borrowing notes", "listening to music"] },
+    { "id": "terrace", "name": "Terrace", "x": 9, "y": 0, "w": 3, "h": 6, "quiet": true, "doing": ["looking at the city lights", "taking a phone call", "lying on the water tank platform"] },
+    { "id": "corridor", "name": "Second-floor Corridor", "x": 0, "y": 3, "w": 9, "h": 2, "doing": ["pacing the corridor on a call", "chatting outside the rooms", "walking to the washroom"] },
+    { "id": "common", "name": "Common Room", "x": 0, "y": 5, "w": 4, "h": 4, "doing": ["watching the match on TV", "shouting at the umpire", "playing carrom"] },
+    { "id": "mess", "name": "Mess", "x": 4, "y": 5, "w": 5, "h": 4, "doing": ["making Maggi on the induction", "eating leftover poha", "drinking chai from the vending machine"] },
+    { "id": "laundry", "name": "Laundry Room", "x": 9, "y": 6, "w": 3, "h": 3, "quiet": true, "doing": ["waiting for the washing machine", "folding clothes", "sitting on the dryer"] }
+  ],
+  "events": [
+    { "from": "21:00", "to": "21:45", "room": "common", "what": "the India-Pakistan match on the common-room TV", "pull": 0.6 },
+    { "from": "22:00", "to": "22:30", "room": "mess", "what": "the late-night Maggi in the mess", "pull": 0.5 },
+    { "from": "23:00", "to": "23:30", "room": "terrace", "what": "the birthday bumps on the terrace", "pull": 0.5 }
+  ],
+  "weapons": [
+    { "id": "bat", "name": "a cricket bat", "room": "r216", "method": "hit over the head with a cricket bat", "found": "A cricket bat with a cracked handle lay beside the body." },
+    { "id": "kettle", "name": "the cord of an electric kettle", "room": "r214", "method": "strangled with a kettle cord", "found": "The cord of an electric kettle was knotted around the neck." },
+    { "id": "dumbbell", "name": "a 10 kg dumbbell", "room": "common", "method": "struck with a 10 kg dumbbell", "found": "A 10 kg dumbbell from the common room lay near the head." },
+    { "id": "paperweight", "name": "the warden's glass paperweight", "room": "warden", "method": "hit with the warden's glass paperweight", "found": "The warden's glass paperweight, cracked, was found under a chair." },
+    { "id": "mess_knife", "name": "a vegetable knife from the mess", "room": "mess", "method": "stabbed with a vegetable knife", "found": "A vegetable knife from the mess was found in a bucket." }
+  ],
+  "sounds": ["a loud thud", "a yell, then silence", "glass breaking", "something heavy hitting the floor"],
+  "archetypes": [
+    { "id": "gsec", "role": "the hostel General Secretary, who runs the place like a minister", "gender": "m", "age": [21, 23], "victim": true, "traits": "charming in public, a bully in private, collects favours", "voice": "Smooth Marathi-tinged Hinglish: 'bhau', 'tension nako'; talks like a politician.", "haunts": ["r214", "corridor", "warden"] },
+    { "id": "topper", "role": "the department topper with a 9.8 CGPA", "gender": "f", "age": [20, 22], "victim": true, "traits": "anxious, competitive, keeps to herself", "voice": "Precise, fast English; gets defensive; starts sentences with 'technically'.", "haunts": ["r216", "laundry", "mess"] },
+    { "id": "warden_a", "role": "the hostel warden, a retired army man", "gender": "m", "age": [52, 60], "victim": true, "traits": "strict, suspicious, secretly lonely", "voice": "Clipped army English and Hindi: 'see here', 'discipline', 'young man'.", "haunts": ["warden", "corridor", "mess"] },
+    { "id": "fresher", "role": "a nervous first-year from a small town in Bihar", "gender": "m", "age": [18, 19], "traits": "eager, scared, observant", "voice": "Polite, Hindi-heavy speech; says 'bhaiya' and 'sir' and apologises a lot.", "haunts": ["common", "mess", "r216"] },
+    { "id": "canteen", "role": "the night-canteen bhaiya who makes the Maggi", "gender": "m", "age": [30, 45], "traits": "knows everyone's secrets, gives credit, jokes a lot", "voice": "Bambaiya Hindi: 'boss', 'udhaar', 'kya re'.", "haunts": ["mess", "corridor", "terrace"] },
+    { "id": "senior", "role": "a senior who has been in college for six years", "gender": "m", "age": [24, 26], "victim": true, "traits": "lazy, funny, knows every trick", "voice": "Lazy Hinglish: 'chill', 'scene sorted'; avoids straight answers.", "haunts": ["terrace", "r214", "common"] },
+    { "id": "coordinator", "role": "the fest's cultural coordinator", "gender": "f", "age": [20, 22], "victim": true, "traits": "bossy, stressed, ambitious", "voice": "Rapid Hinglish: 'guys', 'literally'; always on the phone.", "haunts": ["corridor", "common", "terrace"] },
+    { "id": "phd", "role": "a PhD scholar in his seventh year", "gender": "m", "age": [28, 32], "victim": true, "traits": "bitter, tired, overworked by his guide", "voice": "Tired, sarcastic English; sighs; 'what to do'.", "haunts": ["laundry", "mess", "r216"] },
+    { "id": "visitor", "role": "a student from the girls' hostel who isn't supposed to be here after curfew", "gender": "f", "age": [19, 22], "traits": "bold, quick-witted, secretive", "voice": "Cool Bangalore English: 'macha', 'no da'.", "haunts": ["r214", "terrace", "laundry"] },
+    { "id": "guard", "role": "the security guard on the night shift", "gender": "m", "age": [40, 55], "traits": "sleepy, easily bribed, notices more than he says", "voice": "Marathi-Hindi: 'saheb', 'mala mahit nahi'; very short answers.", "haunts": ["corridor", "warden", "common"] },
+    { "id": "prof", "role": "a visiting professor judging the robotics event", "gender": "m", "age": [45, 55], "victim": true, "traits": "pompous, demanding, hates students", "voice": "Formal Indian English: 'kindly', 'do the needful', 'in my time'.", "haunts": ["warden", "mess", "common"] },
+    { "id": "gamer", "role": "the hostel's competitive gamer, who never sleeps", "gender": "m", "age": [19, 21], "traits": "jittery, sarcastic, lives on energy drinks", "voice": "Gamer Hinglish: 'bro', 'GG', 'lag ho gaya'.", "haunts": ["r216", "r214", "corridor"] },
+    { "id": "mess_sec", "role": "the mess secretary, who controls the mess money", "gender": "f", "age": [20, 22], "traits": "organised, defensive, short-tempered", "voice": "Firm Marathi-English; 'ho na', 'I have receipts'.", "haunts": ["mess", "laundry", "common"] }
+  ]
+}
