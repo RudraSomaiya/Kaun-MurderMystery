@@ -1,0 +1,47 @@
+{
+  "id": "filmset",
+  "title": "Night Shoot on Stage 9",
+  "place": "Stage 9, Film City, Goregaon, Mumbai",
+  "occasion": "the night shoot of a big-budget period film, three weeks behind schedule",
+  "blurb": "Lights, haveli set, two hundred crew and a superstar who won't come out of his vanity van. The only scene nobody rehearsed was the murder.",
+  "start": "22:00",
+  "rooms": [
+    { "id": "stage", "name": "Stage 9 Set", "x": 0, "y": 0, "w": 6, "h": 4, "doing": ["watching the shot from behind the lights", "standing in for a lighting check", "waiting for the next take"] },
+    { "id": "monitor", "name": "Video Village", "x": 6, "y": 0, "w": 3, "h": 2, "doing": ["watching playback on the monitors", "arguing about a take", "sitting in the director's chair"] },
+    { "id": "production", "name": "Production Office", "x": 9, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["going through the call sheets", "making calls about payments", "counting cash for the junior artists"] },
+    { "id": "makeup", "name": "Makeup Room", "x": 6, "y": 2, "w": 3, "h": 2, "doing": ["getting a touch-up", "fixing a wig", "gossiping by the mirror"] },
+    { "id": "van_star", "name": "Star's Vanity Van", "x": 0, "y": 4, "w": 3, "h": 3, "quiet": true, "doing": ["waiting outside the van door", "going over lines", "having a protein shake"] },
+    { "id": "van_heroine", "name": "Heroine's Vanity Van", "x": 3, "y": 4, "w": 3, "h": 3, "quiet": true, "doing": ["sitting on the van steps", "changing costumes", "on a video call"] },
+    { "id": "costume", "name": "Costume Department", "x": 6, "y": 4, "w": 3, "h": 3, "doing": ["steaming a lehenga", "looking for the right sherwani", "pinning a costume"] },
+    { "id": "props", "name": "Props Store", "x": 9, "y": 3, "w": 3, "h": 4, "quiet": true, "doing": ["looking for a prop", "checking the swords for the fight scene", "sitting on a crate"] },
+    { "id": "catering", "name": "Catering Tent", "x": 0, "y": 7, "w": 7, "h": 2, "doing": ["eating biryani", "drinking cutting chai", "standing in the food line"] },
+    { "id": "parking", "name": "Parking Lot", "x": 7, "y": 7, "w": 5, "h": 2, "quiet": true, "doing": ["smoking near the generator truck", "sitting in a car", "on a phone call by the gate"] }
+  ],
+  "events": [
+    { "from": "22:00", "to": "22:45", "room": "stage", "what": "the big song shot", "pull": 0.6 },
+    { "from": "23:00", "to": "23:30", "room": "catering", "what": "the late-night biryani break", "pull": 0.6 },
+    { "from": "23:45", "to": "00:30", "room": "stage", "what": "the climax scene retakes", "pull": 0.5 }
+  ],
+  "weapons": [
+    { "id": "prop_sword", "name": "a prop sword that turned out to be real steel", "room": "props", "method": "stabbed with a steel prop sword", "found": "A prop sword, real steel under the paint, lay beside the body." },
+    { "id": "light_stand", "name": "a heavy light stand", "room": "stage", "method": "hit with a heavy light stand", "found": "A bent light stand from the stage lay across the floor." },
+    { "id": "scissors", "name": "the makeup room's long scissors", "room": "makeup", "method": "stabbed with a pair of makeup scissors", "found": "A pair of long scissors from the makeup room was found under the body." },
+    { "id": "sari", "name": "a silk sari from the costume rack", "room": "costume", "method": "strangled with a silk sari", "found": "A silk sari from the costume rack was wrapped around the neck." },
+    { "id": "trophy", "name": "the superstar's Best Actor trophy", "room": "van_star", "method": "hit with a Best Actor trophy", "found": "The superstar's Best Actor trophy, dented, lay by the body." }
+  ],
+  "sounds": ["a crash of metal", "a scream that sounded like a rehearsal", "a heavy thud", "glass shattering"],
+  "archetypes": [
+    { "id": "superstar", "role": "the ageing superstar playing the hero", "gender": "m", "age": [50, 58], "victim": true, "traits": "vain, generous with juniors, terrified of being replaced", "voice": "Grand, theatrical Hindi-English; sometimes talks about himself in the third person.", "haunts": ["van_star", "stage", "makeup"] },
+    { "id": "debutante", "role": "the debutante heroine, a star kid", "gender": "f", "age": [21, 25], "traits": "insecure, rebellious, always compared to her mother", "voice": "South Bombay English: 'like', 'so basically'; switches to Hindi when upset.", "haunts": ["van_heroine", "makeup", "stage"] },
+    { "id": "director", "role": "the perfectionist director", "gender": "m", "age": [38, 50], "victim": true, "traits": "brilliant, cruel on set, behind schedule", "voice": "Intense, quick Hinglish: 'cut-cut', 'from the top'; swears mildly.", "haunts": ["monitor", "stage", "production"] },
+    { "id": "producer", "role": "the producer, who is over budget and in debt", "gender": "m", "age": [45, 60], "victim": true, "traits": "smooth, desperate, owes everyone", "voice": "Gujarati-tinged Hinglish: 'paisa', 'deal'; always negotiating.", "haunts": ["production", "monitor", "parking"] },
+    { "id": "spotboy", "role": "a spot boy who has worked in films for twenty years", "gender": "m", "age": [35, 50], "traits": "invisible, observant, loyal to the hero", "voice": "Bambaiya Hindi: 'saab', 'apun'; very respectful.", "haunts": ["stage", "van_star", "catering"] },
+    { "id": "makeup_artist", "role": "the superstar's personal makeup artist", "gender": "f", "age": [30, 45], "traits": "gossipy, loyal, knows every scar and secret", "voice": "Chatty Hinglish: 'darling', 'haaye'.", "haunts": ["makeup", "van_star", "catering"] },
+    { "id": "choreographer", "role": "the choreographer, a former backup dancer", "gender": "m", "age": [32, 42], "traits": "dramatic, competitive, easily offended", "voice": "Energetic Hinglish; counts 'five-six-seven-eight' and calls everyone 'baby'.", "haunts": ["stage", "costume", "catering"] },
+    { "id": "writer", "role": "the screenwriter whose script has been rewritten five times", "gender": "f", "age": [30, 40], "victim": true, "traits": "bitter, witty, underpaid", "voice": "Dry, literary English with Urdu words.", "haunts": ["production", "catering", "parking"] },
+    { "id": "manager", "role": "the superstar's manager", "gender": "f", "age": [35, 45], "victim": true, "traits": "ruthless, protective, always on two phones", "voice": "Corporate English: 'basically', 'let me be very clear'.", "haunts": ["van_star", "production", "monitor"] },
+    { "id": "ad", "role": "the first assistant director, who runs the set", "gender": "m", "age": [26, 32], "traits": "exhausted, ambitious, sleeps two hours a night", "voice": "Rushed Hinglish, like on a walkie: 'copy', 'lock it', 'roll sound'.", "haunts": ["stage", "monitor", "costume"] },
+    { "id": "stunt", "role": "the stunt coordinator", "gender": "m", "age": [38, 50], "traits": "quiet, rough, the only one who follows safety rules", "voice": "Gruff Punjabi-Hindi; very few words.", "haunts": ["props", "stage", "parking"] },
+    { "id": "journalist", "role": "an entertainment journalist allowed on set for a feature", "gender": "f", "age": [26, 34], "victim": true, "traits": "nosy, charming, digging for a scoop", "voice": "Bright, probing English; turns questions back on you.", "haunts": ["catering", "makeup", "monitor"] }
+  ]
+}
