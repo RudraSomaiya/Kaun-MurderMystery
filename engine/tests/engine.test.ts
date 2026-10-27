@@ -25,3 +25,23 @@ test('nobody but the discoverer enters the murder room after the murder', () => 
           assert.notEqual(c.pos[p.i][t], c.murder.room, `x${n}: ${p.first} at step ${t}`)
   }
 })
+
+test('settings reference only rooms that exist, and rooms do not overlap', () => {
+  for (const s of content.settings) {
+    const ids = new Set(s.rooms.map((r) => r.id))
+    const refs = [...s.archetypes.flatMap((a) => a.haunts), ...s.weapons.map((w) => w.room), ...s.events.map((e) => e.room)]
+    for (const r of refs) assert.ok(ids.has(r), `${s.id}: unknown room ${r}`)
+    for (const a of s.rooms)
+      for (const b of s.rooms)
+        if (a !== b) {
+          const xo = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)
+          const yo = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y)
+          assert.ok(xo <= 0 || yo <= 0, `${s.id}: ${a.id} overlaps ${b.id}`)
+        }
+    assert.ok(s.archetypes.filter((a) => a.victim).length >= 3, `${s.id}: needs victims`)
+  }
+})
+
+test('every setting comes up and stays solvable', () => {
+  for (const s of content.settings) for (let n = 0; n < 250; n++) assert.ok(solve(generateCase(content, `${s.id}${n}`, s.id)).ok)
+})
