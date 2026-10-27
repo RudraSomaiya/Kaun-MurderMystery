@@ -1,0 +1,46 @@
+{
+  "id": "villa",
+  "title": "The 30th at Villa Saudade",
+  "place": "Villa Saudade, a Portuguese-era villa in Assagao, North Goa",
+  "occasion": "a startup founder's 30th birthday party",
+  "blurb": "A pool, a DJ, a cake shaped like a unicorn startup, and twelve people who all want something from the birthday boy. The party never stopped. Someone's heart did.",
+  "start": "21:00",
+  "rooms": [
+    { "id": "master", "name": "Master Bedroom", "x": 0, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["looking for a phone charger", "sitting on the balcony", "changing out of wet clothes"] },
+    { "id": "living", "name": "Living Room", "x": 3, "y": 0, "w": 4, "h": 3, "doing": ["sitting on the big sofa", "looking at the old azulejo tiles", "talking about funding rounds"] },
+    { "id": "bar", "name": "Bar", "x": 7, "y": 0, "w": 3, "h": 3, "doing": ["making a cocktail", "doing tequila shots", "waiting for a drink"] },
+    { "id": "kitchen", "name": "Kitchen", "x": 10, "y": 0, "w": 2, "h": 3, "doing": ["grabbing ice", "eating prawn rissois", "helping plate the food"] },
+    { "id": "guest", "name": "Guest Room", "x": 0, "y": 3, "w": 3, "h": 3, "quiet": true, "doing": ["lying down for a bit", "fixing makeup in the mirror", "taking a quiet call"] },
+    { "id": "pool", "name": "Pool Deck", "x": 3, "y": 3, "w": 6, "h": 3, "doing": ["dancing by the pool", "floating on an inflatable", "sitting with feet in the water"] },
+    { "id": "rooftop", "name": "Rooftop", "x": 9, "y": 3, "w": 3, "h": 3, "quiet": true, "doing": ["watching the stars", "smoking by the railing", "taking photos of the party below"] },
+    { "id": "garden", "name": "Garden", "x": 0, "y": 6, "w": 5, "h": 3, "doing": ["walking among the coconut trees", "sitting on the swing", "looking for a lost earring"] },
+    { "id": "gazebo", "name": "Gazebo", "x": 5, "y": 6, "w": 3, "h": 3, "quiet": true, "doing": ["sitting in the gazebo", "having a serious conversation", "watching the fireflies"] },
+    { "id": "garage", "name": "Garage", "x": 8, "y": 6, "w": 4, "h": 3, "quiet": true, "doing": ["looking at the vintage Bullet", "getting something from a car", "sitting on the bonnet of a car"] }
+  ],
+  "events": [
+    { "from": "21:00", "to": "21:45", "room": "pool", "what": "the pool party", "pull": 0.6 },
+    { "from": "22:00", "to": "22:30", "room": "living", "what": "the cake cutting", "pull": 0.7 },
+    { "from": "22:45", "to": "23:30", "room": "pool", "what": "the DJ set", "pull": 0.5 }
+  ],
+  "weapons": [
+    { "id": "champagne", "name": "a magnum of champagne", "room": "bar", "method": "hit with a champagne bottle", "found": "A cracked magnum of champagne from the bar lay beside the body." },
+    { "id": "kitchen_knife", "name": "the chef's knife", "room": "kitchen", "method": "stabbed with the chef's knife", "found": "The chef's knife from the kitchen was found under a cushion." },
+    { "id": "buddha", "name": "a brass Buddha statue", "room": "living", "method": "hit with a brass Buddha statue", "found": "A brass Buddha statue from the living room lay on the floor, dented." },
+    { "id": "tow_rope", "name": "a tow rope", "room": "garage", "method": "strangled with a tow rope", "found": "A tow rope from the garage was knotted around the neck." }
+  ],
+  "sounds": ["a splash, then a thud", "a scream that was lost under the music", "glass breaking", "a heavy thud"],
+  "archetypes": [
+    { "id": "founder", "role": "the startup founder whose birthday it is", "gender": "m", "age": [29, 31], "victim": true, "traits": "charismatic, reckless, lying to investors", "voice": "Bangalore startup English: 'bro', 'let's take it offline', 'scale'.", "haunts": ["living", "pool", "master"] },
+    { "id": "cofounder", "role": "the cofounder who was quietly pushed out", "gender": "f", "age": [28, 32], "victim": true, "traits": "brilliant, cold, keeps receipts", "voice": "Measured, sharp English in short sentences.", "haunts": ["gazebo", "living", "rooftop"] },
+    { "id": "investor", "role": "the VC who led the last funding round", "gender": "m", "age": [40, 52], "victim": true, "traits": "polished, predatory, always networking", "voice": "Smooth global-Indian English: 'circle back', 'optics'.", "haunts": ["bar", "living", "gazebo"] },
+    { "id": "ex", "role": "the founder's ex-girlfriend, who wasn't invited", "gender": "f", "age": [27, 31], "traits": "impulsive, funny, still hurt", "voice": "Delhi Hinglish: 'yaar', 'whatever'; sarcastic.", "haunts": ["garden", "bar", "guest"] },
+    { "id": "dj", "role": "the DJ, a Goa local who knows the house well", "gender": "m", "age": [25, 35], "traits": "laid-back, sees everything from the console", "voice": "Goan English with Konkani words: 'baba', 'men', 'sossegado'.", "haunts": ["pool", "rooftop", "garage"] },
+    { "id": "influencer", "role": "a travel influencer with two million followers", "gender": "f", "age": [24, 28], "victim": true, "traits": "image-obsessed, sharp, films everything", "voice": "Instagram English: 'guys', 'vibe', 'aesthetic'.", "haunts": ["pool", "rooftop", "guest"] },
+    { "id": "caretaker", "role": "the villa's elderly Goan caretaker", "gender": "m", "age": [60, 70], "traits": "quiet, devout, disapproves of the party", "voice": "Gentle Goan English: 'baba', 'what to do'; prays under his breath.", "haunts": ["garage", "kitchen", "garden"] },
+    { "id": "chef", "role": "the private chef hired for the night", "gender": "f", "age": [30, 40], "traits": "proud, blunt, underpaid", "voice": "No-nonsense English with Malayalam phrases: 'aiyyo', 'enthu'.", "haunts": ["kitchen", "bar", "garden"] },
+    { "id": "school_friend", "role": "the founder's best friend from school, now broke", "gender": "m", "age": [29, 31], "victim": true, "traits": "loyal, jealous, drinks too much", "voice": "Mumbai Hinglish: 'bhai', 'chal na'; nostalgic.", "haunts": ["bar", "pool", "garage"] },
+    { "id": "crypto", "role": "a crypto trader who keeps talking about his portfolio", "gender": "m", "age": [26, 33], "victim": true, "traits": "flashy, paranoid, deep in debt", "voice": "Crypto-bro English: 'HODL', 'to the moon', 'trust me bro'.", "haunts": ["bar", "rooftop", "living"] },
+    { "id": "lawyer", "role": "the company's lawyer, here as a friend", "gender": "f", "age": [35, 45], "victim": true, "traits": "discreet, calculating, knows where the bodies are buried", "voice": "Formal, careful English; never answers directly.", "haunts": ["gazebo", "living", "master"] },
+    { "id": "plus_one", "role": "someone's plus-one whom nobody seems to know", "gender": "m", "age": [26, 34], "traits": "vague, charming, evasive about what he does", "voice": "Easy-going; deflects with jokes: 'that's a long story'.", "haunts": ["garden", "pool", "garage"] }
+  ]
+}
