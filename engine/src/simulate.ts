@@ -14,7 +14,7 @@ export const clock = (start: string, t: number) => {
   return `${String(Math.floor(x / 60)).padStart(2, '0')}:${String(x % 60).padStart(2, '0')}`
 }
 
-const stepOf = (start: string, hhmm: string) => Math.round(((mins(hhmm) - mins(start) + 1440) % 1440) / STEP)
+export const stepOf = (start: string, hhmm: string) => Math.round(((mins(hhmm) - mins(start) + 1440) % 1440) / STEP)
 
 const range = (a: number, b: number) => Array.from({ length: Math.max(0, b - a) }, (_, k) => a + k)
 

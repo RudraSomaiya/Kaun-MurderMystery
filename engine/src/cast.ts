@@ -42,8 +42,8 @@ export function buildCast(rng: Rng, setting: Setting, content: Content, size = 7
   holders.forEach((h, k) => {
     const m = motives[k]
     const c = cast[h]
-    c.motive = { id: m.id, text: fill(m.text, { victim: victimName }), reveal: m.reveal }
     const gossip = fill(m.gossip, { self: c.first, victim: victimName })
+    c.motive = { id: m.id, text: fill(m.text, { victim: victimName }), gossip, reveal: m.reveal }
     for (const o of rng.shuffle(suspects.filter((x) => x.i !== h)).slice(0, rng.int(1, 2))) o.knows.push(gossip)
   })
 

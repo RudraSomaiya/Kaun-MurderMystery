@@ -101,7 +101,7 @@ export interface Character {
   age: number
   arch: Archetype
   family?: string
-  motive?: { id: string; text: string; reveal: string[] }
+  motive?: { id: string; text: string; gossip: string; reveal: string[] }
   secret?: Secret
   knows: string[]
 }

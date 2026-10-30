@@ -6,7 +6,7 @@ import { solve } from './solvable'
 import type { Case, Content } from './types'
 
 export * from './types'
-export { clock, adjacency } from './simulate'
+export { clock, adjacency, stepOf } from './simulate'
 export { solve } from './solvable'
 export { makeRng, hash } from './rng'
 
