@@ -15,7 +15,7 @@ The suspects are a fine-tuned Qwen3.5-0.8B, trained to keep its secrets and keep
 
 **[Play in your browser][link-play]**
 
-<img src="docs/title.jpg" alt="Kaun's title screen: the word कौन? in red and haldi yellow, with five case cards (a sangeet in Udaipur, a hostel in Pune, a film set in Mumbai, a villa in Goa, a Diwali card night in Delhi) and a Surprise me card" width="880">
+<img src="docs/trailer.gif" alt="A 25-second trailer: the cold open, the कौन? wordmark, six suspects, Arjun questioned until his pulse climbs, a chart of killers keeping their cover, the floor-plan replay of the murder, and the play link" width="880">
 
 </div>
 
