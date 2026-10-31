@@ -1,8 +1,9 @@
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { content } from '../../content'
 import { generateCase } from '../../engine/src'
 import { Atmosphere } from './components/Atmosphere'
+import { ColdOpen } from './components/ColdOpen'
 import { EnginePill, LoadingCard } from './components/Engine'
 import { customModelAvailable, hasWebGPU, load, PRESETS, WEB_MODELS, type Config } from './llm'
 import type { Claim } from './read'
@@ -58,6 +59,7 @@ export default function App() {
   const [game, setGameRaw] = useState<Game | null>(() => read('kaun:game'))
   const [tab, setTab] = useState<Tab | 'title'>(() => (read('kaun:game') ? 'dossier' : 'title'))
   const [who, setWho] = useState<number | null>(null)
+  const [intro, setIntro] = useState(false)
   const savedCfg = useRef(read<Config>('kaun:engine'))
   const [cfg, setCfgRaw] = useState<Config>(() => savedCfg.current ?? (hasWebGPU() ? { kind: 'webllm', model: WEB_MODELS[1].id } : PRESETS[0].cfg))
 
@@ -83,6 +85,7 @@ export default function App() {
     setGameRaw({ seed, chats: {}, nerves: {}, marks: {}, pins: [] })
     setWho(null)
     setTab('dossier')
+    setIntro(true)
     if (cfg.kind === 'webllm') load(cfg.model).catch(() => {})
   }
   const interrogate = (i: number) => {
@@ -125,6 +128,7 @@ export default function App() {
           </motion.main>
         </div>
       )}
+      <AnimatePresence>{intro && c && <ColdOpen c={c} onDone={() => setIntro(false)} />}</AnimatePresence>
       <LoadingCard />
     </>
   )

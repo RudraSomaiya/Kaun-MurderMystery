@@ -49,6 +49,15 @@ export function Dossier({ c, game, onPick }: { c: Case; game: Game; onPick: (i: 
               </div>
             </dl>
           </div>
+          <details className="howto">
+            <summary>How to solve it</summary>
+            <ol>
+              <li>Pin down the time of death. Someone in a room next door heard it happen.</li>
+              <li>Ask everyone where they were at that time, and who was with them.</li>
+              <li>Innocent people vouch for each other. The killer's story has a hole: someone was in the room they claim, and never saw them.</li>
+              <li>Everyone has a secret, so not every lie is about the murder.</li>
+            </ol>
+          </details>
         </motion.section>
 
         <motion.section className="panel plan-card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.12 }}>
