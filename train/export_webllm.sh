@@ -12,16 +12,22 @@ MERGED=${2:-train/out/merged}
 OUT=${3:-game/public/models/kaun-0.8b}
 PREBUILT=mlc-ai/Qwen3.5-0.8B-q4f16_1-MLC
 
-~/.venvs/kaun/bin/python - "$ADAPTER" "$MERGED" <<'PY'
-import sys
-from unsloth import FastLanguageModel
+# merge on CPU so it never competes with training for VRAM
+~/.venvs/mlc/bin/python - "$ADAPTER" "$MERGED" <<'PY'
+import json, sys, torch
+from peft import PeftModel
+from transformers import AutoModelForImageTextToText, AutoTokenizer
 
-model, tok = FastLanguageModel.from_pretrained(sys.argv[1], load_in_4bit=False)
-model.save_pretrained_merged(sys.argv[2], tok, save_method="merged_16bit")
+adapter, out = sys.argv[1:]
+base_id = json.load(open(f"{adapter}/adapter_config.json"))["base_model_name_or_path"]
+model = AutoModelForImageTextToText.from_pretrained(base_id, dtype=torch.bfloat16)
+model = PeftModel.from_pretrained(model, adapter).merge_and_unload()
+model.save_pretrained(out)
+AutoTokenizer.from_pretrained(adapter).save_pretrained(out)
 PY
 
 rm -rf "$OUT" && mkdir -p "$OUT"
-~/.venvs/mlc/bin/mlc_llm convert_weight "$MERGED" --quantization q4f16_1 --model-type qwen35 --device cpu -o "$OUT"
+~/.venvs/mlc/bin/python -m mlc_llm convert_weight "$MERGED" --quantization q4f16_1 --device cpu -o "$OUT"
 
 # chat config and tokenizer from the prebuilt package, so they match the prebuilt kernels exactly
 TMP=$(mktemp -d)
