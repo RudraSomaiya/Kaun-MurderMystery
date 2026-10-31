@@ -61,7 +61,7 @@ export function Interrogation({ c, game, setGame, cfg, who, setWho }: { c: Case;
         return { ...g, chats: { ...g.chats, [who]: list } }
       })
     } catch (e) {
-      setErr(`The suspect didn't answer: ${(e as Error).message}`)
+      setErr(`The suspect didn't answer: ${(e as Error)?.message ?? String(e)}`)
       setGame((g) => ({ ...g, chats: { ...g.chats, [who]: (g.chats[who] ?? []).slice(0, -1) } }))
       setDraft(q)
     } finally {
