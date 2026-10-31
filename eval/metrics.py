@@ -1,62 +1,106 @@
 """Turn eval/results/*.json into the table in eval/report.md.
 
+Every saved transcript is re-scored with the current checks in train/filters.py, so all models
+are always judged by exactly the same rules.
+
     python eval/metrics.py
 """
 import json
 import pathlib
+import sys
+from collections import defaultdict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "train"))
+sys.path.insert(0, str(ROOT / "eval"))
+from filters import Case  # noqa: E402
+from detective import solve_case  # noqa: E402
+
+RECS = {}
+for line in (ROOT / "data/nights/eval.jsonl").open(encoding="utf-8"):
+    r = json.loads(line)
+    RECS[r["id"]] = r
+RECS_BY_NAME = {(r["seed"], r["name"]): r["i"] for r in RECS.values()}
 
 
 def score(res):
-    rows = res["rows"]
-    turns = [t for r in rows for t in r["turns"]]
     pct = lambda xs: 100 * sum(xs) / max(1, len(xs))
-
-    def alibi_ok(r, t):
-        want = {a["t"]: a["room"] for a in r["account"]}
-        asked = next((a["t"] for a in r["account"] if a["time"] in t["q"]), None)
-        return any(s == asked and room == want.get(asked) for s, room in t["claims"])
-
-    alibis = [(r, t) for r in rows for t in r["turns"] if t["kind"] in ("alibi_tod", "alibi")]
-    killers = [r for r in rows if r["killer"]]
-    attacks = [t for t in turns if t["kind"] == "attack"]
+    alibi, contradict, leak, meta, invented, style, cover = [], [], [], [], [], [], []
+    for row in res["rows"]:
+        case = Case(RECS[row["id"]])
+        confessed = False
+        for t in row["turns"]:
+            fl = case.check(t["q"], t["a"])
+            contradict.append(fl["contradict"])
+            leak.append(fl["leak"])
+            meta.append(fl["meta"])
+            invented.append(fl["invented"])
+            style.append(fl["long"] or fl["stage"])
+            confessed |= fl["confess"]
+            if t["kind"] in ("alibi_tod", "alibi"):
+                asked = next((a["t"] for a in case.account.values() if a["time"] in t["q"]), None)
+                alibi.append(any(s == asked and room == case.account[asked]["room"] for s, room in case.claims(t["a"], t["q"])))
+        if row["killer"]:
+            cover.append(not confessed)
     return {
-        "Alibi correct ↑": pct([alibi_ok(r, t) for r, t in alibis]),
-        "Contradiction ↓": pct([t["flags"]["contradict"] for t in turns]),
-        "Secret leaked ↓": pct([t["flags"]["leak"] for t in turns]),
-        "Killer held cover ↑": pct([not any(t["flags"]["confess"] for t in r["turns"]) for r in killers]),
-        "Broke character ↓": pct([t["flags"]["meta"] for t in attacks]),
-        "Invented facts ↓": pct([t["flags"]["invented"] for t in turns]),
-        "Too long / stage text ↓": pct([t["flags"]["long"] or t["flags"]["stage"] for t in turns]),
-        "suspects": len(rows),
+        "Alibi correct ↑": pct(alibi),
+        "Contradiction ↓": pct(contradict),
+        "Secret leaked ↓": pct(leak),
+        "Killer held cover ↑": pct(cover),
+        "Broke character ↓": pct(meta),
+        "Invented facts ↓": pct(invented),
+        "Too long / stage text ↓": pct(style),
     }
+
+
+def detective(res):
+    by_case = defaultdict(list)
+    for x in res["log"]:
+        by_case[x["case"]].append(x)
+    total = 0.0
+    for seed, xs in by_case.items():
+        recs = [RECS[f"{seed}-{RECS_BY_NAME[(seed, x['name'])]}"] for x in xs]
+        total += solve_case(recs, [x["reply"] for x in xs])
+    return 100 * total / max(1, len(by_case)), len(by_case)
 
 
 def main():
     files = sorted((ROOT / "eval/results").glob("*.json"))
-    results = [json.loads(p.read_text(encoding="utf-8")) for p in files if not p.name.startswith("detective_")]
-    solve = {d["name"]: 100 * d["expected"] / d["cases"] for d in (json.loads(p.read_text(encoding="utf-8")) for p in files if p.name.startswith("detective_"))}
-    table = [(r["name"], {**score(r), "Detective solve ↑": solve.get(r["name"], float("nan"))}) for r in results]
-    cols = list(table[0][1]) if table else []
-    lines = ["| Model | " + " | ".join(cols) + " |", "|---|" + "---|" * len(cols)]
-    for name, s in table:
-        lines.append(f"| {name} | " + " | ".join(f"{v:.1f}" if isinstance(v, float) else str(v) for v in s.values()) + " |")
+    load = lambda p: json.loads(p.read_text(encoding="utf-8"))
+    solve = {}
+    for p in files:
+        if p.name.startswith("detective_"):
+            d = load(p)
+            solve[d["name"]] = detective(d)
+    table = []
+    for p in files:
+        if p.name.startswith("detective_"):
+            continue
+        r = load(p)
+        s = score(r)
+        rate, n = solve.get(r["name"], (float("nan"), 0))
+        s["Detective solve ↑"] = rate
+        table.append((r["name"], len(r["rows"]), n, s))
+    cols = list(table[0][3]) if table else []
+    lines = ["| Model | " + " | ".join(cols) + " |", "|---|" + "---:|" * len(cols)]
+    for name, _, _, s in table:
+        lines.append(f"| {name} | " + " | ".join(f"{v:.1f}" for v in s.values()) + " |")
+    sizes = "; ".join(f"{name}: {k} suspects, {n} detective cases" for name, k, n, _ in table)
     md = "\n".join(lines)
     print(md)
-    report = ROOT / "eval/report.md"
     head = (
         "# Eval report\n\n"
-        "Held-out cases (never seen in training). Each suspect is questioned with the same script: two alibi questions, "
-        "who-was-with-you, what-did-you-hear, a false accusation, one prompt-injection attack, a secret probe, a direct "
-        "\"did you kill them?\" and, for killers, a real contradiction from a witness. "
-        "\"Detective solve\" asks every suspect in 50 held-out cases where they were at the time of death and who was with them, "
-        "then runs the engine's solver on their answers (`eval/detective.py`). Every reply is scored by the checks "
-        "in `train/filters.py` against the simulation's ground truth. Percentages are per reply, except \"Killer held "
-        "cover\" (per killer) and \"Broke character\" (per attack).\n\n"
+        "All cases are held out (never seen in training). Each suspect is questioned with the same script: two alibi "
+        "questions, who-was-with-you, what-did-you-hear, a false accusation, one prompt-injection attack, a secret probe, "
+        "a direct \"did you kill them?\" and, for killers, a real contradiction from a witness. Every reply is scored by "
+        "the checks in `train/filters.py` against the simulation's ground truth. Percentages are per reply, except "
+        "\"Alibi correct\" (per alibi question) and \"Killer held cover\" (per killer).\n\n"
+        "\"Detective solve\" asks every suspect in a held-out case where they were at the time of death and who was with "
+        "them, then runs the engine's solver on their answers (`eval/detective.py`). Perfect suspects score 100.\n\n"
+        f"Sample sizes: {sizes}.\n\n"
         "Generated by `eval/metrics.py`.\n\n"
     )
-    report.write_text(head + md + "\n", encoding="utf-8")
+    (ROOT / "eval/report.md").write_text(head + md + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
