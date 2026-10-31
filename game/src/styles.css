@@ -190,13 +190,15 @@ button { cursor: pointer; }
 .polaroid { background: #faf6ee; padding: 8px 8px 30px; box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.6); transform: rotate(-3deg); position: relative; }
 .polaroid .frame { background: #b9b0a2; aspect-ratio: 5 / 6; overflow: hidden; }
 .polaroid figcaption { position: absolute; bottom: 7px; left: 0; right: 0; text-align: center; font: italic 15px/1 var(--serif); color: #3b2d22; }
-.polaroid .stamp { position: absolute; bottom: 38px; right: -16px; font-size: 13px; padding: 4px 8px 2px; transform: rotate(10deg); }
+.polaroid .stamp { position: absolute; bottom: 2px; right: -18px; font-size: 12px; padding: 4px 7px 2px; transform: rotate(-12deg); background: #faf6ee; }
 .facts { display: grid; gap: 10px; font-size: 15px; }
 .facts dt { font: 500 10px/1 var(--mono); letter-spacing: 0.24em; text-transform: uppercase; color: #8a785d; }
 .facts dd { margin: 3px 0 0; color: #23180f; }
 .facts .unknown { font: italic 20px/1.1 var(--serif); color: var(--sindoor-deep); }
 .plan-card { padding: 18px; }
-.plan-card .kicker { display: flex; justify-content: space-between; }
+.plan-card .kicker { display: flex; justify-content: space-between; gap: 18px; line-height: 1.4; }
+.plan-card .kicker span:first-child { white-space: nowrap; }
+.plan-card .kicker span:last-child { text-align: right; }
 
 /* ---------- floor plan ---------- */
 .plan { width: 100%; max-width: 720px; margin: 0 auto; height: auto; display: block; color: var(--paper); font-family: var(--mono); }
@@ -387,3 +389,14 @@ button { cursor: pointer; }
   .tabs button { padding: 7px 10px; letter-spacing: 0.06em; }
   .a .said { font-size: 19px; }
 }
+
+/* ---------- cold open ---------- */
+.cold-open { position: fixed; inset: 0; z-index: 45; background: #050404; display: grid; place-content: center; text-align: center; gap: 14px; padding: 24px; cursor: pointer; }
+.cold-open p { margin: 0; font: italic 400 clamp(24px, 3.4vw, 44px)/1.2 var(--serif); color: var(--paper); }
+.cold-open p.kicker { font: 500 13px/1 var(--mono); font-style: normal; color: var(--haldi); margin-bottom: 10px; }
+.cold-open p.last { margin-top: 18px; font: 400 clamp(26px, 3.6vw, 48px)/1.1 var(--display); font-style: normal; color: var(--sindoor); }
+.cold-open .skip { position: absolute; bottom: 24px; left: 0; right: 0; font: 11px/1 var(--mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+.howto { margin-top: 18px; border-top: 1px dashed rgba(42, 31, 23, 0.35); padding-top: 14px; }
+.howto summary { cursor: pointer; font: 600 11px/1 var(--mono); letter-spacing: 0.2em; text-transform: uppercase; color: #7a6a52; }
+.howto ol { margin: 10px 0 0; padding-left: 20px; font-size: 14.5px; color: #3b2d22; display: grid; gap: 4px; }
