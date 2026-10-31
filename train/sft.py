@@ -8,7 +8,7 @@ import argparse
 import json
 import pathlib
 
-from unsloth import FastLanguageModel  # must come before transformers/trl
+from unsloth import FastLanguageModel, is_bfloat16_supported  # must come before transformers/trl
 from unsloth.chat_templates import train_on_responses_only
 from datasets import load_dataset
 from trl import SFTConfig, SFTTrainer
@@ -22,6 +22,8 @@ ap.add_argument("--epochs", type=float, default=2)
 ap.add_argument("--lr", type=float, default=2e-4)
 ap.add_argument("--rank", type=int, default=32)
 ap.add_argument("--seq", type=int, default=3072)
+ap.add_argument("--data", default=str(ROOT / "data/sft"))
+ap.add_argument("--batch", type=int, default=2)
 ap.add_argument("--smoke", action="store_true")
 args = ap.parse_args()
 
@@ -37,7 +39,7 @@ model = FastLanguageModel.get_peft_model(
     random_state=7,
 )
 
-ds = load_dataset("json", data_files={"train": str(ROOT / "data/sft/train.jsonl"), "val": str(ROOT / "data/sft/val.jsonl")})
+ds = load_dataset("json", data_files={"train": f"{args.data}/train.jsonl", "val": f"{args.data}/val.jsonl"})
 render = lambda ex: {"text": tok.apply_chat_template(ex["messages"], tokenize=False, enable_thinking=False)}
 ds = ds.map(render, remove_columns=ds["train"].column_names)
 ds = ds.filter(lambda ex: len(tok(ex["text"]).input_ids) <= args.seq)
@@ -52,22 +54,23 @@ trainer = SFTTrainer(
     args=SFTConfig(
         dataset_text_field="text",
         max_length=args.seq,
-        per_device_train_batch_size=2,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=args.batch,
+        gradient_accumulation_steps=16 // args.batch,
         num_train_epochs=args.epochs,
         max_steps=10 if args.smoke else -1,
         learning_rate=args.lr,
         lr_scheduler_type="cosine",
-        warmup_ratio=0.05,
+        warmup_steps=0.05,
         weight_decay=0.01,
         logging_steps=5,
         eval_strategy="steps",
         eval_steps=10 if args.smoke else 50,
         save_steps=100,
         save_total_limit=2,
-        bf16=True,
+        bf16=is_bfloat16_supported(),
+        fp16=not is_bfloat16_supported(),
         optim="adamw_8bit",
-        output_dir=str(ROOT / args.out),
+        output_dir=str(pathlib.Path(args.out).resolve()),
         report_to="none",
         seed=7,
     ),
@@ -75,7 +78,8 @@ trainer = SFTTrainer(
 # loss only on the suspect's replies, not on the sheet or the detective's questions
 trainer = train_on_responses_only(trainer, instruction_part="<|im_start|>user\n", response_part="<|im_start|>assistant\n")
 stats = trainer.train()
-model.save_pretrained(str(ROOT / args.out / "adapter"))
-tok.save_pretrained(str(ROOT / args.out / "adapter"))
-(ROOT / args.out / "train_stats.json").write_text(json.dumps({"metrics": stats.metrics, "log": trainer.state.log_history}, indent=1))
+out = pathlib.Path(args.out).resolve()
+model.save_pretrained(str(out / "adapter"))
+tok.save_pretrained(str(out / "adapter"))
+(out / "train_stats.json").write_text(json.dumps({"metrics": stats.metrics, "log": trainer.state.log_history}, indent=1))
 print("saved", args.out)
