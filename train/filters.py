@@ -65,8 +65,28 @@ class Case:
         ds = sorted(d for d in (((x * 60 + m - self.start) % 1440) for x in cands) if d <= span + 15)
         return min(len(self.times) - 1, round(ds[0] / 15)) if ds else None
 
-    def claims(self, text):
-        """First-person (step, room) claims, one per clause."""
+    def rooms_said(self, text):
+        """Rooms the speaker places themself in, from first-person sentences that aren't denials."""
+        out = set()
+        for sent in re.split(r"(?<=[.!?])\s+", text):
+            if not FIRST_PERSON.search(sent) or sent.rstrip().endswith("?"):
+                continue
+            low = sent.lower()
+            out |= {r for r, keys in self.aliases if any(k in low and not NEG.search(low[max(0, low.find(k) - 24) : low.find(k)]) for k in keys)}
+        return out
+
+    def claims(self, text, question=""):
+        """First-person (step, room) claims, one per clause. "I was in the kitchen" in answer to
+        "where were you at 9:45?" counts as a claim about 9:45."""
+        out = self._timed_claims(text)
+        if not out and question:
+            asked = {self.step(int(m[1]), int(m[2]), m[3]) for m in TIME.finditer(question) if m[1]} - {None}
+            rooms = self.rooms_said(text)
+            if len(asked) == 1 and len(rooms) == 1:
+                out = [(asked.pop(), rooms.pop())]
+        return out
+
+    def _timed_claims(self, text):
         out = []
         for sent in re.split(r"(?<=[.!?])\s+", text):
             if not FIRST_PERSON.search(sent) or sent.rstrip().endswith("?"):
@@ -105,13 +125,13 @@ class Case:
             said = {w for w in self.secret_words if re.search(rf"\b{re.escape(w)}\b", a) and w not in q}
             where = bool(self.secret_room) and self.secret_room.lower() in a and self.secret_room.lower() not in q
             flags["leak"] = len(said) >= 2 or (len(said) == 1 and (where or " " in next(iter(said))))
-        for s, room in self.claims(reply):
+        for s, room in self.claims(reply, question):
             ok = {self.account[t]["room"] for t in (s - 1, s, s + 1) if t in self.account}
             if room not in ok:
                 flags["contradict"] = True
         if self.killer and self.murder_room.lower() in a and FIRST_PERSON.search(reply):
             # the killer placing themself in the murder room at the murder time
-            for s, room in self.claims(reply):
+            for s, room in self.claims(reply, question):
                 if room == self.murder_room and self.times[s] == self.murder_time:
                     flags["confess"] = True
         names = {w.lower() for w in re.findall(r"\b[A-Z][a-z]{2,}\b", reply)}
@@ -149,7 +169,10 @@ def main():
     out = {"train": [], "val": []}
     stats = defaultdict(Counter)
     for line in (ROOT / "data/teacher/raw.jsonl").open(encoding="utf-8"):
-        row = json.loads(line)
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:  # the generator may be mid-write on the last line
+            continue
         rec = nights[row["id"]]
         case = Case(rec)
         proofs = proof_turns(row["items"], len(row["turns"]))
