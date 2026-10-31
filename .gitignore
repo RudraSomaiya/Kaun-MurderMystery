@@ -8,3 +8,5 @@ game/public/models/
 __pycache__/
 *.pyc
 .DS_Store
+unsloth_compiled_cache/
+*.log

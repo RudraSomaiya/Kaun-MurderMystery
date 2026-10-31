@@ -7,7 +7,8 @@ export default defineConfig(({ mode }) => {
     root: 'game',
     base: './',
     plugins: [react()],
-    build: { outDir: '../dist', emptyOutDir: true, target: 'es2022' },
+    // web-llm is a 6 MB chunk, loaded only when the in-browser model is picked
+    build: { outDir: '../dist', emptyOutDir: true, target: 'es2022', chunkSizeWarningLimit: 7000 },
     worker: { format: 'es' },
     server: {
       port: 5173,

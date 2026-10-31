@@ -6,7 +6,8 @@ export type Config = { kind: 'webllm'; model: string } | { kind: 'openai'; baseU
 
 const BASE = 'Qwen3.5-0.8B-q4f16_1-MLC'
 export const WEB_MODELS = [
-  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned', size: '≈ 520 MB', path: 'models/kaun-0.8b/' },
+  // weights are served next to the game in dev, or from Hugging Face when VITE_KAUN_MODEL_URL is set
+  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned', size: '≈ 520 MB', path: import.meta.env.VITE_KAUN_MODEL_URL || 'models/kaun-0.8b/' },
   { id: BASE, label: 'Qwen3.5 0.8B · base', size: '≈ 550 MB' },
   { id: 'Qwen3.5-2B-q4f16_1-MLC', label: 'Qwen3.5 2B · base', size: '≈ 1.3 GB' },
   { id: 'Qwen3-1.7B-q4f16_1-MLC', label: 'Qwen3 1.7B · base', size: '≈ 1.1 GB' },
