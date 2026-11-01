@@ -77,9 +77,10 @@ export function simulate(rng: Rng, s: Setting, cast: Character[], V: number, K: 
   for (let t = tm; t < T; t++) pos[V][t] = R
   pos[K][tm] = R
 
+  // sometimes an innocent sees the killer take the weapon (unless everyone is busy with secrets)
   if (rng.chance(0.75)) {
-    const w = rng.pick(inn.filter((i) => !locked(i, tw)))
-    pos[w][tw] = weapon.room
+    const free = inn.filter((i) => !locked(i, tw))
+    if (free.length) pos[rng.pick(free)][tw] = weapon.room
   }
 
   // someone must have seen the victim alive just before
