@@ -46,7 +46,13 @@ def tensors(src):
     info = MODELS["qwen3_5"]
     config = info.config.from_file(pathlib.Path(src) / "config.json")
     mapping = info.source["huggingface-safetensor"](config, QUANTIZATION["q4f16_1"])
-    loader = HuggingFaceLoader(path=pathlib.Path(src) / "model.safetensors.index.json", extern_param_map=mapping)
+    index = pathlib.Path(src) / "model.safetensors.index.json"
+    if not index.exists():  # small checkpoints are saved as one file; MLC's loader wants an index
+        from safetensors import safe_open
+
+        with safe_open(pathlib.Path(src) / "model.safetensors", "np") as f:
+            index.write_text(json.dumps({"metadata": {}, "weight_map": {k: "model.safetensors" for k in f.keys()}}))
+    loader = HuggingFaceLoader(path=index, extern_param_map=mapping)
     return {name: t.numpy() for name, t in loader.load(device=tvm.cpu())}
 
 
