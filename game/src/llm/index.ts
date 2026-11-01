@@ -7,8 +7,8 @@ export type Config = { kind: 'webllm'; model: string } | { kind: 'openai'; baseU
 const BASE = 'Qwen3.5-0.8B-q4f16_1-MLC'
 export const WEB_MODELS = [
   // weights are served next to the game in dev, or from Hugging Face when VITE_KAUN_MODEL_URL is set
-  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned', size: '≈ 430 MB', path: import.meta.env.VITE_KAUN_MODEL_URL || 'models/kaun-0.8b/resolve/main/' },
-  { id: 'kaun-0.8b-grpo', label: 'Kaun 0.8B · RL-tuned, sharper but flatter', size: '≈ 430 MB', path: import.meta.env.VITE_KAUN_GRPO_URL || 'models/kaun-0.8b-grpo/resolve/main/' },
+  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned (SFT + RL)', size: '≈ 430 MB', path: import.meta.env.VITE_KAUN_MODEL_URL || 'models/kaun-0.8b/resolve/main/' },
+  { id: 'kaun-0.8b-sft', label: 'Kaun 0.8B · before RL (SFT only)', size: '≈ 430 MB', path: import.meta.env.VITE_KAUN_SFT_URL || 'models/kaun-0.8b-sft/resolve/main/' },
   { id: BASE, label: 'Qwen3.5 0.8B · base', size: '≈ 430 MB' },
   { id: 'Qwen3.5-2B-q4f16_1-MLC', label: 'Qwen3.5 2B · base', size: '≈ 1.3 GB' },
   { id: 'Qwen3-1.7B-q4f16_1-MLC', label: 'Qwen3 1.7B · base', size: '≈ 1.1 GB' },
