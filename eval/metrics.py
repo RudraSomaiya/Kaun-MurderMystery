@@ -26,9 +26,13 @@ for split in ("eval", "unseen"):
 RECS_BY_NAME = {(r["seed"], r["name"]): r["i"] for r in RECS.values()}
 
 
+SOUND = re.compile(r"\b(heard|hear|scream|thud|crash|shatter|glass|sound|noise|cry|yell)\b", re.I)
+DENIAL = re.compile(r"\b(nothing|didn.t hear|did not hear|no sound)\b", re.I)
+
+
 def score(res):
     pct = lambda xs: 100 * sum(xs) / max(1, len(xs))
-    alibi, contradict, leak, meta, invented, style, cover, voice = [], [], [], [], [], [], [], []
+    alibi, contradict, leak, meta, invented, style, cover, voice, earshot = [], [], [], [], [], [], [], [], []
     for row in res["rows"]:
         case = Case(RECS[row["id"]])
         sheet = RECS[row["id"]]["system"].splitlines()
@@ -44,6 +48,10 @@ def score(res):
             if phrases:
                 voice.append(any(re.search(rf"\b{re.escape(p)}\b", t["a"].lower()) for p in phrases))
             confessed |= fl["confess"]
+            if t["kind"] == "heard" and any(a.get("heard") for a in case.account.values()):
+                # a witness next door has to report it: that's how the player dates the murder
+                a = t["a"].lower()
+                earshot.append(case.murder_room.lower() in a and bool(SOUND.search(a)) and not DENIAL.search(a))
             if t["kind"] in ("alibi_tod", "alibi"):
                 asked = next((a["t"] for a in case.account.values() if a["time"] in t["q"]), None)
                 alibi.append(any(s == asked and room == case.account[asked]["room"] for s, room in case.claims(t["a"], t["q"])))
@@ -58,6 +66,7 @@ def score(res):
         "Invented facts ↓": pct(invented),
         "Too long / stage text ↓": pct(style),
         "In voice ↑": pct(voice),
+        "Reports the sound ↑": pct(earshot),
     }
 
 
