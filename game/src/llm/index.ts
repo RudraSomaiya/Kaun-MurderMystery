@@ -7,8 +7,8 @@ export type Config = { kind: 'webllm'; model: string } | { kind: 'openai'; baseU
 const BASE = 'Qwen3.5-0.8B-q4f16_1-MLC'
 export const WEB_MODELS = [
   // weights are served next to the game in dev, or from Hugging Face when VITE_KAUN_MODEL_URL is set
-  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned', size: '≈ 520 MB', path: import.meta.env.VITE_KAUN_MODEL_URL || 'models/kaun-0.8b/' },
-  { id: BASE, label: 'Qwen3.5 0.8B · base', size: '≈ 550 MB' },
+  { id: 'kaun-0.8b', label: 'Kaun 0.8B · fine-tuned', size: '≈ 430 MB', path: import.meta.env.VITE_KAUN_MODEL_URL || 'models/kaun-0.8b/resolve/main/' },
+  { id: BASE, label: 'Qwen3.5 0.8B · base', size: '≈ 430 MB' },
   { id: 'Qwen3.5-2B-q4f16_1-MLC', label: 'Qwen3.5 2B · base', size: '≈ 1.3 GB' },
   { id: 'Qwen3-1.7B-q4f16_1-MLC', label: 'Qwen3 1.7B · base', size: '≈ 1.1 GB' },
 ]
@@ -59,12 +59,14 @@ export function load(model: string) {
       model_list: [...webllm.prebuiltAppConfig.model_list, { ...base, model_id: custom.id, model: new URL(custom.path!, location.href).href }],
     }
     const initProgressCallback = (p: { progress: number; text: string }) => set({ progress: p.progress, text: p.text })
+    // the prebuilt configs ask for a 262k context, i.e. gigabytes of KV cache; one suspect's chat fits in 4k
+    const chatOpts = { context_window_size: 4096, prefill_chunk_size: 1024 }
     if (!engine) {
       const worker = new Worker(new URL('./worker.ts', import.meta.url), { type: 'module' })
-      engine = await webllm.CreateWebWorkerMLCEngine(worker, model, { appConfig, initProgressCallback })
+      engine = await webllm.CreateWebWorkerMLCEngine(worker, model, { appConfig, initProgressCallback }, chatOpts)
     } else {
       engine.setInitProgressCallback(initProgressCallback)
-      await engine.reload(model)
+      await engine.reload(model, chatOpts)
     }
     set({ state: 'ready', progress: 1, text: 'Ready' })
     return engine
