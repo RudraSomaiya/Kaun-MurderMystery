@@ -22,7 +22,7 @@ export function EnginePill({ cfg, setCfg }: { cfg: Config; setCfg: (c: Config) =
           <span className="kicker" style={{ marginRight: 8 }}>
             Suspects
           </span>
-          {label(cfg)}
+          <span className="engine-label">{label(cfg)}</span>
         </span>
         <span className="mini">change</span>
       </button>

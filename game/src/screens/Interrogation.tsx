@@ -61,7 +61,12 @@ export function Interrogation({ c, game, setGame, cfg, who, setWho }: { c: Case;
         return { ...g, chats: { ...g.chats, [who]: list } }
       })
     } catch (e) {
-      setErr(`The suspect didn't answer: ${(e as Error)?.message ?? String(e)}`)
+      const msg = (e as Error)?.message ?? String(e)
+      setErr(
+        cfg.kind === 'openai' && /fetch|network/i.test(msg)
+          ? `Couldn't reach ${cfg.baseURL}. Is the server running? Ollama also needs OLLAMA_ORIGINS to allow this page. Or switch to the in-browser model (top right).`
+          : `The suspect didn't answer: ${msg}`,
+      )
       setGame((g) => ({ ...g, chats: { ...g.chats, [who]: (g.chats[who] ?? []).slice(0, -1) } }))
       setDraft(q)
     } finally {
@@ -82,7 +87,10 @@ export function Interrogation({ c, game, setGame, cfg, who, setWho }: { c: Case;
     <div className="interro">
       <aside className="cell">
         <span className="bulb" />
-        <Portrait c={me} stress={stress} />
+        {/* re-keyed on every jump in nerves so the flinch replays */}
+        <div key={`${who}:${Math.round(stress * 10)}`} className={stress > 0.5 ? 'flinch' : ''}>
+          <Portrait c={me} stress={stress} />
+        </div>
         <div>
           <h2>{me.name}</h2>
           <p className="role">
