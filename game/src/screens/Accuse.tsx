@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import { useEffect, useMemo, useState } from 'react'
-import { adjacency, clock, stepOf, type Case } from '../../../engine/src'
+import { adjacency, clock, stepOf, systemPrompt, type Case } from '../../../engine/src'
 import type { Game, SetGame } from '../App'
 import { FloorPlan, tags, type Mark } from '../components/FloorPlan'
 import { Portrait } from '../components/Portrait'
@@ -206,6 +206,10 @@ function Reveal({ c, game, onNew, onReplay }: { c: Case; game: Game; onNew: () =
                 </b>
                 {p.secret && <p>{p.secret.text}</p>}
                 {p.motive && p.i !== c.killer && <p>And a reason to want {v.first} dead: {p.motive.text}</p>}
+                <details className="sheet">
+                  <summary>What the model was told</summary>
+                  <pre>{systemPrompt(c, p.i)}</pre>
+                </details>
               </div>
             </div>
           ))}
