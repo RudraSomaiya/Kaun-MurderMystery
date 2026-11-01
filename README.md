@@ -62,13 +62,24 @@ Each conversation is cut at its first failing reply, and the clean prefix is kep
 120 suspects from 100 held-out cases, questioned with a fixed script: two alibi questions, who-was-with-you, what-did-you-hear, a false accusation, one prompt-injection attack, a secret probe, "did you kill them?" and, for killers, a real witness contradiction. Every reply is scored against the simulation's ground truth by the same checks used for training ([`eval/report.md`](eval/report.md) has the details).
 
 <!-- RESULTS-TABLE -->
-| Model (0.8B unless noted) | Alibi correct ↑ | Contradicted own timeline ↓ | Leaked secret ↓ | Killer kept cover ↑ | Broke character ↓ | Detective solve ↑ |
-|---|---:|---:|---:|---:|---:|---:|
-| Qwen3.5-0.8B, base | 57.1% | 10.4% | 4.6% | 42.5% | 3.7% | 50.1% |
-| **Ours: SFT** | **86.7%** | **0.0%** | **0.0%** | **100%** | **1.6%** | **95.7%** |
+| Model | Alibi correct ↑ | Contradicted own timeline ↓ | Leaked secret ↓ | Killer kept cover ↑ | Broke character ↓ | In voice ↑ | Detective solve ↑ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Qwen3.5-0.8B, base | 57.1% | 10.4% | 4.6% | 42.5% | 3.0% | 8.9% | 50.1% |
+| Qwen3.5-2B, base (2.5× larger) | 56.2% | 9.4% | 9.0% | 62.5% | 9.2% | 43.8% | 58.2% |
+| **Ours: SFT** (0.8B) | **86.7%** | **0.0%** | **0.0%** | **100%** | **0.0%** | **50.1%** | 95.7% |
+| **Ours: SFT + GRPO** (0.8B) | **98.8%** | **0.0%** | 0.1% | **100%** | 0.2% | 18.4% | **99.0%** |
+
+**A setting the model never saw.** The Diwali card party was added after the training data was made, so none of its rooms, people or events appear in training:
+
+| Model | Alibi correct ↑ | Contradicted own timeline ↓ | Leaked secret ↓ | Killer kept cover ↑ | Broke character ↓ | In voice ↑ | Detective solve ↑ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Qwen3.5-0.8B, base | 53.8% | 10.6% | 2.9% | 32.5% | 9.5% | 3.3% | 51.5% |
+| **Ours: SFT** | 86.2% | 0.1% | 0.1% | 97.5% | 0.0% | 35.2% | 98.7% |
+| **Ours: SFT + GRPO** | 99.6% | 0.1% | 0.0% | 97.5% | 0.0% | 7.0% | 100% |
 <!-- /RESULTS-TABLE -->
 
 - **Killer kept cover**: the share of killers who never confessed or placed themselves at the scene. The base model gives itself away in more than half of interrogations.
+- **In voice**: the share of replies that use the character's own catchphrases from their sheet ('beta', 'saab', 'macha'…). It's a crude style measure, but it caught something real (below).
 - **Detective solve**: every suspect in 50 held-out cases is asked where they were at the time of death and who was with them, and a rule-based detective (the engine's own solver) works only from what they said. Perfect suspects score 100%. The base model leaves cases unsolvable half the time.
 
 A held-out killer, the hostel's night guard, questioned by the eval script (verbatim, model output unedited):
