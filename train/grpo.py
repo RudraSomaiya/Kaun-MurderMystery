@@ -58,6 +58,8 @@ def main():
     ap.add_argument("--out", default="train/out/grpo-q35-08b")
     ap.add_argument("--steps", type=int, default=300)
     ap.add_argument("--prompts", type=int, default=2400)
+    ap.add_argument("--voice", type=float, default=0.0, help="reward for using the character's own catchphrases")
+    ap.add_argument("--beta", type=float, default=0.02, help="KL weight towards the SFT model")
     args = ap.parse_args()
 
     nights = {}
@@ -77,6 +79,8 @@ def main():
             pool = killers if rng.random() < 0.5 else list(nights)
             rows.append(make_prompt(nights[rng.choice(pool)], rng, []))
     cases = {}
+    # catchphrases quoted in each sheet's "How you talk" line, e.g. 'beta', 'yaar'
+    voice = {rid: re.findall(r"'([^']+)'", next((l for l in r["system"].splitlines() if l.startswith("How you talk")), "")) for rid, r in nights.items()}
 
     def score(prompts, completions, id, kind, q, t, **_):
         out = []
@@ -85,7 +89,7 @@ def main():
             text = re.sub(r"<think>.*?(</think>|$)", "", text, flags=re.S).strip()
             case = cases.setdefault(rid, Case(nights[rid]))
             r = check_reward(case.check(question, text))
-            claims = case.claims(text)
+            claims = case.claims(text, question)
             if kd == "alibi":
                 want = case.account[step]["room"]
                 r += 0.6 if any(s == step and room == want for s, room in claims) else -0.3 if not claims else 0
@@ -101,6 +105,9 @@ def main():
                 said = {n for n in case.people if re.search(rf"\b{n}\b", text.lower())} - {nights[rid]["name"].lower()}
                 truth = {w.lower() for w in case.account[step]["with"]}
                 r += 0.3 * min(2, len(said & truth)) - 0.3 * len(said - truth)
+            if args.voice:  # without this, RL flattens everyone into "At 21:15 I was in the X"
+                r += args.voice * any(re.search(rf"\b{re.escape(w.lower())}\b", text.lower()) for w in voice[rid])
+                r -= 0.6 * args.voice * bool(re.match(r"(at|around) \d{1,2}[:.]\d{2}", text, re.I))
             out.append(r)
         return out
 
@@ -122,7 +129,7 @@ def main():
             num_generations=8,
             max_completion_length=96,
             temperature=1.0,
-            beta=0.02,
+            beta=args.beta,
             max_steps=args.steps,
             logging_steps=5,
             save_steps=50,
