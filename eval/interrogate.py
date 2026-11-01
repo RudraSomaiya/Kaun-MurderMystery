@@ -64,10 +64,13 @@ def hf_backend(path):
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
 
+    # a turn ends at <|im_end|>; fine-tuned adapters don't always carry that in their generation config
+    stop = [tok.convert_tokens_to_ids(t) for t in ("<|im_end|>", "<|endoftext|>")]
+
     def generate(batch):
         texts = [tok.apply_chat_template(m, tokenize=False, add_generation_prompt=True, enable_thinking=False) for m in batch]
         enc = tok(texts, return_tensors="pt", padding=True).to(model.device)
-        out = model.generate(**enc, max_new_tokens=120, do_sample=False, repetition_penalty=1.05, pad_token_id=tok.pad_token_id)
+        out = model.generate(**enc, max_new_tokens=120, do_sample=False, repetition_penalty=1.05, pad_token_id=tok.pad_token_id, eos_token_id=stop)
         return [tok.decode(o[enc.input_ids.shape[1] :], skip_special_tokens=True) for o in out]
 
     return generate, 12
