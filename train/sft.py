@@ -25,21 +25,31 @@ ap.add_argument("--seq", type=int, default=3072)
 ap.add_argument("--data", default=str(ROOT / "data/sft"))
 ap.add_argument("--batch", type=int, default=2)
 ap.add_argument("--smoke", action="store_true")
+ap.add_argument("--init", default="", help="continue training an existing LoRA adapter")
+ap.add_argument("--extra", default="", help="extra jsonl mixed into the training set")
 args = ap.parse_args()
 
-model, tok = FastLanguageModel.from_pretrained(args.model, max_seq_length=args.seq, load_in_4bit=False, dtype=None)
-tok = getattr(tok, "tokenizer", tok)  # multimodal checkpoints hand back a processor
-model = FastLanguageModel.get_peft_model(
-    model,
-    r=args.rank,
-    lora_alpha=args.rank,
-    lora_dropout=0,
-    target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
-    use_gradient_checkpointing="unsloth",
-    random_state=7,
-)
+if args.init:
+    model, tok = FastLanguageModel.from_pretrained(args.init, max_seq_length=args.seq, load_in_4bit=False, dtype=None)
+    tok = getattr(tok, "tokenizer", tok)
+    for n, p in model.named_parameters():
+        p.requires_grad = "lora_" in n
+else:
+    model, tok = FastLanguageModel.from_pretrained(args.model, max_seq_length=args.seq, load_in_4bit=False, dtype=None)
+    tok = getattr(tok, "tokenizer", tok)  # multimodal checkpoints hand back a processor
+    model = FastLanguageModel.get_peft_model(
+        model,
+        r=args.rank,
+        lora_alpha=args.rank,
+        lora_dropout=0,
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        use_gradient_checkpointing="unsloth",
+        random_state=7,
+    )
+print("trainable params:", sum(p.numel() for p in model.parameters() if p.requires_grad))
 
-ds = load_dataset("json", data_files={"train": f"{args.data}/train.jsonl", "val": f"{args.data}/val.jsonl"})
+train_files = [f"{args.data}/train.jsonl"] + ([args.extra] if args.extra else [])
+ds = load_dataset("json", data_files={"train": train_files, "val": f"{args.data}/val.jsonl"})
 render = lambda ex: {"text": tok.apply_chat_template(ex["messages"], tokenize=False, enable_thinking=False)}
 ds = ds.map(render, remove_columns=ds["train"].column_names)
 ds = ds.filter(lambda ex: len(tok(ex["text"]).input_ids) <= args.seq)
