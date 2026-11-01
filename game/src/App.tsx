@@ -61,7 +61,7 @@ export default function App() {
   const [who, setWho] = useState<number | null>(null)
   const [intro, setIntro] = useState(false)
   const savedCfg = useRef(read<Config>('kaun:engine'))
-  const [cfg, setCfgRaw] = useState<Config>(() => savedCfg.current ?? (hasWebGPU() ? { kind: 'webllm', model: WEB_MODELS[1].id } : PRESETS[0].cfg))
+  const [cfg, setCfgRaw] = useState<Config>(() => savedCfg.current ?? (hasWebGPU() ? { kind: 'webllm', model: WEB_MODELS.find((m) => !m.path)!.id } : PRESETS[0].cfg))
 
   const c = useMemo(() => (game ? generateCase(content, game.seed, settingOf(game.seed)) : null), [game?.seed])
   const setGame: SetGame = (f) => setGameRaw((g) => (g ? f(g) : g))
@@ -75,7 +75,7 @@ export default function App() {
   }, [game])
   useEffect(() => {
     // prefer the fine-tuned model when its weights are being served next to the game
-    if (!savedCfg.current && hasWebGPU()) customModelAvailable().then((ok) => ok && setCfgRaw({ kind: 'webllm', model: WEB_MODELS[0].id }))
+    if (!savedCfg.current && hasWebGPU()) customModelAvailable(WEB_MODELS[0].path!).then((ok) => ok && setCfgRaw({ kind: 'webllm', model: WEB_MODELS[0].id }))
   }, [])
   useEffect(() => {
     window.scrollTo({ top: 0 })

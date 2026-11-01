@@ -6,11 +6,11 @@ const label = (cfg: Config) => (cfg.kind === 'webllm' ? (WEB_MODELS.find((m) => 
 
 export function EnginePill({ cfg, setCfg }: { cfg: Config; setCfg: (c: Config) => void }) {
   const [open, setOpen] = useState(false)
-  const [custom, setCustom] = useState(false)
+  const [avail, setAvail] = useState<Record<string, boolean>>({})
   const st = useStatus()
   const gpu = hasWebGPU()
   useEffect(() => {
-    customModelAvailable().then(setCustom)
+    for (const m of WEB_MODELS) if (m.path) customModelAvailable(m.path).then((ok) => setAvail((a) => ({ ...a, [m.id]: ok })))
   }, [])
   const dot = cfg.kind === 'openai' ? 'ready' : st.model === cfg.model ? st.state : 'idle'
 
@@ -31,7 +31,7 @@ export function EnginePill({ cfg, setCfg }: { cfg: Config; setCfg: (c: Config) =
           <motion.div className="engine-pop panel" initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }}>
             <div className="kicker">Who voices the suspects</div>
             <div className="seg">
-              <button className={cfg.kind === 'webllm' ? 'on' : ''} disabled={!gpu} onClick={() => setCfg({ kind: 'webllm', model: custom ? WEB_MODELS[0].id : WEB_MODELS[1].id })}>
+              <button className={cfg.kind === 'webllm' ? 'on' : ''} disabled={!gpu} onClick={() => setCfg({ kind: 'webllm', model: avail[WEB_MODELS[0].id] ? WEB_MODELS[0].id : WEB_MODELS.find((m) => !m.path)!.id })}>
                 In this browser
               </button>
               <button className={cfg.kind === 'openai' ? 'on' : ''} onClick={() => setCfg(PRESETS[0].cfg)}>
@@ -45,9 +45,9 @@ export function EnginePill({ cfg, setCfg }: { cfg: Config; setCfg: (c: Config) =
                   Model (downloaded once, then cached)
                   <select value={cfg.model} onChange={(e) => setCfg({ kind: 'webllm', model: e.target.value })}>
                     {WEB_MODELS.map((m) => (
-                      <option key={m.id} value={m.id} disabled={!!m.path && !custom}>
+                      <option key={m.id} value={m.id} disabled={!!m.path && !avail[m.id]}>
                         {m.label} · {m.size}
-                        {m.path && !custom ? ' (not published yet)' : ''}
+                        {m.path && !avail[m.id] ? ' (not published yet)' : ''}
                       </option>
                     ))}
                   </select>

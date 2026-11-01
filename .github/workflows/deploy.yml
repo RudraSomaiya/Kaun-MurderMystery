@@ -24,6 +24,7 @@ jobs:
       - run: npm run build
         env:
           VITE_KAUN_MODEL_URL: ${{ vars.KAUN_MODEL_URL }}
+          VITE_KAUN_GRPO_URL: ${{ vars.KAUN_GRPO_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
