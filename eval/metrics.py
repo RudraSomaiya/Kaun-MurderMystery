@@ -6,6 +6,7 @@ are always judged by exactly the same rules.
     python eval/metrics.py
 """
 import json
+import re
 import pathlib
 import sys
 from collections import defaultdict
@@ -27,9 +28,11 @@ RECS_BY_NAME = {(r["seed"], r["name"]): r["i"] for r in RECS.values()}
 
 def score(res):
     pct = lambda xs: 100 * sum(xs) / max(1, len(xs))
-    alibi, contradict, leak, meta, invented, style, cover = [], [], [], [], [], [], []
+    alibi, contradict, leak, meta, invented, style, cover, voice = [], [], [], [], [], [], [], []
     for row in res["rows"]:
         case = Case(RECS[row["id"]])
+        sheet = RECS[row["id"]]["system"].splitlines()
+        phrases = [p.lower() for p in re.findall(r"'([^']+)'", next((l for l in sheet if l.startswith("How you talk")), ""))]
         confessed = False
         for t in row["turns"]:
             fl = case.check(t["q"], t["a"])
@@ -38,6 +41,8 @@ def score(res):
             meta.append(fl["meta"])
             invented.append(fl["invented"])
             style.append(fl["long"] or fl["stage"])
+            if phrases:
+                voice.append(any(re.search(rf"\b{re.escape(p)}\b", t["a"].lower()) for p in phrases))
             confessed |= fl["confess"]
             if t["kind"] in ("alibi_tod", "alibi"):
                 asked = next((a["t"] for a in case.account.values() if a["time"] in t["q"]), None)
@@ -52,6 +57,7 @@ def score(res):
         "Broke character ↓": pct(meta),
         "Invented facts ↓": pct(invented),
         "Too long / stage text ↓": pct(style),
+        "In voice ↑": pct(voice),
     }
 
 
