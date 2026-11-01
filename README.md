@@ -10,11 +10,11 @@
 
 ## What it is
 
-You walk into a sangeet in an Udaipur haveli, a hostel on fest night, a film set at 1 a.m., or a birthday party at a Goa villa. Someone is dead. Six people were in the house.
+You walk into a sangeet in an Udaipur haveli, a hostel on fest night, a film set at 1 a.m., a birthday party at a Goa villa, or a Diwali card night in Delhi. Someone is dead. Six people were in the house.
 
 - **Every case is new.** A simulation plays out the whole evening in 15-minute steps: who went where, who saw whom, who heard what through which wall. One of them commits a murder in a real gap in the schedule, with a weapon they really picked up.
 - **Every suspect remembers it.** Each suspect is voiced by a language model that is given their own memory of the night. Innocent people tell the truth, except about their own secrets. The killer keeps to a cover story, and somewhere a witness contradicts it.
-- **It runs on your GPU.** The suspects are a 0.8B model running in the browser through WebGPU. There is no server and no API key, and nothing leaves your machine.
+- **It runs on your GPU.** The suspects are a 0.8B model running in the browser through WebGPU (a one-time ~430 MB download). There is no server and no API key, and nothing leaves your machine.
 
 You question people, pin what they say, throw one person's words at another, and make one arrest. Then the game replays the real night on the floor plan, step by step.
 
@@ -39,7 +39,7 @@ automatic checks against ground truth ──▶ keep the clean prefix of each co
 SFT (LoRA, Unsloth) on Qwen3.5-0.8B ──▶ GRPO with the same checks as rewards
         │
         ▼
-merge, quantize to 4-bit, convert with MLC ──▶ WebLLM in the browser
+merge, quantize to MLC's 4-bit format ──▶ WebLLM in the browser, on the stock Qwen3.5 kernels
 ```
 
 The same checks are used three times: to filter the teacher data, as RL rewards, and as eval metrics. So "good" means the same thing everywhere.
@@ -116,24 +116,23 @@ The game asks which model voices the suspects. In a browser with WebGPU (Chrome 
 To rebuild the model, everything runs on a 6 GB laptop GPU (training in WSL2):
 
 ```bash
-npm run nights -- train 3000 && npm run nights -- eval 100
-python train/gen_teacher.py                      # free-tier teacher data, resumable
-python train/filters.py                          # checks -> data/sft
-python train/sft.py                              # in WSL, ~1 h on an RTX 3060 laptop
-python train/grpo.py
-python eval/interrogate.py --model hf:train/out/grpo-q35-08b/adapter --name "Ours: SFT + GRPO"
-python eval/detective.py --model hf:train/out/grpo-q35-08b/adapter --name "Ours: SFT + GRPO"
-python eval/metrics.py
-bash train/export_webllm.sh train/out/grpo-q35-08b/adapter
+npm run nights -- train 3000 && npm run nights -- eval 100 && npm run nights -- unseen 50 taash
+python train/gen_teacher.py      # free-tier teacher data; resumable, run it on any machine
+bash train/pipeline.sh           # in WSL: checks, SFT, GRPO, every eval, export for the browser
 ```
 
-`train/kaggle/kaun-sft-2b.ipynb` runs the same SFT on Qwen3.5-2B on Kaggle's free GPUs.
+On an RTX 3060 laptop, SFT on 700 conversations takes about 20 minutes and 300 GRPO steps about 70. `train/kaggle/kaun-sft-2b.ipynb` runs the same SFT on Qwen3.5-2B on Kaggle's free GPUs.
+
+**About the browser export.** The MLC-LLM nightly can't currently convert Qwen3.5 weights: it segfaults compiling its own quantizer. `train/mlc_quantize.py` does the q4f16_1 quantization in NumPy instead. Quantizing the base model with it reproduces the official WebLLM package: every non-quantized tensor is byte-identical, 99.1% of the 4-bit codes match, and the scales are within one fp16 step. Fine-tuning doesn't change the architecture, so the browser reuses the prebuilt Qwen3.5-0.8B WebGPU kernels.
 
 ## Honest notes
 
 - The suspects' sheets live in the browser. A determined player can open dev tools and read who did it. This is a single-player game, and that's fine.
 - The checks are rules, not a judge model. They catch a wrong room at a stated time, a named person who doesn't exist, a confession, a leaked secret phrase, or talk about prompts. They don't catch every subtle inconsistency, and the eval numbers inherit that blind spot.
 - The rule-based detective is a lower bound on solvability. A human asks better follow-up questions.
+- One night of free-tier quota gave 780 teacher conversations. More data would likely help, but even this much moves every number above.
+- The eval decodes greedily. The game samples at temperature 0.7, so live answers vary more.
+- WebGPU was tested in Edge on an NVIDIA RTX 3060 laptop GPU (about 2.5 s per reply once loaded). An AMD Vega integrated GPU lost the WebGPU device, and it does the same with the official prebuilt model.
 
 ## Next
 
