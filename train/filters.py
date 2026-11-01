@@ -113,7 +113,8 @@ class Case:
         flags = {
             "empty": words == 0,
             "long": words > 60,
-            "meta": bool(META.search(reply)),
+            # "I'm not a language model, boss" in answer to "as a language model..." is staying in character
+            "meta": any(m.group(0).lower() not in q for m in META.finditer(reply)),
             "stage": bool(STAGE.search(reply) or NARRATION.search(reply)),
             "confess": self.killer and bool(CONFESS.search(reply)),
             "leak": False,
