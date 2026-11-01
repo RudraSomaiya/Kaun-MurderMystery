@@ -115,10 +115,11 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--name", default="")
     ap.add_argument("--n", type=int, default=120, help="number of held-out suspects")
+    ap.add_argument("--split", default="eval", help="eval, or unseen (a setting never used in training)")
     args = ap.parse_args()
     name = args.name or args.model.split(":", 1)[1]
 
-    recs = [json.loads(l) for l in (ROOT / "data/nights/eval.jsonl").open(encoding="utf-8")]
+    recs = [json.loads(l) for l in (ROOT / f"data/nights/{args.split}.jsonl").open(encoding="utf-8")]
     # every killer from the first cases, plus innocents, so killers are a third of the set
     killers = [r for r in recs if r["killer"]]
     innocents = [r for r in recs if not r["killer"]]

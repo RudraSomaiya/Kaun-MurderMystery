@@ -52,11 +52,12 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--name", default="")
     ap.add_argument("--cases", type=int, default=50)
+    ap.add_argument("--split", default="eval")
     args = ap.parse_args()
     name = args.name or args.model.split(":", 1)[1]
 
     by_case = defaultdict(list)
-    for line in (ROOT / "data/nights/eval.jsonl").open(encoding="utf-8"):
+    for line in (ROOT / f"data/nights/{args.split}.jsonl").open(encoding="utf-8"):
         r = json.loads(line)
         by_case[r["seed"]].append(r)
     cases = list(by_case.values())[: args.cases]

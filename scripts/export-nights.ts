@@ -1,10 +1,11 @@
 // Writes simulated cases as JSONL for the Python side (teacher data, training, evals).
-// usage: npm run nights -- <split> <count>     e.g. npm run nights -- train 3000
+// usage: npm run nights -- <split> <count> [setting]     e.g. npm run nights -- train 3000
+// data/nights/{train,eval}.jsonl were made before the taash setting existed; it is held out as "unseen"
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { content } from '../content'
 import { clock, generateCase, systemPrompt, type Case, type Line } from '../engine/src'
 
-const [split = 'train', count = '100'] = process.argv.slice(2)
+const [split = 'train', count = '100', only] = process.argv.slice(2)
 
 const facts = (c: Case, i: number) => {
   const room = (id: string) => c.setting.rooms.find((r) => r.id === id)!.name
@@ -41,7 +42,7 @@ const facts = (c: Case, i: number) => {
 mkdirSync('data/nights', { recursive: true })
 const out: string[] = []
 for (let n = 0; n < Number(count); n++) {
-  const c = generateCase(content, `${split}-${n}`)
+  const c = generateCase(content, `${split}-${n}`, only)
   for (const p of c.cast) {
     if (p.i === c.victim) continue
     out.push(JSON.stringify({ id: `${split}-${n}-${p.i}`, seed: c.seed, setting: c.setting.id, i: p.i, name: p.first, killer: p.i === c.killer, system: systemPrompt(c, p.i), facts: facts(c, p.i) }))

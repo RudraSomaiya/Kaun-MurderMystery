@@ -17,9 +17,11 @@ from filters import Case  # noqa: E402
 from detective import solve_case  # noqa: E402
 
 RECS = {}
-for line in (ROOT / "data/nights/eval.jsonl").open(encoding="utf-8"):
-    r = json.loads(line)
-    RECS[r["id"]] = r
+for split in ("eval", "unseen"):
+    path = ROOT / f"data/nights/{split}.jsonl"
+    for line in path.open(encoding="utf-8") if path.exists() else []:
+        r = json.loads(line)
+        RECS[r["id"]] = r
 RECS_BY_NAME = {(r["seed"], r["name"]): r["i"] for r in RECS.values()}
 
 
