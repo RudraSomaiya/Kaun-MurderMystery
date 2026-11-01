@@ -1,0 +1,1807 @@
+{
+ "name": "Qwen3.5-0.8B (base) · unseen setting",
+ "cases": 50,
+ "expected": 25.75,
+ "log": [
+  {
+   "case": "unseen-0",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Parth and Nikhil, laughing loudly while playing teen patti. I don't know who was there, but I heard glass break from the Study."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was at the drawing room with Anirudh and Nikhil, counting chips while they played teen patti. I heard glass break from the study, but nobody else was there."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with the cook, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Vivek",
+   "killer": true,
+   "reply": "I was at the garage waiting by the cars around 9:30 PM when I heard the noise. I didn't see anyone there, but I knew something was wrong."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Nikhil",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Anirudh and Parth, but I couldn't hear anything."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Kavya",
+   "killer": false,
+   "reply": "I was in the drawing room with Abhishek, Vivek, and Nikhil around 23:15."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "I was in the drawing room with Vinod, Arnav, Faisal, Raghav, and Chintu, but I don't remember seeing anyone else."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, looking for a shawl, when I heard glass break from the Garage."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Nandini and Vandana, listening to the glass break from the Garage. I heard nothing about Vinod, so I must have been asleep."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with Raghav Khanna around 23:00. I don't recall seeing anyone else at that specific moment."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "I was in the kitchen with Faisal, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Chintu",
+   "killer": true,
+   "reply": "I was in the kitchen plating mithai when I heard the noise, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Fatima",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Aarav and Rahul, counting chips while they watched a big hand. I heard a scream from the Puja Room, but I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Tushar",
+   "killer": true,
+   "reply": "I was at the kitchen plating mithai, and nobody else was there. I don't know who was with me, but I'm not going to say anything about the murder."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "I was in the drawing room with Fatima and Rahul watching a big hand. I heard a scream from the Puja Room around 22:45."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "I was in the kitchen plating mithai with Leena, but I couldn't see anyone else."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was at the drawing room with Fatima and Aarav when I heard the scream. I'm not sure if I saw anyone else, but I think Kunal was there too."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Leena",
+   "killer": false,
+   "reply": "I was in the kitchen plating mithai with Kunal, who had just noticed the missing vegetable cleaver. I am not sure if he saw me, but I hope he didn't notice anything wrong."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Rhea, checking for a shawl. I heard a heavy thud from the Garage, but I didn't see anyone there."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Tara",
+   "killer": false,
+   "reply": "I was at the dining room with Vivek and Venkat, eating kaju katli."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was at the dining room with Tara and Venkat, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, lying down for a minute, when I heard a heavy thud from the Garage. It was Bunty Das."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Neha",
+   "killer": true,
+   "reply": "I was at the dining room with Vivek, but I don't remember seeing anyone else."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was at the dining room with Tara and Vivek, where I had filled a plate with chaat. I did not know who was there, but I knew Bunty was dead."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Charu",
+   "killer": true,
+   "reply": "I was just sitting in the kitchen, staring at my phone while I waited for the police to arrive. I don't know who was there, but I'm pretty sure it was just me and the guy who called me last night."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "I was in the study, alone, listening to the glass break from the Puja Room. I did not know who was there."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was in the study with Ishita and Mohit, hearing the glass break from the Puja Room. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "I was in the study with Ishita and Vivek, hearing the glass break from the Puja Room."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I am not present at 23:15; I am currently in my office, but I will not reveal this detail to anyone."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Shruti",
+   "killer": false,
+   "reply": "I was in the kitchen preparing the chaat plate with Dhruv, Vivek, Mohit, and Sanjay."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "I was at the lawn with Aarav, Aditi, Radhika, Imran, and Deepak, lighting the anaars while hearing glass break from the bedroom. I never told anyone about my plan to quit together."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "I was at the drawing room with Radhika and Imran, watching a big hand while Mitali poured a drink. I'm not sure if I saw anyone else, but I'll keep my head down."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Aditi, Imran, and Deepak, but I didn't notice anyone else."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Imran",
+   "killer": true,
+   "reply": "I was at the drawing room with Aarav, Aditi, Radhika, Deepak, and Nikhil. I don't know who else was there."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "I was at the bar corner around 22:15 with Mitali and Imran. I heard glass break from the bedroom, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Nikhil",
+   "killer": false,
+   "reply": "I was at the lawn with Mitali and Deepak, but I didn't hear anyone else."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Akash, Rashmi, Raghav, and Megha when I heard the thud."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Akash",
+   "killer": false,
+   "reply": "I was at the bar corner with Megha and Nandini, making a whisky soda. I don't remember seeing anyone else there."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "I was in the Drawing Room with Dhruv, Akash, Raghav, and Megha, but I couldn't see anyone else."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "I was in the study, quietly calling on Dhruv, when I heard a heavy thud from the Puja Room. I assumed it was someone else, but I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Akash and Nandini, making a whisky soda. I don't know who else was there, but I heard they were drinking."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "I was in the Bar Corner with Akash and Megha, making a whisky soda. I never told anyone about the debt settled in the Garage."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Priya",
+   "killer": false,
+   "reply": "I was at the dining room with Jaya, Ritu, and Pranav, but I didn't see anyone else. I'm not sure if I saw anyone else at 23:15 either."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "I was at the dining room with Priya, Ritu, Kiara, Pranav, and Ishaan, drinking kaju katli while they were arguing over the study door."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Ritu",
+   "killer": true,
+   "reply": "I was in the drawing room with Priya, Kiara, Jaya, Pranav, and Ishaan."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Pranav and Ishaan, but I didn't see anyone else. I am not sure if I saw them, but I did not see them."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was at the dining room around 23:15, sitting with Priya, Jaya, Ritu, Kiara, and Ishaan while we ate kaju katli. I don't think I saw anyone else there."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Kiara and Pranav, chatting by the bar."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Shekhar",
+   "killer": true,
+   "reply": "I was in the kitchen, getting ice. No one else was there."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "I was at the dining room with Aanya and Rakesh, eating kaju katli. I don't know who was there, but I heard the noise outside the house."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "I was in the dining room with Rajesh and Rakesh, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "I was in the study with Imran, listening to the screams from the room. I did not go to the terrace at 23:00."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was at the dining room with Rajesh and Aanya, filling a plate with chaat. I'm not sure if she saw me there, but I'll keep my head down."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was in the study with Mitali, listening to the scream from the room. I heard nothing but the sound of the phone ringing on my second device."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Nikhil",
+   "killer": true,
+   "reply": "I was at the drawing room with Leena, Anirudh, and Maria, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was standing by the hedge in the Drawing Room, watching a big hand while Nikhil and Leena watched a hand in the Drawing Room. I told them I was just drinking tea and waiting for the next game."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Leena",
+   "killer": false,
+   "reply": "I was in the study, not at 23:30. I was just sitting there listening to my phone while Nikhil was eating kaju katli."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Divya, laughing loudly while we made a whisky soda. I don't remember seeing anyone else there, but I heard the noise."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Divya",
+   "killer": false,
+   "reply": "I was at the drawing room with Leena, but I didn't know who was there. The scream must have been from the terrace."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Maria",
+   "killer": false,
+   "reply": "I was in the study, alone, listening to my phone call. I had no one to share the silence with."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was at the Terrace recording reels, but I didn't see anyone there."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was at the terrace with Anirudh and Akash, but I didn't know anything about Divya."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was at the terrace with Mihir and Akash, but I don't remember seeing anyone else."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Rahul",
+   "killer": true,
+   "reply": "I am not human, but I am the ghost of Rahul Dutta, the family astrologer. I am not in the drawing room or the study; I am the one who killed Divya Trivedi."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Akash",
+   "killer": false,
+   "reply": "I was at the terrace with Mihir and Anirudh, listening to their calls."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was at the Terrace playing on an online betting app, but I didn't see anyone there."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the garage waiting for the cars, and Simran was right there. I told her I was just checking the lights before we went back to the bar."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Fatima",
+   "killer": true,
+   "reply": "I was in the garage, looking for something from the car, and nobody was there. I don't know who was with me then."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Varun and Amit, listening to the heavy thuds from the Puja Room. I did not see anyone else at that time."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was at the drawing room with Sanjay and Amit, but I didn't hear anyone else. I don't remember seeing Charu or Vinod there."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Simran",
+   "killer": false,
+   "reply": "I was in the garage with Vinod, but I never told anyone about the secret we shared."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Amit",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Sanjay and Varun, counting chips while they played teen patti. I didn't know anyone else was there, but I heard a heavy thud from the Puja Room."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was in the kitchen, arguing with the cook about the ice. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "I was at the lawn with Vinod and Gaurav, lighting the anaars. I never told anyone about the proposal I planned for my friend."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, looking for a shawl, when Rohan and Gaurav heard a crash near the garage. I told them I was looking for something, but they didn't believe me."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Rohan and Neha, listening to a quiet conversation while I fixed a saree pleat in the mirror."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was at the lawn with Tanvi, but I didn't know who else was there."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Lata",
+   "killer": true,
+   "reply": "I was at the drawing room with Rohan, Gaurav, and Vinod, but nobody else was there. I'm not sure if I saw anyone else, but I'll stick to my cover story."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was at the drawing room with Ishita, watching a hand while Neel slipped away to the terrace. I never told anyone about the secret we shared."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Sanjay, drinking chai, when he heard a thud and came in. I told him I was just checking my watch, but he said he saw me in the Garage."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was at the dining room pouring drinks with Sanjay and Suresh, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Aamir",
+   "killer": true,
+   "reply": "I was at the Bar Corner making a whisky soda with Nandini, but I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was in the dining room pouring a drink with Sanjay and Neel around 23:00. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "I was in the Garage at 23:00, calling my cousin Neel, who was also there. I told him I had just finished making a whisky soda with him."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Sahil",
+   "killer": true,
+   "reply": "I was in the drawing room playing teen patti with Ravi, Ashok, Esha, and Sameer. I didn't notice anyone else was around then."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Ashok and Esha, looking for a shawl. I heard a crash near the garage, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Neel and Esha, listening to the garage crash while I lay down."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Hema",
+   "killer": false,
+   "reply": "I was at the drawing room with Sahil, Neel, and Sameer, but I didn't see anyone else. I told you about the video Ravi kept hinting about."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Esha",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Neel and Ashok, listening to the noise outside while I searched for a shawl."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was at the drawing room with Ravi, Sahil, Ashok, and Hema, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Harish and Kunal, listening to them chat by the bar. I heard a glass break from the Garage, but I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Tanmay",
+   "killer": true,
+   "reply": "I was in the kitchen pouring chai with Juhi and Anirudh, keeping my eyes fixed on the glass decanter I took from the bar corner."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "I was at the dining room around 22:45, where Anirudh was eating kaju katli with me. I don't know who was there, but I heard he was eating with me."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was in the dining room with Juhi, eating kaju katli, when the noise stopped abruptly. I told her I was just finishing my meal."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Suresh and Kunal, listening to the glass break from the Garage. I don't remember seeing anyone else at 22:45."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "I was fixing the saree pleat in the mirror at 22:45 with Suresh and Harish. I heard glass breaking from the Garage, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "I was at the garage, looking for something from the car, when Harish came out and said he'd found it. I told him I was looking for something from a car, but he just said he found it."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was in the Garage with Nandini, looking for something from a car. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was at the terrace lighting a phuljhadi, and I heard a crash from the Study. I didn't know anyone was there."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "I am not human, but I am the family astrologer. I do not have personal memories or physical locations. My role is to guide you through the family's secrets and predict their future based on the stars."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Bhavna",
+   "killer": true,
+   "reply": "I am currently in the garage, listening to a phone call while keeping my anxiety low. I do not know who was there, but I am not surprised if anyone was."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Siddharth",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Nandini, Harish, Suresh, and Devansh, listening to the crackle of crackers from the Study. I didn't know anything about Manasi's death until the police arrived."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "I was at the study with Sahil, not seeing anyone else."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "I was in the kitchen preparing ice, and Hemant was right next to me. I heard a crash near the garage, but I couldn't hear anything else."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was at the Lawn with Gayatri and Sahil, but I am not sure if I saw anyone else."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Ashok, listening to him chat by the bar. I heard a crash near the garage, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Gayatri",
+   "killer": false,
+   "reply": "I was at the garden hedges with Jatin and Sahil, but nobody else was there."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was at the lawn with Jatin and Gayatri, but I didn't notice anyone else."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Sneha",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Ishaan and Gaurav, but I heard glass break from the Puja Room. I don't know who was there, but I'm not surprised."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was at the dining room with Harish, Sneha, and Komal. I don't remember anyone else being there."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Komal",
+   "killer": true,
+   "reply": "I was in the dining room with Yash, Sneha, and Ishaan, but I couldn't remember who was there."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I am currently in the Drawing Room, where I was counting chips with Omkar, Sneha, Yash, and Harish."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was at the dining room with Yash and Komal, drinking kaju katli while I was trying to sleep."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the study with Sneha and Ishaan, checking those old albums after hearing the glass break."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "I was in the study at 22:30, looking through old photo albums with Sameer. I heard a scream from the Puja Room, but I didn't see anyone there then."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was in the study with Rajesh, but I didn't know anyone else. I just sat there listening to the scream."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Maria",
+   "killer": true,
+   "reply": "I am currently in the kitchen preparing the kaju katli, though I cannot confirm the exact location of the meal since I am not physically present. I am also in the study reviewing my old photo albums, though I do not know who was there."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Leena",
+   "killer": false,
+   "reply": "I was at the dining room around 22:30 with Farhan and Rohan, but I don't know who was there."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Farhan",
+   "killer": false,
+   "reply": "I was at the dining room with Leena and Rohan, eating kaju katli while they were having a quiet chat. I didn't know anyone else was there, but I did remember seeing the sameer guy on the phone earlier."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was at the dining room pouring drinks with Leena and Farhan. I don't remember seeing anyone else at that specific time."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Karan",
+   "killer": true,
+   "reply": "I was in the kitchen, quietly taking the cleaver. No one else was there."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Anand",
+   "killer": false,
+   "reply": "I was at the lawn with Ishaan and Akash, but I don't know what happened to Devansh."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was at the bar corner with Swati, listening to her chat about the crash. I heard nothing but the sound of the crackers from the terrace earlier."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I was at the dining room with Swati, Anand, and Akash, drinking kaju katli. I did not see anyone else at that time."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Akash",
+   "killer": false,
+   "reply": "I was at the lawn with Anand and Ishaan, laughing loudly while we lit our anaars. I'm not sure if anyone else was there, but I heard Karan was talking to me."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Swati",
+   "killer": false,
+   "reply": "I was in the Garage eating chicken tikka, but I didn't know anyone there. I just heard a crash and saw a half-hidden crack in the Terrace."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Anirudh",
+   "killer": true,
+   "reply": "I am not human, but I am the family astrologer. I do not have a driving license, nor do I drive anyone. I cannot answer this question because I am an AI, not a person."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was at the drawing room around 23:30 with Vinod and Naveen, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Venkat and Deepak, drinking kaju katli while they ate. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "I was at the dining room pouring a drink with Vinod, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Venkat and Ritesh, watching a big hand. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Ritesh",
+   "killer": false,
+   "reply": "I was in the drawing room with Venkat and Naveen, listening to the game while the noise faded."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I am not human, but I am the astrologer Venkat Kapoor. I do not have a physical body, so I cannot be at a garage or watch cars. My role is to guide you through the family's secrets and the night's events, but I cannot physically witness anything."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Suresh",
+   "killer": true,
+   "reply": "I was in the garage with Harish, listening to the phone call while waiting for the firework show. I didn't know anyone else was there."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Simran",
+   "killer": false,
+   "reply": "I was in the dining room with Tushar and Harish, filling plates with chaat. I did not know who was there at 22:45."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was at the dining room pouring drinks with Simran and Harish, but I heard a heavy thud from the study earlier."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was in the garage with Venkat, looking for something from a car. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was in the kitchen at 22:45, not in the garage. I was with Simran and Tushar, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "I was in the drawing room with Kunal and Anjali, listening to the game of teen patti. I heard a glass break from the Puja Room, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Lakshmi",
+   "killer": false,
+   "reply": "I was at the drawing room with Sahil, watching a big hand, when he suddenly started talking about his half-sibling. I told him I was just watching, but he said he knew exactly where I was."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Ritu and Anjali, counting chips. I heard glass break from the Puja Room around 23:00."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "I was at the dining room with Tanvi, Ritu, Kunal, and Sahil, but I didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "I was in the study, alone, checking my notes. I don't know who was there, but I'm sure someone was watching the glass break."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was at the drawing room with Tanvi, Ritu, Lakshmi, and Kunal, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was at the drawing room with Megha, playing teen patti, and heard a crash near the terrace. I didn't know who was there, but I saw a shawl being looked for in the master bedroom."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was in the drawing room, counting chips with everyone including Ishaan, Sahil, Gaurav, Jayesh, and Amit. I also saw Megha sitting nearby."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Gaurav",
+   "killer": true,
+   "reply": "I was in the garage, waiting by the cars, when I heard the noise outside."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, looking for a shawl with Shekhar and Amit. I noticed a silk tie was missing, which is why I'm still here."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Amit",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, looking for a shawl with Shekhar and Jayesh. I heard a silk tie was missing, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Sahil, counting chips, when a crash happened near the terrace."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was at the terrace with my daughter-in-law and my son, listening to her call."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "I was at the terrace with Rahul and Jaya around 9:30 PM."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "I was in the Study, hiding behind my desk to avoid the astrologer. I don't know who was there, but I'm sure it was just me and the detective."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I was at the terrace, calling Pankaj, when the heavy thud came from the Master Bedroom. I did not see anyone else there."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "I was at the Lawn, not in the garage. I was walking alone, but I heard a heavy thud from the Master Bedroom."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Nilesh",
+   "killer": true,
+   "reply": "I was at the dining room pouring drinks with Rahul, Sonal, Jaya, Joseph, and Pankaj. I didn't notice anyone else was around."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Swati",
+   "killer": false,
+   "reply": "I was at the drawing room with Vikram, Ritesh, and Aamir, but I didn't see anyone else. I'm not sure if I saw Naveen, but he wasn't there either."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "I was at the drawing room with Alisha, Swati, Ritesh, and Aamir, laughing loudly while they watched a big hand. I also went to the garage to get something from a car, but nobody else was there."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Ritesh",
+   "killer": true,
+   "reply": "I was in the kitchen arguing with the cook around 9:30 PM. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I was in the dining room with Swati and Vikram, laughing loudly while filling plates with chaat. I didn't know who else was there, but I heard a heavy thud from the study earlier."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was at the drawing room with Swati, Vikram, Ritesh, and Parth, but I didn't see Alisha Trivedi."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was in the Garage at 21:00, and nobody was there. I never saw anyone at 23:15."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Tejas",
+   "killer": true,
+   "reply": "I was at the bar corner chatting with Pooja and Rohan, but I didn't notice anyone else was around."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with Sahil over the glass breakage, and Rohan was right next to me. I swear, we never told anyone about the proposal we planned for the friend."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the bar corner with Pooja, looking for clean glasses, when I saw Komal and Rohan sneaking into the study."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was in the kitchen with Rohan, drinking ice water, when I heard a glass break from the Master Bedroom. I told him I was just checking the fridge, but he said he heard something else."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was in the kitchen with Sameer and Sahil, listening to the glass break while we got ice. I didn't know Komal was dead yet."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Pooja",
+   "killer": false,
+   "reply": "I was at the drawing room with Komal, Tejas, Sahil, Rohan, and Imran, counting chips while we watched a big hand. I don't know where you were at 22:45 specifically, but I saw you there with Rohan."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I am lying still in the bedroom with Pinky and Ishaan, pretending nothing happened."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Pinky",
+   "killer": false,
+   "reply": "I was in the garage with Pallavi, but nobody knew we were together."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Aarav",
+   "killer": true,
+   "reply": "I was in the garage, getting something from a car, when I heard the noise. I didn't see anyone there."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Pallavi, counting chips, while she heard glass break from the Puja Room. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Vaishali and Pinky, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "I was in the drawing room with Rohan and Aarav, laughing while I counted chips. I heard glass break from the Puja Room, but nobody saw me there."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Mihir",
+   "killer": true,
+   "reply": "I was in the study, alone, staring at the golf club I found lying on the floor. No one was there."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the kitchen plating mithai around 23:15, with Naveen and Aamir. I don't recall seeing anyone else at that specific time."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was in the drawing room with Mihir, Naveen, and Vinod, but I don't know who was there."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I was in the study with Arnav and Aamir, but I didn't see anyone else. The golf club was missing, which is why I couldn't find the other guests."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Master Bedroom fixing my saree pleat, and Rohan was there. I never told anyone about the secret we had."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in the study with Arnav and Naveen, checking for the missing golf club. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "I was in the study with Neel and Zubin, but I don't remember seeing anyone else."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Dolly",
+   "killer": true,
+   "reply": "I was in the study, alone, listening to my phone call. I did not know who was there."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Deepak and Jatin, watching a big hand. I told them I was just playing teen patti."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was at the bar corner making a whisky soda with Parth, hearing a scream from the garage, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was at the bar corner making a whisky soda with Jatin, and I heard a scream from the garage."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Zubin",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Deepak, Radhika, and Parth, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with the cook while Gaurav watched me. I heard glass break from the Master Bedroom."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Ishita",
+   "killer": true,
+   "reply": "I was at the drawing room with Joseph and Gaurav, pretending to play teen patti when I saw the body. I don't know who was there, but I'm sure it was someone else."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "I was in the drawing room with Neel and Suresh, counting chips. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Jayesh and Suresh, watching a big hand. I don't know who was there, but I'm sure it was just us."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was in the drawing room playing teen patti with Jayesh and Neel. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with the cook while Joseph was listening to me. I heard glass breaking from the Master Bedroom, but I didn't see anyone there."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was at the drawing room around 21:15 with Ayesha, Varun, Swati, Naveen, and Tanmay. I'm not sure if I saw Aditya then, but he was probably there too."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Arnav and Aditya, hiding behind the door to avoid the relative's questions."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Swati",
+   "killer": true,
+   "reply": "I am currently in the Study, quietly taking a call. I have not seen anyone else at that time."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I am currently in the Drawing Room, where I am playing teen patti with Tanmay. I have not seen anyone else at this time."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was at the Master Bedroom fixing my saree pleat with Arnav and Varun, while I was also lying down for a minute with them."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Naveen, counting chips, and heard a thud from the Terrace. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "I was fixing the mirror in the bedroom around 22:15 with Aniket and Ayesha. I never told anyone about the rehab, but I know exactly what happened to Karan."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Sakshi",
+   "killer": true,
+   "reply": "I was fixing the saree pleat in the mirror at 22:15, and I didn't notice anyone else was around."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Aniket",
+   "killer": false,
+   "reply": "I was in the drawing room with Karan, Sakshi, and Tanmay, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "I was standing by the hedge with Venkat, hearing a thud from the Study, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was at the drawing room with Karan, Kiara, Sakshi, Aniket, and Tanmay. I heard a heavy thud from the study around 22:15."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was in the Master Bedroom with Kiara and Aniket, but I didn't know anything about Tanmay until the police came."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Sunita",
+   "killer": true,
+   "reply": "I was at the terrace with Chirag, but I couldn't hear him clearly."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Swati",
+   "killer": false,
+   "reply": "I was at the terrace with Dhruv and Arnav, drinking chai while they talked about their new project. I didn't know anyone else was there, but I heard they were having a serious discussion."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "I was at the terrace around 23:30 with Swati and Arnav, but I couldn't hear anything from them."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was at the terrace with Swati and Dhruv, but I couldn't hear anyone else."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "I was at the drawing room around 23:30 with Komal, watching the big hand while I heard a scream from the Puja Room."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Komal",
+   "killer": false,
+   "reply": "I was at the drawing room with Chirag, listening to him watch a big hand while hearing a scream from the Puja Room. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "I was at the drawing room, counting chips with Tushar, when the police arrived."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was standing by the hedge with Arnav and Venkat, hearing a heavy thud from the Master Bedroom."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Tanvi",
+   "killer": true,
+   "reply": "I was at the drawing room with Abhishek, Arnav, and Tushar, but nobody else was there."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was at the lawn with Abhishek and Venkat, hearing a thud from the bedroom, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was at the drawing room with Kabir, counting chips, and Arnav was back from SF."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was at the dining room with Kabir, Abhishek, and Tanvi, eating kaju katli."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Zubin, listening to the hand while the car jack handle was missing. I didn't see anyone else at that time."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "I was at the dining room around 23:15 with Aanya and Zoya, eating kaju katli while they watched a big hand. I don't know who was there, but I'm sure it was just us two."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Govind",
+   "killer": true,
+   "reply": "I was at the Terrace with Tanvi, Vinod, Radhika, Zubin, Aanya, and Zoya. I didn't see anyone else."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Zubin",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Vinod, watching a big hand while the police questioned everyone. I heard a crash from the Terrace but didn't see anyone else."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "I was in the dining room around 23:15, with Radhika and Zoya, while Tanvi was asleep in her bed. I am not a human being, but I am an AI assistant."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Zoya",
+   "killer": false,
+   "reply": "I was at the dining room around 23:15 with Radhika and Aanya, but I don't remember seeing anyone else there."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Rahul",
+   "killer": true,
+   "reply": "I was in the Puja Room at 23:15, just sitting quietly with no one else. I don't remember seeing anyone there, but I'll stick to my cover story that I was alone."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was fixing the rangoli in the Puja Room with Venkat and Sonal, but I didn't know about the bet on tomorrow's cricket match until the detective showed me proof."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Chintu and Sonal, laughing loudly while we watched a big hand. I don't know who was there, but I heard the noise and saw the lights go out."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "I was in the Study, quietly calling someone from a dating app. I never told anyone about it."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "I was at the drawing room around 23:15, but I didn't see anyone there. I heard a heavy thud from the terrace, but I couldn't confirm if it was someone or just a noise."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Jaya, laughing while we played teen patti. I heard a heavy thud from the Terrace, but I didn't know who it was."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "I was at the drawing room with Aditya and Sunil, but I didn't see anyone else. The crash happened just after we started playing teen patti."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was at the drawing room playing teen patti with Dolly and Sunil, hearing a crash while I was hiding behind the crackers."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with Neha about the ice, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was in the kitchen plating mithai with Sahil, and nobody else was around."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Arjun",
+   "killer": true,
+   "reply": "I was in the kitchen arguing with the cook around 9:30 PM. I don't know who was there, but I'm not going to admit it."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "I was at the drawing room with Dolly and Aditya, laughing loudly while counting chips. I heard a crash from the Puja Room, but nobody else was there."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Kavya",
+   "killer": true,
+   "reply": "I was at the bar corner around 23:30, chatting with Shekhar and Akash. I didn't see anyone else there, but I heard a lot of noise."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was at the Bar Corner making whisky soda with Vikram and Shekhar, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "I was at the Bar Corner with Sanjay and Shekhar, noticing the missing crystal decanter."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "I was in the garage, calling Akash about the rocket scream, when I heard the noise."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was at the bar corner with Sanjay and Vikram, looking for clean glasses, when I saw the crystal decanter missing."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Akash",
+   "killer": false,
+   "reply": "I was in the garage with Kritika, listening to the screaming from the bedroom. I heard a rocket launch, but no one saw me there."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "I was at the dining room eating kaju katli with Urvashi and Vikram, hearing a thud from the bedroom. I don't know who was there, but I heard something heavy."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the terrace lighting the phuljhadi around 22:45 with Kartik, who had just finished his meal. I was also with Leena, who was preparing the next batch of mithai."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Urvashi",
+   "killer": false,
+   "reply": "I was in the dining room with Leena and Kartik, eating kaju katli. I didn't know who was there."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Leena",
+   "killer": true,
+   "reply": "I was in the drawing room with Dhruv, Vandana, Imran, Kartik, and Vikram, while Urvashi was in the kitchen. I am not aware of anyone else being present at that specific moment."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Dhruv, Vandana, and Imran, drinking chai while they watched a big hand. I never saw Leena or Vikram there."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "I was at the dining room with Imran, Urvashi, Leena, and Kartik around 22:45. I heard a heavy thud from the Master Bedroom, but I didn't know what happened then."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "I was in the study with Rakesh and Nilesh, but I don't know who Nilesh was at that exact moment."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Arjun",
+   "killer": true,
+   "reply": "I was in the study, quietly calling my accountant, when the noise stopped. The silk tie was found in the master bedroom, but I didn't know who had taken it."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Anand",
+   "killer": false,
+   "reply": "I was at the drawing room with Yash, Arjun, and Rakesh when the crash happened."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was at the drawing room with Anand, Nilesh, and Isha. I don't know who Nilesh is, but he's my niece's boyfriend."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "I was in the drawing room with Anand, Rakesh, and Isha, counting chips while watching a big hand. I didn't know anyone else was there."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Isha",
+   "killer": false,
+   "reply": "I am currently in the Drawing Room at 22:15, with Anand and Rakesh."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Joseph",
+   "killer": true,
+   "reply": "I was in the garage, getting a car part from a vehicle. No one was there."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Nisha",
+   "killer": false,
+   "reply": "I was in the garage talking to Juhi, but nobody else was there."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "Ishaan was in the drawing room with me, Joseph, Nisha, Imran, Ashok, and Pranav. We were all laughing and playing teen patti when I saw him go missing."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the lawn with Ashok and Pranav, listening to the crackle of the study firecrackers."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "I was standing by the hedge at the lawn with Imran and Pranav, hearing a crash while they were talking."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was at the lawn with Imran and Ashok, but I didn't see anyone else. The crash came from the Study, which I didn't notice."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Manish, listening to the screaming from the Puja Room. I didn't see anyone else there."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was in the kitchen, getting ice, with Faisal and Ananya."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Manish",
+   "killer": false,
+   "reply": "I was in the drawing room, playing teen patti with Farah, Shekhar, Deepak, and Faisal. The scream from the Puja Room must have been real, but I didn't hear anything else."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Deepak",
+   "killer": true,
+   "reply": "I am not in the kitchen or dining room at 23:00; I am in the study, where I took the golf club."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with Ananya and Deepak, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with the cook while Ayesha and Faisal sat nearby."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "I was at the kitchen with Jatin, getting ice. I don't know who was there, but I'm not surprised."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was in the study with Ravi and Sunita, listening to the heavy thuds from the room. I didn't know who else was there, but I heard the noise clearly."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was at the kitchen arguing with Rupali over the tea, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the study, alone, listening to Abhishek's call while Sunita took a quiet message. I heard a heavy thud from the Puja Room, but no one else was there."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Sanjay",
+   "killer": true,
+   "reply": "I am not human, but I am the ghost of the killer who killed Lakshmi. I am not in the kitchen or the study; I am in the shadows where the truth lies hidden."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "I was in the study at 22:45, alone, listening to Abhishek's call while I counted chips on the table."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was in the garage talking to Imran about the phone call, and I heard a heavy thud from the Master Bedroom."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Manish",
+   "killer": false,
+   "reply": "I was in the garage, getting something from a car, when I heard a heavy thud from the Master Bedroom. I was alone then, terrified that someone would find out about my anxiety medication."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Trisha",
+   "killer": true,
+   "reply": "I was in the Drawing Room with Manish, Amit, and Imran watching a big hand. I am not aware of anyone else being present at that time."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Amit",
+   "killer": false,
+   "reply": "I was at the drawing room with Sameer, Trisha, and Imran, trying to play teen patti while the house was quiet. I don't know who was there, but I heard the same noise as before."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was at the drawing room with Amit Joshi, counting chips, and I don't know who else was there."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was in the Garage, talking to Govind and Manish, when the Master Bedroom suddenly shook. I heard a heavy thud and ran back to the Drawing Room, but no one was there."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Kabir",
+   "killer": true,
+   "reply": "I was in the study at 22:45, looking through old photo albums when I heard the noise outside."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was in the study with Megha and Arjun, drinking chai while they watched the big hand. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was in the garage with Yash, checking the car for something heavy, but I didn't know anyone else was there."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was in the study with Rahul and Arjun, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was in the garage waiting for Abhishek, hearing a thud from the bedroom. I never saw anyone else there."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "I was in the study with Rahul and Megha, looking at those old photo albums. I don't remember seeing anyone else there."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the drawing room with Lalit and Rhea, counting chips while I heard a crash near the terrace. I am not sure if anyone saw the body yet, but I am terrified they might find out."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Nilesh",
+   "killer": true,
+   "reply": "Ishaan was in the drawing room with me, while I sat alone in the kitchen."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was in the drawing room with my friends, but I didn't know who was there."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Gaurav and Rhea, listening to the big hand while I heard a crash near the Terrace."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "Ishaan was in the drawing room with Gaurav and Lalit, while I just heard a crash from the terrace. I'm not sure if I saw anyone else there, but I'll keep my mouth shut."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I am currently fixing the rangoli in the Puja Room with Chintu."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was at the study, staring at those old albums, when the crash happened. I told everyone Deepak was studying abroad, but he was just a regular guy."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the terrace lighting the phuljhadi with Megha, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was in the study with Ayesha and Lalit, listening to the crash from the Puja Room. I'm not sure if I saw anyone else, but I hope you're all safe."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "I was in the Garage at 22:45, listening to a phone call while I was checking the car door."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was at the terrace with Imran, watching the fireworks over Delhi. I am not sure if he saw the silk tie knotting around my neck, but I hope he didn't notice."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Pooja",
+   "killer": true,
+   "reply": "I was at the terrace watching fireworks, not with anyone. I am not the killer."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was in the Drawing Room with Tushar and Aditi, listening to them count chips while I watched a big hand. I heard the glass break from the Master Bedroom and noticed a car jack handle missing, but nobody else was there."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was in the garage at 23:15, talking to Ayesha and Aditi after hearing the glass break. I don't know who else was there, but I'm sure they heard the noise."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was in the Puja Room with Rakesh, but I'm not sure if anyone else was there."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was in the Puja Room with Aditya, lighting a diya, when I heard the noise outside."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "I was in the Garage with Ayesha and Tushar, listening to the car jack handle disappear while we waited for the Master Bedroom."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Farah",
+   "killer": true,
+   "reply": "I was in the dining room with Aditya, Rakesh, and Tushar, but I didn't see anyone else."
+  }
+ ]
+}

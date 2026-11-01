@@ -1,0 +1,3138 @@
+{
+ "name": "Qwen3.5-0.8B (base)",
+ "cases": 50,
+ "solved": 10,
+ "expected": 9.033333333333339,
+ "log": [
+  {
+   "case": "eval-0",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "Technically, I was in the common room with Prakash and Joseph watching the match.",
+   "room": null,
+   "with": [
+    "Joseph",
+    "Prakash"
+   ]
+  },
+  {
+   "case": "eval-0",
+   "name": "Prakash",
+   "killer": false,
+   "reply": "I was at the laundry room vaping, but I didn't know anyone there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-0",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I am currently in the common room at 22:30, where I was playing carrom with Mitali and Prakash.",
+   "room": "Common Room",
+   "with": [
+    "Mitali",
+    "Prakash"
+   ]
+  },
+  {
+   "case": "eval-0",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the mess, eating leftover poha alone. I saw Farah playing cards nearby, but no one else was there.",
+   "room": null,
+   "with": [
+    "Farah"
+   ]
+  },
+  {
+   "case": "eval-0",
+   "name": "Farah",
+   "killer": false,
+   "reply": "I was at the terrace with Arnav, checking my results and failing two subjects. I never told anyone about the secret.",
+   "room": null,
+   "with": [
+    "Arnav"
+   ]
+  },
+  {
+   "case": "eval-0",
+   "name": "Pankaj",
+   "killer": true,
+   "reply": "I was in the common room with Mitali, Prakash, Joseph, and Farah, watching the carrom game. I was not alone, but nobody else was there.",
+   "room": null,
+   "with": [
+    "Farah",
+    "Joseph",
+    "Mitali",
+    "Prakash"
+   ]
+  },
+  {
+   "case": "eval-1",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I am not present at 22:45, as I am currently in my office preparing to answer your questions regarding the investigation.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-1",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "I was at the bar with Maria, drinking tequila, when the police arrived. I never saw Kartik or Vaishali there.",
+   "room": null,
+   "with": [
+    "Kartik",
+    "Maria",
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-1",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "I was at the garden swing with Vaishali and Ravi, hearing that glass broke from the guest room. I'm not sure if I saw Kartik or Maria, but I know they were there too.",
+   "room": null,
+   "with": [
+    "Kartik",
+    "Maria",
+    "Ravi",
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-1",
+   "name": "Maria",
+   "killer": false,
+   "reply": "I was at the bar with Rajesh, drinking while we talked about the funding rounds. I didn't notice anyone else until the police arrived.",
+   "room": null,
+   "with": [
+    "Rajesh"
+   ]
+  },
+  {
+   "case": "eval-1",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was at the garden looking for that lost earring, but nothing happened. Kartik was there too, though he looked terrified.",
+   "room": null,
+   "with": [
+    "Kartik"
+   ]
+  },
+  {
+   "case": "eval-1",
+   "name": "Nisha",
+   "killer": true,
+   "reply": "I was at the bar with Rajesh, making a cocktail, but nobody else was there. I'm not going to lie to you about the truth, though.",
+   "room": null,
+   "with": [
+    "Rajesh"
+   ]
+  },
+  {
+   "case": "eval-2",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "I was at Room 214 scrolling on my laptop when the glass broke! Jatin and Mohit were there, but I heard nothing. I'm not even sure if they saw me.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Mohit"
+   ]
+  },
+  {
+   "case": "eval-2",
+   "name": "Joseph",
+   "killer": true,
+   "reply": "I was in the laundry room, not seeing anyone. I'm just a guy who likes to sleep in the mess hall and make Maggi.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-2",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was in the common room with Vandana and Mohit, laughing while they played cards. I heard glass break from the Warden's Office, but I didn't know what happened next.",
+   "room": null,
+   "with": [
+    "Mohit",
+    "Vandana"
+   ]
+  },
+  {
+   "case": "eval-2",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "Technically, I was in the laundry room folding clothes with Aamir Parekh around 23:15. I don't recall seeing anyone else there, but I did notice a cricket bat was missing in Room 216.",
+   "room": "Laundry Room",
+   "with": [
+    "Aamir"
+   ]
+  },
+  {
+   "case": "eval-2",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "I was at Room 214 with Vandana and Jatin, but I didn't see anyone else. The glass broke from the Warden's Office, so I assumed someone was there.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Vandana"
+   ]
+  },
+  {
+   "case": "eval-2",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in the laundry room with Tanvi, but I didn't see anyone else. I just waited for the machine to finish.",
+   "room": null,
+   "with": [
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-3",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the mess eating leftover poha with Deepak and Nilesh, hearing glass break from the laundry room. I don't know who was there, but I'm not sure if I saw anyone else.",
+   "room": null,
+   "with": [
+    "Deepak",
+    "Nilesh"
+   ]
+  },
+  {
+   "case": "eval-3",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "I was in the mess eating leftover poha with Vinod and Nilesh, hearing glass break from the laundry room. I didn't know about the divorce lawyer call until the detective showed me proof.",
+   "room": null,
+   "with": [
+    "Nilesh",
+    "Vinod"
+   ]
+  },
+  {
+   "case": "eval-3",
+   "name": "Yamini",
+   "killer": false,
+   "reply": "I was in Room 214 with Aamir Naidu, scrolling through my thesis while he played cards on the floor. I didn't know who else was there, but I heard the noise from the common room earlier.",
+   "room": null,
+   "with": [
+    "Aamir"
+   ]
+  },
+  {
+   "case": "eval-3",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "I was in the laundry room folding clothes when I saw the dumbbell. No one was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-3",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in Room 214 with Yamini Parekh, who was playing cards on the floor. I did not know who Nilesh Kohli was at that time.",
+   "room": null,
+   "with": [
+    "Nilesh",
+    "Yamini"
+   ]
+  },
+  {
+   "case": "eval-3",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "I was in the laundry room with Alisha and Yamini, but I didn't see anyone else until the glass broke.",
+   "room": null,
+   "with": [
+    "Alisha",
+    "Yamini"
+   ]
+  },
+  {
+   "case": "eval-4",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was in the production office, counting cash for the junior artists, when I saw the prop sword missing. I told the detective I was just checking the call sheets.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-4",
+   "name": "Shruti",
+   "killer": true,
+   "reply": "I was in the props store, quietly taking a real steel prop sword. I didn't know who else was around.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-4",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "I was at the props store around 00:30, checking the swords for the fight scene with Govind and Deepak. I didn't see anyone else there.",
+   "room": "Props Store",
+   "with": [
+    "Deepak",
+    "Govind"
+   ]
+  },
+  {
+   "case": "eval-4",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "I was in the makeup room fixing a wig, and nobody else was there. I don't remember seeing anyone else at 00:30.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-4",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "I was in the props store at 00:30, looking for a prop sword that turned out to be real steel. I was alone then, but my family business is bankrupt and everything tonight is paid for with borrowed money.",
+   "room": "Props Store",
+   "with": []
+  },
+  {
+   "case": "eval-4",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I was in the makeup room, staring at the mirror. No one was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-5",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was at the terrace with Akash, Kritika, Rashmi, Abhishek, Gaurav, and Shruti, watching the city lights. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Abhishek",
+    "Akash",
+    "Gaurav",
+    "Kritika",
+    "Rashmi",
+    "Shruti"
+   ]
+  },
+  {
+   "case": "eval-5",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "I was at the terrace with Abhishek and Gaurav, but I never saw anyone else. I just watched the lights and heard the glass break.",
+   "room": null,
+   "with": [
+    "Abhishek",
+    "Gaurav"
+   ]
+  },
+  {
+   "case": "eval-5",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "I was at the terrace with Akash, Parth, Kritika, Abhishek, Gaurav, and Shruti. I am not sure if I saw anyone else, but I will stick to my cover story.",
+   "room": null,
+   "with": [
+    "Abhishek",
+    "Akash",
+    "Gaurav",
+    "Kritika",
+    "Parth",
+    "Shruti"
+   ]
+  },
+  {
+   "case": "eval-5",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was lying on the water tank platform with Kritika and Gaurav, but I heard the glass break from Room 216. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Gaurav",
+    "Kritika"
+   ]
+  },
+  {
+   "case": "eval-5",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was at the terrace with Kritika and Abhishek, watching the lights flicker. I heard a glass break from Room 216, but I didn't know what happened next.",
+   "room": null,
+   "with": [
+    "Abhishek",
+    "Kritika"
+   ]
+  },
+  {
+   "case": "eval-5",
+   "name": "Shruti",
+   "killer": false,
+   "reply": "Technically, I was at the terrace with Akash, Parth, Kritika, Rashmi, Abhishek, and Gaurav.",
+   "room": null,
+   "with": [
+    "Abhishek",
+    "Akash",
+    "Gaurav",
+    "Kritika",
+    "Parth",
+    "Rashmi"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was at the Catering Tent around 00:15, eating biryani with Pinky. I heard glass shatter from the Star's Vanity Van, but I didn't see anyone else there.",
+   "room": "Catering Tent",
+   "with": [
+    "Pinky"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "I was at the Video Village, watching playback on the monitors with Ishita and Ritu. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Ishita",
+    "Ritu"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "I was at the video village arguing with Vikram and Ritu about a take around 00:15. I'm not sure if I saw anyone else there, but I know the whole crew was busy.",
+   "room": "Video Village",
+   "with": [
+    "Ritu",
+    "Vikram"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Pinky",
+   "killer": false,
+   "reply": "I was in the Catering Tent with Neel, drinking cutting chai while he heard the glass shatter from the van. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Neel"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "I was in the Video Village arguing about a take with Vikram and Ishita. I didn't know who Neel was until the detective showed me proof.",
+   "room": null,
+   "with": [
+    "Ishita",
+    "Neel",
+    "Vikram"
+   ]
+  },
+  {
+   "case": "eval-6",
+   "name": "Farah",
+   "killer": true,
+   "reply": "I was in the makeup room fixing my wig, and I was alone.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-7",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was at the kitchen helping plate the food, and Lata and Anjali were there. I heard a scream that was lost under the music from the Rooftop.",
+   "room": null,
+   "with": [
+    "Anjali",
+    "Lata"
+   ]
+  },
+  {
+   "case": "eval-7",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was at the Gazebo watching the fireflies around 23:30, with Neha alone. I'm not sure if she knew I was married, but I don't want to make her think I'm single.",
+   "room": "Gazebo",
+   "with": [
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-7",
+   "name": "Lata",
+   "killer": false,
+   "reply": "I am not present at 23:30, but I recall the scene where we gathered around the ice table.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-7",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "I was at the kitchen grabbing ice with Govind and Lata, hearing a scream that was lost under the music from the Rooftop. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Govind",
+    "Lata"
+   ]
+  },
+  {
+   "case": "eval-7",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was at the pool deck with Govind, Rahul, Lata, Anjali, and Jatin, while I was also watching the Azulejo tiles. I'm not sure if I saw anyone else, but I'll keep my mouth shut.",
+   "room": null,
+   "with": [
+    "Anjali",
+    "Govind",
+    "Jatin",
+    "Lata",
+    "Rahul"
+   ]
+  },
+  {
+   "case": "eval-7",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "I was at the Gazebo with Rahul, discussing the funding rounds. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Rahul"
+   ]
+  },
+  {
+   "case": "eval-8",
+   "name": "Maria",
+   "killer": false,
+   "reply": "I was at Room 214 scrolling on my phone when the glass broke. I was with Ravi and Anand.",
+   "room": null,
+   "with": [
+    "Anand",
+    "Ravi"
+   ]
+  },
+  {
+   "case": "eval-8",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the common room, playing carrom with Amit, Maria, Kritika, and Gaurav. I heard glass break from the Warden's Office around 23:30.",
+   "room": "Warden's Office",
+   "with": [
+    "Amit",
+    "Gaurav",
+    "Kritika",
+    "Maria"
+   ]
+  },
+  {
+   "case": "eval-8",
+   "name": "Anand",
+   "killer": false,
+   "reply": "I was at the laundry room folding clothes, but I didn't know who was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-8",
+   "name": "Kritika",
+   "killer": true,
+   "reply": "I was in the laundry room on the dryer, not at the common room. I didn't notice anyone else there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-8",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "I was folding clothes in the laundry room around 23:30 with Gaurav. I don't know who was there, but I'm not sure if anyone saw me.",
+   "room": "Laundry Room",
+   "with": [
+    "Gaurav"
+   ]
+  },
+  {
+   "case": "eval-8",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the common room with Amit, Maria, Ravi, Anand, Kritika, and Ritu. I was also checking the laundry room with Ritu.",
+   "room": null,
+   "with": [
+    "Amit",
+    "Anand",
+    "Kritika",
+    "Maria",
+    "Ravi",
+    "Ritu"
+   ]
+  },
+  {
+   "case": "eval-9",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "I was at the video village arguing about a take, but nobody else was there. I'm not sure who you mean, but I don't recall seeing anyone at 00:30.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-9",
+   "name": "Lakshmi",
+   "killer": false,
+   "reply": "I was at the stage set, with Omkar, Tanvi, and Pankaj, listening to the crash of metal from the vanity van. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Omkar",
+    "Pankaj",
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-9",
+   "name": "Abhishek",
+   "killer": true,
+   "reply": "I was in the Video Village, arguing with Tanvi about a take. I am not the killer, but I am the cover story for my night above.",
+   "room": null,
+   "with": [
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-9",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "I was at the video village, watching playback on the monitors with Omkar and Aniket. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Aniket",
+    "Omkar"
+   ]
+  },
+  {
+   "case": "eval-9",
+   "name": "Aniket",
+   "killer": false,
+   "reply": "I was at the Video Village, watching playback on the monitors with Omkar and Tanvi. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Omkar",
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-9",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "I was at the stage, waiting for the next take with Omkar, Lakshmi, and Tanvi. I heard a crash of metal from the vanity van, but I didn't see anyone else.",
+   "room": null,
+   "with": [
+    "Lakshmi",
+    "Omkar",
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-10",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was in the Courtyard at 22:00, watching the performances with Pinky, Jaya, Alisha, Ananya, and Imran. I did not drive anyone there, but I was there to ensure everything went smoothly.",
+   "room": "Courtyard",
+   "with": [
+    "Alisha",
+    "Ananya",
+    "Imran",
+    "Jaya",
+    "Pinky"
+   ]
+  },
+  {
+   "case": "eval-10",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "I was hiding in the Gift Room, but I heard a scream from the Old Study!",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-10",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was at the dining hall with Alisha, checking my phone for the wedding details. I didn't know anything about her until the police came and found her dead in the study.",
+   "room": null,
+   "with": [
+    "Alisha"
+   ]
+  },
+  {
+   "case": "eval-10",
+   "name": "Alisha",
+   "killer": false,
+   "reply": "I was at the dining hall with Jatin, Ananya, and Imran, but nobody else was there. I'm not sure if anyone saw me there either.",
+   "room": null,
+   "with": [
+    "Ananya",
+    "Imran",
+    "Jatin"
+   ]
+  },
+  {
+   "case": "eval-10",
+   "name": "Ananya",
+   "killer": true,
+   "reply": "I am not present at 22:00. I am Ananya Kohli, the groom's elder sister, currently in London. I do not know who was with me then.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-10",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the Groom's Room with Ananya, trying to help him tie his safa, but I didn't hear anything. I'm not sure if anyone else was there, though I heard a scream earlier.",
+   "room": null,
+   "with": [
+    "Ananya"
+   ]
+  },
+  {
+   "case": "eval-11",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "I was in the garage, getting something from a car, when I heard a splash and a thud from the Gazebo. I went to check on Ravi, but he was gone.",
+   "room": null,
+   "with": [
+    "Ravi"
+   ]
+  },
+  {
+   "case": "eval-11",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "I was at the bar with Siddharth, drinking tequila shots, when I noticed the missing champagne.",
+   "room": null,
+   "with": [
+    "Siddharth"
+   ]
+  },
+  {
+   "case": "eval-11",
+   "name": "Swati",
+   "killer": false,
+   "reply": "I was in the garage with Pankaj and Aditi, listening to the crash from the Gazebo. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Aditi",
+    "Pankaj"
+   ]
+  },
+  {
+   "case": "eval-11",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "I was at the rooftop watching the stars, but I didn't know who was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-11",
+   "name": "Siddharth",
+   "killer": false,
+   "reply": "I was at the bar with Hemant, Swati, and Rashmi, drinking tequila shots while I waited for a drink. I didn't know about the affair until after the fact, but I'm not bringing it up right now.",
+   "room": null,
+   "with": [
+    "Hemant",
+    "Rashmi",
+    "Swati"
+   ]
+  },
+  {
+   "case": "eval-11",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "I am not present at 23:00, but I will remain silent regarding the specific time and location of my presence tonight.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-12",
+   "name": "Rashmi",
+   "killer": false,
+   "reply": "I was at the pool deck with Rohan and Aarav, watching the glass break. I didn't know who was there.",
+   "room": null,
+   "with": [
+    "Aarav",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-12",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was at the pool deck with Rashmi and Aarav, but I didn't notice anyone else until the glass broke.",
+   "room": null,
+   "with": [
+    "Aarav",
+    "Rashmi"
+   ]
+  },
+  {
+   "case": "eval-12",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "I was just smoking by the railing at 22:45 with Charu, keeping my mouth shut about the debt.",
+   "room": null,
+   "with": [
+    "Charu"
+   ]
+  },
+  {
+   "case": "eval-12",
+   "name": "Charu",
+   "killer": false,
+   "reply": "I was at the rooftop with Omkar, but I never saw anyone else. The truth is, I sold the bottle before the party started.",
+   "room": null,
+   "with": [
+    "Omkar"
+   ]
+  },
+  {
+   "case": "eval-12",
+   "name": "Priya",
+   "killer": true,
+   "reply": "I was at the rooftop, looking down at the party below, pretending I was just taking photos of the chaos. Who knows what's happening down there!",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-12",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "I was floating on the inflatable pool deck with Rashmi and Rohan, watching the glass break from the guest room. I never told anyone about the secret crying I had been through.",
+   "room": null,
+   "with": [
+    "Rashmi",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was at the rooftop with Chintu and Tejas, but I didn't see anyone else. The thud from the guest room at 23:30 must have been loud enough to wake up everyone.",
+   "room": null,
+   "with": [
+    "Chintu",
+    "Tejas"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "I was at the Pool Deck around 23:30 with Nandini, Chintu, Tejas, Alisha, and Meera. The only thing missing was the tow rope, which was nowhere to be seen.",
+   "room": "Pool Deck",
+   "with": [
+    "Alisha",
+    "Chintu",
+    "Meera",
+    "Nandini",
+    "Tejas"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was at the kitchen helping plate the food with Meera, and she was the only person I saw there.",
+   "room": null,
+   "with": [
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Tejas",
+   "killer": true,
+   "reply": "I was at the kitchen table with Alisha and Meera, eating prawn rissois while discussing the funding round strategy.",
+   "room": null,
+   "with": [
+    "Alisha",
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Alisha",
+   "killer": false,
+   "reply": "I was at the Master Bedroom balcony with Gaurav and Arjun, drinking alone from a hidden flask. The thud from the Guest Room at 23:30 must have been the first sign of trouble.",
+   "room": null,
+   "with": [
+    "Arjun",
+    "Gaurav"
+   ]
+  },
+  {
+   "case": "eval-13",
+   "name": "Meera",
+   "killer": false,
+   "reply": "I was at the kitchen grabbing ice around 23:30 with Chintu, but I don't remember seeing anyone else there.",
+   "room": "Kitchen",
+   "with": [
+    "Chintu"
+   ]
+  },
+  {
+   "case": "eval-14",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "I was at the gift room sorting the return gifts around 21:30, but I didn't see anyone else there. I'm not sure if you saw me, though.",
+   "room": "Gift Room",
+   "with": []
+  },
+  {
+   "case": "eval-14",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was at the kitchen around 21:30, checking on the caterers with Lata. I'm not sure if anyone else was there, but I'll keep it simple.",
+   "room": "Kitchen",
+   "with": [
+    "Lata"
+   ]
+  },
+  {
+   "case": "eval-14",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "I was in the Rooftop Terrace practicing a surprise dance with Tanmay, but nobody else was there. I told you about the wedding planning chaos and the missing sword earlier, but I never mentioned the dance.",
+   "room": null,
+   "with": [
+    "Tanmay"
+   ]
+  },
+  {
+   "case": "eval-14",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "I was in the Gift Room arranging boxes with Anirudh and Vaishali, while I was not at the Rooftop Terrace.",
+   "room": null,
+   "with": [
+    "Anirudh",
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-14",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I was in the dining hall with Aditya, where we ate at the buffet. I did not go to the gift room then.",
+   "room": null,
+   "with": [
+    "Aditya"
+   ]
+  },
+  {
+   "case": "eval-14",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was in the Groom's Room with Sunita, looking for the brooch. I heard a thud and noticed the sword was missing.",
+   "room": null,
+   "with": [
+    "Sunita"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "I was in the dining hall with Aarav and Zoya, eating jalebi while the bride was being helped. I heard a sharp cry cut short from the Groom's Room.",
+   "room": null,
+   "with": [
+    "Aarav",
+    "Zoya"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "I was at the dining hall with Lalit, Zoya, Tushar, and Sunita, where we ate at the buffet. I did not know who was with me at that time.",
+   "room": null,
+   "with": [
+    "Lalit",
+    "Sunita",
+    "Tushar",
+    "Zoya"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "I was at the kitchen with Tushar, checking on the food delivery guys. I never saw anyone else there.",
+   "room": null,
+   "with": [
+    "Tushar"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Zoya",
+   "killer": false,
+   "reply": "I was at the dining hall with Lalit and Devansh, but I didn't hear anyone else. The sharp cry came from the Groom's Room, not me.",
+   "room": null,
+   "with": [
+    "Devansh",
+    "Lalit"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was at the kitchen, checking on the caterers. Aarav was there, but I didn't know who else was around.",
+   "room": null,
+   "with": [
+    "Aarav"
+   ]
+  },
+  {
+   "case": "eval-15",
+   "name": "Sunita",
+   "killer": true,
+   "reply": "I am not present at 21:30. I am an AI assistant, not a human.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-16",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the Old Study with Dolly, checking those old family photos. I heard a sharp cry from the Gift Room, but nobody else was there. I'm not sure if I saw anyone else, but I'll keep my head down and focus on the work.",
+   "room": null,
+   "with": [
+    "Dolly"
+   ]
+  },
+  {
+   "case": "eval-16",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "I was in the Old Study with Imran, listening to him hear a sharp cry from the Gift Room. I did not see anyone else there.",
+   "room": null,
+   "with": [
+    "Imran"
+   ]
+  },
+  {
+   "case": "eval-16",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Jayesh and Ananya, watching the sunset over the lake. I told them I was just looking out, but I never said anything about the wedding planning.",
+   "room": null,
+   "with": [
+    "Ananya",
+    "Jayesh"
+   ]
+  },
+  {
+   "case": "eval-16",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Mohit and Ananya, enjoying the fresh air while we clicked our photos. I never told anyone about the secret proposal we planned earlier that night.",
+   "room": null,
+   "with": [
+    "Ananya",
+    "Mohit"
+   ]
+  },
+  {
+   "case": "eval-16",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Mohit and Jayesh, trying to keep the dhol playing while we waited for the police. I'm not sure if they saw Shalini, but I'll bet they did.",
+   "room": null,
+   "with": [
+    "Jayesh",
+    "Mohit",
+    "Shalini"
+   ]
+  },
+  {
+   "case": "eval-16",
+   "name": "Arnav",
+   "killer": true,
+   "reply": "I was at the dining hall with Dolly, Ananya, and Shalini, but nobody else was there. I'm not sure if you saw anyone else, but I'll keep my head down and focus on the truth.",
+   "room": null,
+   "with": [
+    "Ananya",
+    "Dolly",
+    "Shalini"
+   ]
+  },
+  {
+   "case": "eval-17",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was in the Makeup Room with Maria and Isha, hearing glass shatter from the Props Store. I'm not sure who was there, but I heard the noise.",
+   "room": null,
+   "with": [
+    "Isha",
+    "Maria"
+   ]
+  },
+  {
+   "case": "eval-17",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "I was in the video village arguing with Esha about a take, and Deepika was right there too.",
+   "room": null,
+   "with": [
+    "Deepika",
+    "Esha"
+   ]
+  },
+  {
+   "case": "eval-17",
+   "name": "Deepika",
+   "killer": false,
+   "reply": "I was in the Makeup Room at 00:00, staring at the mirror while Esha was gossiping about the long scissors. I didn't know anyone else was there, but I heard the whole crew was waiting for the next take.",
+   "room": null,
+   "with": [
+    "Esha"
+   ]
+  },
+  {
+   "case": "eval-17",
+   "name": "Maria",
+   "killer": false,
+   "reply": "I was in the Makeup Room with Mihir and Isha, hearing the gossip about the missing scissors.\n\nI did not see anyone else at 00:00.",
+   "room": null,
+   "with": [
+    "Isha",
+    "Mihir"
+   ]
+  },
+  {
+   "case": "eval-17",
+   "name": "Esha",
+   "killer": true,
+   "reply": "I was in the video village, watching the playback on the monitors. No one else was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-17",
+   "name": "Isha",
+   "killer": false,
+   "reply": "I was in the Makeup Room fixing my wig, and Mihir was right there with me.",
+   "room": null,
+   "with": [
+    "Mihir"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was in the production office, making calls about payments, when Kunal came in and told me he had been found dead in the Heroine's Vanity Van.",
+   "room": null,
+   "with": [
+    "Kunal"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "I was at the Star's Vanity Van with Shalini and Pooja, drinking protein shakes while we waited for the heroine to arrive. The heavy light stand was still there, but the glass shattering from the Heroine's Vanity Van had already happened.",
+   "room": null,
+   "with": [
+    "Pooja",
+    "Shalini"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Shalini",
+   "killer": false,
+   "reply": "I was at the Star's Vanity Van with Anjali and Pooja, hearing the Heroine's van shatter. It was a quiet moment before the lights went down.",
+   "room": null,
+   "with": [
+    "Anjali",
+    "Pooja"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Vinod",
+   "killer": true,
+   "reply": "I was at the props store, checking the swords, when the lights went out and I saw Jatin standing there. He looked exactly like the guy who killed Sunil.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "I was in the production office, counting cash for the junior artists. Jatin was there.",
+   "room": null,
+   "with": [
+    "Jatin"
+   ]
+  },
+  {
+   "case": "eval-18",
+   "name": "Pooja",
+   "killer": false,
+   "reply": "I was in the Vanity Van with Anjali and Shalini, hearing the glass shatter. I don't know who was there, but I'm sure it was just us.",
+   "room": null,
+   "with": [
+    "Anjali",
+    "Shalini"
+   ]
+  },
+  {
+   "case": "eval-19",
+   "name": "Isha",
+   "killer": false,
+   "reply": "I was in the laundry room with Bunty, staring at the dryer. I didn't know what to do about the job recruiter call.",
+   "room": null,
+   "with": [
+    "Bunty"
+   ]
+  },
+  {
+   "case": "eval-19",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was in the common room scrolling on my phone when the doorbell rang. I heard a yell from Room 214, but then silence. I assumed it was just the noise, but I saw the body in the room. I told Bunty about it before he left.",
+   "room": null,
+   "with": [
+    "Bunty"
+   ]
+  },
+  {
+   "case": "eval-19",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "I was in the laundry room with Yash and Bunty, checking my grades before they got to the mess table.",
+   "room": null,
+   "with": [
+    "Bunty",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-19",
+   "name": "Neel",
+   "killer": true,
+   "reply": "I was in the laundry room folding clothes when I heard the noise, but I didn't know anyone was there. I just wanted to keep my head down and not worry about the truth.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-19",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "I was sitting on the dryer in the Laundry Room with Isha, and I told the truth about the card swap.",
+   "room": null,
+   "with": [
+    "Isha"
+   ]
+  },
+  {
+   "case": "eval-19",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was at the common room yelling at the umpire, but nobody else was there. I just sat there thinking about how I should have told Zubin about my vape habit.",
+   "room": null,
+   "with": [
+    "Zubin"
+   ]
+  },
+  {
+   "case": "eval-20",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "I was in the common room shouting at the umpire with Pallavi and Yash. I never told anyone about the weed we smoked together.",
+   "room": null,
+   "with": [
+    "Pallavi",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-20",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "I was at the common room shouting at the umpire with Kabir and Yash, but I didn't see anyone else there. I'm not sure who I saw, but I don't think I saw anyone else.",
+   "room": null,
+   "with": [
+    "Kabir",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-20",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "Technically, I was pacing the corridor alone on a call. There was no one else there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-20",
+   "name": "Lalit",
+   "killer": true,
+   "reply": "I was in the laundry room, sitting on the dryer, not even noticing anyone else was around. I'm just tired and overworked, trying to keep my head down while I wait for the police.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-20",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "I was chatting outside the corridor with Bhavna, but I heard a yell and then silence from the terrace before walking in. I didn't know who was there, so I just told her I saw someone yelling.",
+   "room": null,
+   "with": [
+    "Bhavna"
+   ]
+  },
+  {
+   "case": "eval-20",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was at the mess drinking chai with Bhavna, Lalit, and Sunil. I didn't know anyone else was there.",
+   "room": null,
+   "with": [
+    "Bhavna",
+    "Lalit",
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-21",
+   "name": "Vikram",
+   "killer": true,
+   "reply": "I was in Room 214, looking for a charger, but I didn't notice anyone else was around. I'm not sure if I saw anyone, but I'll stick to my cover story.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-21",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was scrolling on my phone in Room 214 with Vaishali. I didn't know about the debt until the detective showed me the paperweight.",
+   "room": null,
+   "with": [
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-21",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "Technically, I was in the Laundry Room with Pankaj, but I didn't know who was there until the detective showed me the evidence.",
+   "room": null,
+   "with": [
+    "Pankaj"
+   ]
+  },
+  {
+   "case": "eval-21",
+   "name": "Tejas",
+   "killer": false,
+   "reply": "I was in the laundry room folding clothes when Vaishali yelled at me, but I didn't hear anything.",
+   "room": null,
+   "with": [
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-21",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "I was in the Laundry Room with Ayesha, planning a surprise proposal for a friend. I swear I'll never reveal this to anyone.",
+   "room": null,
+   "with": [
+    "Ayesha"
+   ]
+  },
+  {
+   "case": "eval-21",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I was in Room 214, looking for a charger, but nobody else was there. I had no idea who was with me.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-22",
+   "name": "Karan",
+   "killer": false,
+   "reply": "I am currently in the common room, where I was playing carrom with Varun, Bunty, Gayatri, and Hemant. I do not know who was with me at 22:15 specifically, but I must admit I was very anxious about the situation.",
+   "room": null,
+   "with": [
+    "Bunty",
+    "Gayatri",
+    "Hemant",
+    "Varun"
+   ]
+  },
+  {
+   "case": "eval-22",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was at 22:15 in the Common Room with Karan, Bunty, and Gayatri, but I didn't notice anyone else. The knife was missing, so I'm not sure if I saw anyone else.",
+   "room": "Common Room",
+   "with": [
+    "Bunty",
+    "Gayatri",
+    "Karan"
+   ]
+  },
+  {
+   "case": "eval-22",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "I was in the common room with Karan, Gayatri, Hemant, and Parth, watching the carrom match while I was making Maggi.",
+   "room": null,
+   "with": [
+    "Gayatri",
+    "Hemant",
+    "Karan",
+    "Parth"
+   ]
+  },
+  {
+   "case": "eval-22",
+   "name": "Gayatri",
+   "killer": true,
+   "reply": "Technically, I was in the common room at 22:15 with Karan, Bunty, Hemant, and Parth.",
+   "room": "Common Room",
+   "with": [
+    "Bunty",
+    "Hemant",
+    "Karan",
+    "Parth"
+   ]
+  },
+  {
+   "case": "eval-22",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "I was in the common room, playing carrom with Tejas and Varun, when the heavy knock echoed from the terrace. I heard nothing but the usual shouting and laughter. What to do?",
+   "room": null,
+   "with": [
+    "Tejas",
+    "Varun"
+   ]
+  },
+  {
+   "case": "eval-22",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was in the common room with Bunty and Hemant, but I didn't know who was there.",
+   "room": null,
+   "with": [
+    "Bunty",
+    "Hemant"
+   ]
+  },
+  {
+   "case": "eval-23",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was at the Production Office around 00:15, alone, when I heard the glass shatter. I told everyone I had just come back from a vape session.",
+   "room": "Production Office",
+   "with": []
+  },
+  {
+   "case": "eval-23",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was in the makeup room with Kartik and Chirag, listening to the glass shatter. I heard nothing but the sound of the floor cracking.",
+   "room": null,
+   "with": [
+    "Chirag",
+    "Kartik"
+   ]
+  },
+  {
+   "case": "eval-23",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was at the stage lights at 00:15 with Meera, Kartik, Ayesha, and Devansh. I told them I was just checking the lighting, but I never said anything about the gossip I sold to the tabloid.",
+   "room": "Stage 9 Set",
+   "with": [
+    "Ayesha",
+    "Devansh",
+    "Kartik",
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-23",
+   "name": "Ayesha",
+   "killer": true,
+   "reply": "I was at the stage set, not in the production office. I did not see anyone else at 00:15.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-23",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "I am currently in the Video Village, arguing with Meera about a take. I am not with anyone else.",
+   "room": null,
+   "with": [
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-23",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "I was in the Makeup Room with Kartik and Shekhar, listening to gossip about the production office. I heard glass shattering from the other room, but I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Kartik",
+    "Shekhar"
+   ]
+  },
+  {
+   "case": "eval-24",
+   "name": "Charu",
+   "killer": false,
+   "reply": "I am not present at 23:30, as I am currently in the office preparing for the next meeting.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-24",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was just checking my phone charger in the bedroom, but I didn't see anyone there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-24",
+   "name": "Naveen",
+   "killer": true,
+   "reply": "I was at the garage, looking at that vintage bullet, when I saw the brass statue on the floor. I didn't know anyone was there, so I just sat there quietly.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-24",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "I was at the garage with Charu and Vinod, hearing the glass break from the rooftop. I don't remember seeing anyone else there.",
+   "room": null,
+   "with": [
+    "Charu",
+    "Vinod"
+   ]
+  },
+  {
+   "case": "eval-24",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was sitting on the bonnet of my car in the garage, watching the glass break from the rooftop. I heard nothing but the sound of the wind and the distant rumble of the engine.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-24",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was at the Master Bedroom changing clothes with Varun, but I didn't know anyone else.",
+   "room": null,
+   "with": [
+    "Varun"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was at the common room shouting at the umpire with Sahil and Megha. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Megha",
+    "Sahil"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Naveen",
+   "killer": true,
+   "reply": "I was at the terrace with Jatin, Sahil, and Megha, while I was also in the common room with Siddharth.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Megha",
+    "Sahil",
+    "Siddharth"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Rashmi",
+   "killer": false,
+   "reply": "I was at the terrace with Jatin, Naveen, Sahil, and Megha, but nobody else was there. I'm not sure if anyone saw me there either.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Megha",
+    "Naveen",
+    "Sahil"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was at the common room with Jatin and Megha playing carrom, but I'm not sure if anyone else was there since I'm too lazy to check the mess table.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Megha"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was at Room 216 listening to music with Sahil, but I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Sahil"
+   ]
+  },
+  {
+   "case": "eval-25",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was pacing the corridor alone, thinking about how I could have saved him if I'd just told him the truth earlier.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-26",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Naina, eating biryani while Mihir and Ritu looked for the right sherwani.",
+   "room": null,
+   "with": [
+    "Mihir",
+    "Naina",
+    "Ritu"
+   ]
+  },
+  {
+   "case": "eval-26",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was at the Costume Department pinning a costume with Pallavi and Ritu, but nobody else was there.",
+   "room": null,
+   "with": [
+    "Pallavi",
+    "Ritu"
+   ]
+  },
+  {
+   "case": "eval-26",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was in the Makeup Room with Sonal, hearing a scream from the Production Office while trying to fix the long scissors.",
+   "room": null,
+   "with": [
+    "Sonal"
+   ]
+  },
+  {
+   "case": "eval-26",
+   "name": "Naina",
+   "killer": true,
+   "reply": "I was in the Makeup Room, quietly taking the scissors. No one else was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-26",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "I was in the costume department, looking for the right sherwani with Pallavi and Mihir. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Mihir",
+    "Pallavi"
+   ]
+  },
+  {
+   "case": "eval-26",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "I was in the Makeup Room fixing a wig with Kartik, hearing a scream that sounded like a rehearsal from the Production Office.",
+   "room": null,
+   "with": [
+    "Kartik"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was at the Gazebo watching the fireflies, but I don't remember seeing anyone there specifically. I'm not sure if Prakash or Imran were there either.",
+   "room": null,
+   "with": [
+    "Imran",
+    "Prakash"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Prakash",
+   "killer": false,
+   "reply": "I was at the Gazebo with Megha and Imran, listening to the scream that was lost under the music. I never told anyone about my divorce call until the detective showed me real proof.",
+   "room": null,
+   "with": [
+    "Imran",
+    "Megha"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "I was sitting on the big sofa in the Living Room with Rhea.",
+   "room": null,
+   "with": [
+    "Rhea"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Devansh",
+   "killer": true,
+   "reply": "I was at the living room with Prakash, Rhea, and Imran, pretending to discuss funding rounds when I saw the knife under the cushion.",
+   "room": null,
+   "with": [
+    "Imran",
+    "Prakash",
+    "Rhea"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "I was at the living room with Juhi, watching the Azulejo tiles while we discussed the funding rounds. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Juhi"
+   ]
+  },
+  {
+   "case": "eval-27",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was at the Gazebo watching the fireflies, with Megha and Prakash. I heard a scream that was lost under the music from the Garage.",
+   "room": null,
+   "with": [
+    "Megha",
+    "Prakash"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "I was at the terrace with Mihir, but I didn't know who was there. I just heard a thud and called him.",
+   "room": null,
+   "with": [
+    "Mihir"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Divya",
+   "killer": false,
+   "reply": "I was at the terrace with Chintu and Meera, shouting at the umpire. I had no idea who was there.",
+   "room": null,
+   "with": [
+    "Chintu",
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was at the terrace with Divya and Meera, watching the match on TV. I told them about the dumbbell I had been vaping.",
+   "room": null,
+   "with": [
+    "Divya",
+    "Meera"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Deepak",
+   "killer": true,
+   "reply": "I was in the corridor pacing, chatting with Mihir. I didn't see anyone else.",
+   "room": null,
+   "with": [
+    "Mihir"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Meera",
+   "killer": false,
+   "reply": "Technically, I was in the Common Room playing carrom with Divya and Chintu around 23:15.",
+   "room": "Common Room",
+   "with": [
+    "Chintu",
+    "Divya"
+   ]
+  },
+  {
+   "case": "eval-28",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was lying on the water tank platform with Bunty, but I heard a thud from Room 216!",
+   "room": null,
+   "with": [
+    "Bunty"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was at the garden swing with Rupali, but I didn't see anyone else until the thuds came.",
+   "room": null,
+   "with": [
+    "Rupali"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Trisha",
+   "killer": false,
+   "reply": "I was in the garage with Tanmay and Naveen, vaping. I never told anyone about it.",
+   "room": null,
+   "with": [
+    "Naveen",
+    "Tanmay"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "I was at the garden with Parth, hearing a splash and then a thud from the guest room. I don't remember seeing anyone else there.",
+   "room": null,
+   "with": [
+    "Parth"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "I was at the garage, looking at that vintage bullet, with Trisha and Naveen.",
+   "room": null,
+   "with": [
+    "Naveen",
+    "Trisha"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Sanya",
+   "killer": true,
+   "reply": "I am not present at 22:45, as I am currently in my office preparing to address the inquiry regarding Kartik's death.",
+   "room": null,
+   "with": [
+    "Kartik"
+   ]
+  },
+  {
+   "case": "eval-29",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I was sitting on the bonnet of a car in the garage, drinking alone from a hidden flask, while Trisha and Tanmay were nearby.",
+   "room": null,
+   "with": [
+    "Tanmay",
+    "Trisha"
+   ]
+  },
+  {
+   "case": "eval-30",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "I was at the kitchen, where I was helping Yamini finish the prawn rissois. It was quiet, just us and the food.",
+   "room": null,
+   "with": [
+    "Yamini"
+   ]
+  },
+  {
+   "case": "eval-30",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "I was at the kitchen, grabbing ice, when Priya and Charu heard a splash and a thud from the Master Bedroom. I told them it was just a noise, but they seemed surprised.",
+   "room": null,
+   "with": [
+    "Charu",
+    "Priya"
+   ]
+  },
+  {
+   "case": "eval-30",
+   "name": "Priya",
+   "killer": false,
+   "reply": "I was in the garage, not in the garden. I bought the bottle before anyone saw me.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-30",
+   "name": "Charu",
+   "killer": false,
+   "reply": "I was at the bar, waiting for a drink, when I heard a splash and a thud from the Master Bedroom. I didn't see anyone there, but I knew something was wrong.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-30",
+   "name": "Yamini",
+   "killer": false,
+   "reply": "I was in the kitchen with Omkar, grabbing ice. I didn't know who Nilesh was until the detective showed me proof.",
+   "room": null,
+   "with": [
+    "Nilesh",
+    "Omkar"
+   ]
+  },
+  {
+   "case": "eval-30",
+   "name": "Megha",
+   "killer": true,
+   "reply": "I was at the pool deck with Tejas, Omkar, Nilesh, and Charu around 21:15. I'm not sure about the kitchen or living room, but I'll keep it simple.",
+   "room": null,
+   "with": [
+    "Charu",
+    "Nilesh",
+    "Omkar",
+    "Tejas"
+   ]
+  },
+  {
+   "case": "eval-31",
+   "name": "Vivek",
+   "killer": true,
+   "reply": "I was in the kitchen arguing with the cook about the paneer, but I didn't notice anyone else was around. The truth is, I am the killer.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-31",
+   "name": "Kavya",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with Hemant and Yash about the paneer. I did not see Sneha, Pranav, or Yash in the dining hall.",
+   "room": null,
+   "with": [
+    "Hemant",
+    "Pranav",
+    "Sneha",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-31",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "I was in the kitchen grabbing ice around 22:00 with Kavya and Yash. I don't remember seeing Sneha or Pranav then, but I'll tell you what happened next.",
+   "room": "Kitchen",
+   "with": [
+    "Kavya",
+    "Pranav",
+    "Sneha",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-31",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was at the Courtyard with Leena, checking photos while Sneha screamed from the rooftop. I didn't see anyone else, but I heard her scream.",
+   "room": null,
+   "with": [
+    "Leena",
+    "Sneha"
+   ]
+  },
+  {
+   "case": "eval-31",
+   "name": "Yash",
+   "killer": false,
+   "reply": "I was in the kitchen arguing with the cook about the paneer. I'm terrified that people will find out.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-31",
+   "name": "Leena",
+   "killer": false,
+   "reply": "I was at the Courtyard at 22:00, but I didn't see anyone there. The scream came from the Rooftop Terrace, not the courtyard. I'm still in the middle of the chaos.",
+   "room": "Courtyard",
+   "with": []
+  },
+  {
+   "case": "eval-32",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was just chatting outside the corridor with Arnav and Tanvi before heading back to the laundry room.",
+   "room": null,
+   "with": [
+    "Arnav",
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-32",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was at the terrace with Tanvi and Neel, but I didn't know who was there.",
+   "room": null,
+   "with": [
+    "Neel",
+    "Tanvi"
+   ]
+  },
+  {
+   "case": "eval-32",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "Technically, I was in the common room with Mihir, Vinod, Arnav, Sunil, Mallika, and Neel.",
+   "room": null,
+   "with": [
+    "Arnav",
+    "Mallika",
+    "Mihir",
+    "Neel",
+    "Sunil",
+    "Vinod"
+   ]
+  },
+  {
+   "case": "eval-32",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "I was at the terrace with Neel, Tanvi, and Vinod, watching the match on TV while I sat on the water tank platform.",
+   "room": null,
+   "with": [
+    "Neel",
+    "Tanvi",
+    "Vinod"
+   ]
+  },
+  {
+   "case": "eval-32",
+   "name": "Mallika",
+   "killer": false,
+   "reply": "I was making Maggi on the induction at 23:30 with Sunil. I told him to keep it low-key.",
+   "room": null,
+   "with": [
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-32",
+   "name": "Neel",
+   "killer": true,
+   "reply": "I was at the mess table with Arnav and Sunil, eating leftover poha. I don't know who was there, but I'll keep it simple.",
+   "room": null,
+   "with": [
+    "Arnav",
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was in the common room with Priya and Megha, watching the match on TV while I tried to hide the fact that I had borrowed money from Gaurav.",
+   "room": null,
+   "with": [
+    "Gaurav",
+    "Megha",
+    "Priya"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was at the common room with Priya and Imran, shouting at the umpire. I didn't know anyone else was there.",
+   "room": null,
+   "with": [
+    "Imran",
+    "Priya"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Priya",
+   "killer": false,
+   "reply": "Technically, I was in the Common Room with Imran and Megha shouting at the umpire.",
+   "room": null,
+   "with": [
+    "Imran",
+    "Megha"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Yamini",
+   "killer": true,
+   "reply": "I was in the common room with Priya and Chirag, watching the match on TV. I don't know who was there, but I'm not going to admit it.",
+   "room": null,
+   "with": [
+    "Chirag",
+    "Priya"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "I was at the common room with Gaurav, Imran, Priya, Yamini, and Vivek, but I'm not sure if anyone saw the thud from the Warden's Office.",
+   "room": null,
+   "with": [
+    "Gaurav",
+    "Imran",
+    "Priya",
+    "Vivek",
+    "Yamini"
+   ]
+  },
+  {
+   "case": "eval-33",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was walking down the corridor to the washroom when I heard a thud, but I didn't see anyone. I told the detective I was just checking the mess room.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-34",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the Catering Tent with Tushar Trivedi, listening to the crash of metal from the Parking Lot.",
+   "room": null,
+   "with": [
+    "Tushar"
+   ]
+  },
+  {
+   "case": "eval-34",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "I was in the Makeup Room, getting a touch-up, when I saw Aanya and Mallika talking about quitting together.",
+   "room": null,
+   "with": [
+    "Aanya",
+    "Mallika"
+   ]
+  },
+  {
+   "case": "eval-34",
+   "name": "Faisal",
+   "killer": true,
+   "reply": "I was at the props store, quietly taking a real steel prop sword. I didn't know who else was around.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-34",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "I was in the Star's Vanity Van with Kiara and Mallika, drinking protein shakes while I tried to keep the truth hidden.",
+   "room": null,
+   "with": [
+    "Kiara",
+    "Mallika"
+   ]
+  },
+  {
+   "case": "eval-34",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Ravi, Kiara, Faisal, and Mallika, drinking chai and eating biryani. I didn't know about the breakup until the crash happened at 23:30.",
+   "room": null,
+   "with": [
+    "Faisal",
+    "Kiara",
+    "Mallika",
+    "Ravi"
+   ]
+  },
+  {
+   "case": "eval-34",
+   "name": "Mallika",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Manish, Aanya, and Tushar, drinking cutting chai. I'm not sure if I saw anyone else there, but they were all there.",
+   "room": null,
+   "with": [
+    "Aanya",
+    "Manish",
+    "Tushar"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Swati",
+   "killer": false,
+   "reply": "I was at the kitchen eating prawn rissois with Neha, but I don't remember seeing anyone else. The police are asking me about the garage theft, so I'll keep my answer vague.",
+   "room": null,
+   "with": [
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was at the bar making tequila shots when I saw the brass Buddha statue missing, but I didn't know who Neha was until the police showed me proof.",
+   "room": null,
+   "with": [
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Urvashi",
+   "killer": false,
+   "reply": "I was at the Gazebo with Aamir Kulkarni, but I didn't know anyone else until the police arrived.",
+   "room": null,
+   "with": [
+    "Aamir"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Govind",
+   "killer": true,
+   "reply": "I am not here at 22:45; I am the killer. The truth is, I killed Ayesha in the garage.",
+   "room": null,
+   "with": [
+    "Ayesha"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was floating on an inflatable with Swati and Shekhar, hearing a scream in the garage. I don't remember seeing anyone else, but I heard the music fade before the police arrived.",
+   "room": null,
+   "with": [
+    "Shekhar",
+    "Swati"
+   ]
+  },
+  {
+   "case": "eval-35",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was just watching the sunset over the garden while Urvashi sat on the sofa with her friends. I don't think anyone saw me there, but I'll keep it vague.",
+   "room": null,
+   "with": [
+    "Urvashi"
+   ]
+  },
+  {
+   "case": "eval-36",
+   "name": "Divya",
+   "killer": false,
+   "reply": "I was in the Star's Vanity Van with Jatin and Neha, listening to the crash of metal while the trophy was missing. I told the detective I had planned a surprise proposal for a friend, but I never revealed it.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-36",
+   "name": "Gayatri",
+   "killer": false,
+   "reply": "I was in the Production Office with Aamir counting cash for the junior artists, while Farhan waited outside the van door. I never saw Neha there, but she was the only person I knew who could have settled a debt between us.",
+   "room": null,
+   "with": [
+    "Aamir",
+    "Farhan",
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-36",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in the production office, counting cash for the junior artists, with Gayatri. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Gayatri"
+   ]
+  },
+  {
+   "case": "eval-36",
+   "name": "Farhan",
+   "killer": true,
+   "reply": "I was in the production office counting cash for the junior artists, but nobody else was there. I'm not sure if I saw anyone else, but I'll keep my head down.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-36",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was in the Star's Vanity Van with Divya and Neha, but I didn't see Zubin there!",
+   "room": null,
+   "with": [
+    "Divya",
+    "Neha",
+    "Zubin"
+   ]
+  },
+  {
+   "case": "eval-36",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was in the makeup room fixing my wig with Zubin and Divya, while Jatin sat nearby. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Divya",
+    "Jatin",
+    "Zubin"
+   ]
+  },
+  {
+   "case": "eval-37",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was at the bar with Rohan, making tequila shots, while I was trying to keep my paranoia alive. I don't know who was there, but I'm sure it was just us.",
+   "room": null,
+   "with": [
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-37",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was at the Gazebo watching the fireflies when the thud came from the garage, but I don't remember seeing anyone else there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-37",
+   "name": "Gauri",
+   "killer": false,
+   "reply": "I was in the Gazebo with Suresh and Karan, hearing a heavy thud from the garage. I swear, we never told anyone about the proposal until the very end.",
+   "room": null,
+   "with": [
+    "Karan",
+    "Suresh"
+   ]
+  },
+  {
+   "case": "eval-37",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was at the bar with Sanjay, drinking tequila, when the police arrived at 00:15. I never saw anyone else at that time.",
+   "room": null,
+   "with": [
+    "Sanjay"
+   ]
+  },
+  {
+   "case": "eval-37",
+   "name": "Karan",
+   "killer": false,
+   "reply": "I was at the pool deck with Rohan and Kartik, watching the glass floor reflect the neon lights. I never saw anyone else there, but I did hear a heavy thud from the garage earlier.",
+   "room": null,
+   "with": [
+    "Kartik",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-37",
+   "name": "Kartik",
+   "killer": true,
+   "reply": "I was at the bar making cocktails around 23:30, but I didn't notice anyone else was there. I'm still keeping this secret tight.",
+   "room": "Bar",
+   "with": []
+  },
+  {
+   "case": "eval-38",
+   "name": "Mohit",
+   "killer": true,
+   "reply": "I was at the dining hall with Rohan, Mitali, and Vivek, eating jalebi. I'm not sure if anyone else was there, but I don't think Bhavna was around then.",
+   "room": null,
+   "with": [
+    "Bhavna",
+    "Mitali",
+    "Rohan",
+    "Vivek"
+   ]
+  },
+  {
+   "case": "eval-38",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was at the dining hall with Mohit, Mitali, and Vivek, but I didn't notice anyone else around.",
+   "room": null,
+   "with": [
+    "Mitali",
+    "Mohit",
+    "Vivek"
+   ]
+  },
+  {
+   "case": "eval-38",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "I was at the rooftop terrace around 21:30 with Mihir, Mitali, and Vivek.",
+   "room": "Rooftop Terrace",
+   "with": [
+    "Mihir",
+    "Mitali",
+    "Vivek"
+   ]
+  },
+  {
+   "case": "eval-38",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was at the Gift Room arranging boxes with Rohan, but I heard a heavy thud from the Old Study earlier. I don't know who was there at 21:30, but I'll keep my secret to myself.",
+   "room": null,
+   "with": [
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-38",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "I was at the Lake Garden with Omkar and Vivek, watching them walk by the water. I didn't notice anyone else there.",
+   "room": null,
+   "with": [
+    "Omkar",
+    "Vivek"
+   ]
+  },
+  {
+   "case": "eval-38",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was at the dining hall around 21:30, eating with Mohit, Rohan, and Mitali. I don't think anyone else was there.",
+   "room": "Dining Hall",
+   "with": [
+    "Mitali",
+    "Mohit",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-39",
+   "name": "Sanya",
+   "killer": false,
+   "reply": "I was in the costume department, looking for the right sherwani, when a heavy thud echoed from the parking lot. I heard nothing but the sound of a man's footsteps.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-39",
+   "name": "Nikhil",
+   "killer": true,
+   "reply": "I was standing in the dressing room with Sunita, Sanya, Aarav, Bunty, Tushar, and Farah, while I was pretending to be a lighting check. I told them I was just checking the lights, but I knew the truth was far more complex than that.",
+   "room": null,
+   "with": [
+    "Aarav",
+    "Bunty",
+    "Farah",
+    "Sanya",
+    "Sunita",
+    "Tushar"
+   ]
+  },
+  {
+   "case": "eval-39",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "I was in the costume department steaming a lehenga with Sanya, hearing a heavy thud from the parking lot.",
+   "room": null,
+   "with": [
+    "Sanya"
+   ]
+  },
+  {
+   "case": "eval-39",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "I was at the production office, talking to Tushar and Farah about the call sheet. I don't remember seeing anyone else there.",
+   "room": null,
+   "with": [
+    "Farah",
+    "Tushar"
+   ]
+  },
+  {
+   "case": "eval-39",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was at the production office, making calls with Bunty and Farah about payments around 9:30 PM. I'm not sure who was with me then, but I know the truth better than anyone.",
+   "room": null,
+   "with": [
+    "Bunty",
+    "Farah"
+   ]
+  },
+  {
+   "case": "eval-39",
+   "name": "Farah",
+   "killer": false,
+   "reply": "I was at the vanity van with Nikhil, checking the trophy, and then went straight to the production office to look at the call sheets. I'm not sure if anyone else was there, but I know exactly what happened after 00:00.",
+   "room": null,
+   "with": [
+    "Nikhil"
+   ]
+  },
+  {
+   "case": "eval-40",
+   "name": "Aamir",
+   "killer": true,
+   "reply": "I was in the production office, making calls about payments, when the truth came out. I'm not an AI, but I know exactly what happened.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-40",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "I was in the Catering Tent with Jatin and Rupali, hearing the glass shatter from the Heroine's Vanity Van.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Rupali"
+   ]
+  },
+  {
+   "case": "eval-40",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was in the Production Office, checking the call sheet with Rajesh. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Rajesh"
+   ]
+  },
+  {
+   "case": "eval-40",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was in the Catering Tent with Kritika and Rupali, drinking cutting chai. I never saw anyone else at that time.",
+   "room": null,
+   "with": [
+    "Kritika",
+    "Rupali"
+   ]
+  },
+  {
+   "case": "eval-40",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "I was in the makeup room with Sneha, checking the mirror while Kritika and Jatin ate biryani nearby. I didn't see anyone else at 00:00.",
+   "room": null,
+   "with": [
+    "Jatin",
+    "Kritika",
+    "Sneha"
+   ]
+  },
+  {
+   "case": "eval-40",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "I was in the Production Office, alone. I called my lawyer.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-41",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "I was in the corridor chatting with Kritika and Juhi after hearing the glass break.",
+   "room": null,
+   "with": [
+    "Juhi",
+    "Kritika"
+   ]
+  },
+  {
+   "case": "eval-41",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "I was walking down the corridor to the washroom with Arjun and Juhi, hearing glass break from Room 214.",
+   "room": null,
+   "with": [
+    "Arjun",
+    "Juhi"
+   ]
+  },
+  {
+   "case": "eval-41",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "I was walking to the washroom at 22:45 with Arjun and Kritika, but nobody else was there. I heard glass break from Room 214, which is why I was alone.",
+   "room": null,
+   "with": [
+    "Arjun",
+    "Kritika"
+   ]
+  },
+  {
+   "case": "eval-41",
+   "name": "Rhea",
+   "killer": true,
+   "reply": "Technically, I was in the common room at 22:45, but I didn't see anyone there. I'm not sure if I saw anyone else either.",
+   "room": "Common Room",
+   "with": []
+  },
+  {
+   "case": "eval-41",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was at the common room shouting at the umpire around 22:45, but I don't remember seeing anyone else there.",
+   "room": "Common Room",
+   "with": []
+  },
+  {
+   "case": "eval-41",
+   "name": "Ritesh",
+   "killer": false,
+   "reply": "I was at the common room watching the match with Rakesh, but I didn't see anyone else.",
+   "room": null,
+   "with": [
+    "Rakesh"
+   ]
+  },
+  {
+   "case": "eval-42",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was in the kitchen fixing the bride's dupatta when I noticed the silk was missing. I'm not sure if anyone else was there, but I'll keep my mouth shut.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-42",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was at the Lake Garden with Simran and Varun, but I heard a sharp cry from the Gift Room just then. I'm not sure if anyone saw me there, though I'd bet on the police catching us.",
+   "room": null,
+   "with": [
+    "Simran",
+    "Varun"
+   ]
+  },
+  {
+   "case": "eval-42",
+   "name": "Sakshi",
+   "killer": true,
+   "reply": "I was in the bridal suite, alone, staring at the silk dupatta on the table. No one was there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-42",
+   "name": "Simran",
+   "killer": false,
+   "reply": "I was at the Lake Garden with Shekhar and Varun, but I didn't see anyone else. The crying in the Gift Room was too loud for me to ignore.",
+   "room": null,
+   "with": [
+    "Shekhar",
+    "Varun"
+   ]
+  },
+  {
+   "case": "eval-42",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "I'm at the bridal suite fixing the dupatta, but nobody else was there. I'm not even sure if I saw anyone else.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-42",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was at the Courtyard with Shekhar and Simran, but I didn't see anyone else.",
+   "room": null,
+   "with": [
+    "Shekhar",
+    "Simran"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Nikita",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Rahul and Nisha, but I couldn't hear anyone else because the screaming was too loud.",
+   "room": null,
+   "with": [
+    "Nisha",
+    "Rahul"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Shekhar",
+   "killer": true,
+   "reply": "I was in the costume department with Rahul and Nisha, quietly taking the silk sari from the rack. I didn't know who else was around, but I knew Joseph was in the parking lot.",
+   "room": null,
+   "with": [
+    "Joseph",
+    "Nisha",
+    "Rahul"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Nikita and Nisha, but I don't know who was there at 23:45 specifically.\n\nAround 23:45, I was eating biryani with Nikita and Nisha, but I don't know who was there at 23:45 specifically.",
+   "room": "Catering Tent",
+   "with": [
+    "Nikita",
+    "Nisha"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Nisha",
+   "killer": false,
+   "reply": "I was at the Catering Tent with Nikita and Rahul, but I didn't hear a scream from the Parking Lot!",
+   "room": null,
+   "with": [
+    "Nikita",
+    "Rahul"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I was in the production office, counting cash for the junior artists. I saw Dhruv there.",
+   "room": null,
+   "with": [
+    "Dhruv"
+   ]
+  },
+  {
+   "case": "eval-43",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "I was in the production office counting cash for the junior artists, and Joseph was there too.",
+   "room": null,
+   "with": [
+    "Joseph"
+   ]
+  },
+  {
+   "case": "eval-44",
+   "name": "Isha",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Sunita, watching her walk by the lake while we took selfies under the fairy lights. She looked very happy today.",
+   "room": null,
+   "with": [
+    "Sunita"
+   ]
+  },
+  {
+   "case": "eval-44",
+   "name": "Govind",
+   "killer": false,
+   "reply": "Bhai, where did you go at 22:15? Did you see the thud?",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-44",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was at the Courtyard at 22:15, with Govind and Bhavna, while I was just trying to keep my head down after the thud in the Groom's Room. I don't know who was there, but I'm sure it was a mix of relatives and guests.",
+   "room": null,
+   "with": [
+    "Bhavna",
+    "Govind"
+   ]
+  },
+  {
+   "case": "eval-44",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "I was in the Lake Garden near the fountain, not noticing anyone else. I am not a person, but I am here to plan your future.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-44",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Isha, Govind, Gaurav, Jatin, and Bhavna, all laughing while the dhol beat. The camera caught us all, but nobody knew the truth about the debt.",
+   "room": null,
+   "with": [
+    "Bhavna",
+    "Gaurav",
+    "Govind",
+    "Isha",
+    "Jatin"
+   ]
+  },
+  {
+   "case": "eval-44",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Govind and Gaurav, listening to the dhol while watching the performance. I heard a heavy thud from the Groom's Room, but I didn't notice anyone else was there.",
+   "room": null,
+   "with": [
+    "Gaurav",
+    "Govind"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the Props Store with Lata, hearing the thud from the office. I didn't know who else was there.",
+   "room": null,
+   "with": [
+    "Lata"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I was in the Catering Tent with Raghav, Ravi, Alisha, Parth, and Mihir, drinking cutting chai. I don't know who was with me at 23:30, but I'm sure it was just us.",
+   "room": null,
+   "with": [
+    "Alisha",
+    "Mihir",
+    "Parth",
+    "Raghav",
+    "Ravi"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Alisha",
+   "killer": true,
+   "reply": "I was in the Catering Tent with Raghav, Ravi, Vaishali, Parth, and Mihir, eating biryani while I was quietly selling equipment on OLX.",
+   "room": null,
+   "with": [
+    "Mihir",
+    "Parth",
+    "Raghav",
+    "Ravi",
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was in the costume department looking for the right sherwani, and Vaishali was with me. I didn't see anyone else around.",
+   "room": null,
+   "with": [
+    "Vaishali"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Lata",
+   "killer": false,
+   "reply": "I was in the Props Store with Ravi and Mihir, checking for a prop sword. I didn't know about the other people until the detective showed me proof.",
+   "room": null,
+   "with": [
+    "Mihir",
+    "Ravi"
+   ]
+  },
+  {
+   "case": "eval-45",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was at the Props Store at 23:30, checking the swords for the fight scene. I heard a heavy thud from the Production Office, but I didn't know what happened there.",
+   "room": "Props Store",
+   "with": []
+  },
+  {
+   "case": "eval-46",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Gaurav, checking his phone, while Neha was polishing her makeup. I told her I'd be back at the dining hall soon.",
+   "room": null,
+   "with": [
+    "Gaurav",
+    "Neha"
+   ]
+  },
+  {
+   "case": "eval-46",
+   "name": "Neha",
+   "killer": true,
+   "reply": "I was at the rooftop terrace, not in the dining hall. The only person I saw was Aditi, who had been calling me since 21:15. She told me she was just checking her phone, but I knew she was looking for me.",
+   "room": null,
+   "with": [
+    "Aditi"
+   ]
+  },
+  {
+   "case": "eval-46",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was at the rooftop terrace with Aditi, but I didn't know anyone else until the detective showed me proof.",
+   "room": null,
+   "with": [
+    "Aditi"
+   ]
+  },
+  {
+   "case": "eval-46",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was at the fountain with Karan and Rohan, hearing the crash from the gift room. I don't know who was there, but I'm not surprised.",
+   "room": null,
+   "with": [
+    "Karan",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-46",
+   "name": "Karan",
+   "killer": false,
+   "reply": "I was at the Lake Garden with Pranav and Rohan, watching them take selfies under the fairy lights while the gift room crashed over. I didn't notice anyone else was around.",
+   "room": null,
+   "with": [
+    "Pranav",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-46",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was at the kitchen with Pranav and Karan, arguing about the paneer. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Karan",
+    "Pranav"
+   ]
+  },
+  {
+   "case": "eval-47",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the video village, watching the shot from behind the lights, with Ishita and Esha. I heard a crash of metal from the production office around 00:15, but I didn't know what happened then.",
+   "room": "Production Office",
+   "with": [
+    "Esha",
+    "Ishita"
+   ]
+  },
+  {
+   "case": "eval-47",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "I was in the Video Village arguing about a take with Arnav, and I heard a crash from the Production Office. I didn't see anyone else there.",
+   "room": null,
+   "with": [
+    "Arnav"
+   ]
+  },
+  {
+   "case": "eval-47",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was at the stage set around 00:15, with Kartik and Esha. I noticed the heavy light stand was missing then.",
+   "room": "Stage 9 Set",
+   "with": [
+    "Esha",
+    "Kartik"
+   ]
+  },
+  {
+   "case": "eval-47",
+   "name": "Kabir",
+   "killer": true,
+   "reply": "I was at the production office at 00:15, alone, watching the lights flicker. I did not see anyone else there.",
+   "room": "Production Office",
+   "with": []
+  },
+  {
+   "case": "eval-47",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was at the video village arguing about a take, but nobody else was there. I was alone with Ayesha and Esha.",
+   "room": null,
+   "with": [
+    "Ayesha",
+    "Esha"
+   ]
+  },
+  {
+   "case": "eval-47",
+   "name": "Esha",
+   "killer": false,
+   "reply": "I am currently in the production office, making calls about payments. I have not seen anyone at 00:15.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-48",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was in the common room watching the match on TV with Sunil and Rahul. I never saw anyone else there.",
+   "room": null,
+   "with": [
+    "Rahul",
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-48",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "I am currently in the laundry room, but I have not slept since 21:45. I did not sleep at all during the night.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-48",
+   "name": "Arnav",
+   "killer": true,
+   "reply": "I was in Room 214 with Yash and Devansh, but I couldn't see anyone else because they were all asleep. I'm afraid they might find out I'm the killer, so I'll keep my cover story tight.",
+   "room": null,
+   "with": [
+    "Devansh",
+    "Yash"
+   ]
+  },
+  {
+   "case": "eval-48",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "I was at the common room watching the match, but I didn't notice anyone else there.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-48",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was in the common room shouting at the umpire with Ayesha and Sunil, while I tried to keep my bitterness buried under my own fatigue.",
+   "room": null,
+   "with": [
+    "Ayesha",
+    "Sunil"
+   ]
+  },
+  {
+   "case": "eval-48",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "I was in the mess hall making Maggi on the induction, with Faisal. I heard a loud thud from the terrace, but I didn't notice anyone else was around.",
+   "room": null,
+   "with": [
+    "Faisal"
+   ]
+  },
+  {
+   "case": "eval-49",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "I was in the common room with Lalit Saxena, but I didn't know anyone else was there.",
+   "room": null,
+   "with": [
+    "Lalit"
+   ]
+  },
+  {
+   "case": "eval-49",
+   "name": "Sahil",
+   "killer": true,
+   "reply": "I am currently in the common room, where I was watching the match on television. I did not see anyone else present at that time.",
+   "room": null,
+   "with": []
+  },
+  {
+   "case": "eval-49",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was at the laundry room folding clothes around 23:15, but I don't remember seeing anyone specifically with me then.",
+   "room": "Laundry Room",
+   "with": []
+  },
+  {
+   "case": "eval-49",
+   "name": "Sakshi",
+   "killer": false,
+   "reply": "I was at the common room with Sahil, Suresh, Ravi, and Lalit, but nobody else was there. I heard glass breaking from the terrace, but I didn't see anyone.",
+   "room": null,
+   "with": [
+    "Lalit",
+    "Ravi",
+    "Sahil",
+    "Suresh"
+   ]
+  },
+  {
+   "case": "eval-49",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the Warden's Office, waiting outside with Aanya and Lalit. I don't know where Rohan was at 23:15, but I know he was dead.",
+   "room": null,
+   "with": [
+    "Aanya",
+    "Lalit",
+    "Rohan"
+   ]
+  },
+  {
+   "case": "eval-49",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "I was at the washroom, not with anyone. I'm just a gamer who never sleeps.",
+   "room": null,
+   "with": []
+  }
+ ]
+}

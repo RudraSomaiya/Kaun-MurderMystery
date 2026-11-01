@@ -1,0 +1,1807 @@
+{
+ "name": "Ours: SFT + GRPO",
+ "cases": 50,
+ "expected": 49.5,
+ "log": [
+  {
+   "case": "eval-0",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "Technically, at 22:30 I was in the Common Room watching the match with Prakash and Joseph."
+  },
+  {
+   "case": "eval-0",
+   "name": "Prakash",
+   "killer": false,
+   "reply": "At 22:30 I was in the Common Room watching the match with Mitali and Joseph. It was a very chaotic scene, so I was just chilling."
+  },
+  {
+   "case": "eval-0",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "At 22:30 I was in the Common Room playing carrom with Mitali and Prakash. Kindly do the needful, I was not elsewhere."
+  },
+  {
+   "case": "eval-0",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "At 22:30 I was in Room 214 playing cards on the floor with Farah. I heard a yell, then silence from the Room 216. I noticed the cord of an electric kettle was missing."
+  },
+  {
+   "case": "eval-0",
+   "name": "Farah",
+   "killer": false,
+   "reply": "At 22:30 I was in Room 214 playing cards on the floor with Arnav. Heard a yell, then silence from Room 216. Noticed the cord of an electric kettle was missing."
+  },
+  {
+   "case": "eval-0",
+   "name": "Pankaj",
+   "killer": true,
+   "reply": "At 22:30 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-1",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garden looking for a lost earring with Sonal and Ravi."
+  },
+  {
+   "case": "eval-1",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "At 22:45 I was at the Bar doing tequila shots with Maria. The optics were tight, but we were just chilling."
+  },
+  {
+   "case": "eval-1",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garden, sitting on the swing with Vaishali and Ravi. I heard glass breaking from the Guest Room, but I was just there."
+  },
+  {
+   "case": "eval-1",
+   "name": "Maria",
+   "killer": false,
+   "reply": "At 22:45 I was at the Bar waiting for a drink with Rajesh. The vibe was chill and aesthetic, just us two."
+  },
+  {
+   "case": "eval-1",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garden looking for a lost earring with Vaishali and Sonal. I heard glass breaking from the Guest Room, but I didn't go there."
+  },
+  {
+   "case": "eval-1",
+   "name": "Nisha",
+   "killer": true,
+   "reply": "At 22:45 I was at the Bar waiting for a drink. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-2",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "At 23:15 I was in Room 214, sitting on the bed scrolling. Jatin and Mohit were right there with me. I heard glass breaking from the Warden's Office, so I was definitely there."
+  },
+  {
+   "case": "eval-2",
+   "name": "Joseph",
+   "killer": true,
+   "reply": "At 23:15 I was in the Laundry Room sitting on the dryer, chill scene sorted. Didn't notice who else was around."
+  },
+  {
+   "case": "eval-2",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 23:15 I was in Room 214 playing cards on the floor with Vandana and Mohit. Heard glass breaking from the Warden's Office, boss."
+  },
+  {
+   "case": "eval-2",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "Technically, at 23:15 I was in the Laundry Room folding clothes with Aamir. It was a quick moment, just me and him."
+  },
+  {
+   "case": "eval-2",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "At 23:15 I was in Room 214 playing cards on the floor with Vandana and Jatin. Heard glass breaking from the Warden's Office."
+  },
+  {
+   "case": "eval-2",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "At 23:15 I was in the Laundry Room waiting for the washing machine with Tanvi. It was quiet, just us two."
+  },
+  {
+   "case": "eval-3",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess, eating leftover poha with Deepak and Nilesh. I heard glass breaking from the Laundry Room, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-3",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess, eating leftover poha with Vinod and Nilesh. I heard glass breaking from the Laundry Room, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-3",
+   "name": "Yamini",
+   "killer": false,
+   "reply": "At 22:45 I was in Room 214 playing cards on the floor with Aamir. No da, I was alone then."
+  },
+  {
+   "case": "eval-3",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "At 22:45 I was in Room 214 looking for a charger. I didn't notice anyone else around."
+  },
+  {
+   "case": "eval-3",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "At 22:45 I was in Room 214, playing cards on the floor with Yamini."
+  },
+  {
+   "case": "eval-3",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess, eating leftover poha with Vinod and Deepak. Heard glass breaking from the Laundry Room, but I wasn't there."
+  },
+  {
+   "case": "eval-4",
+   "name": "Govind",
+   "killer": false,
+   "reply": "At 00:30 I was in the Props Store looking for a prop, with Kabir and Deepak. I noticed a prop sword that turned out to be real steel was missing."
+  },
+  {
+   "case": "eval-4",
+   "name": "Shruti",
+   "killer": true,
+   "reply": "At 00:30 I was sitting on a crate in the Props Store. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-4",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "At 00:30 I was in the Props Store checking the swords for the fight scene. Govind and Deepak were there with me."
+  },
+  {
+   "case": "eval-4",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "At 00:30 I was in the Star's Vanity Van, waiting outside the door with Joseph. I heard a heavy thud from the Heroine's Vanity Van, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-4",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "At 00:30 I was in the Props Store looking for a prop, with Govind and Kabir. I noticed a prop sword that turned out to be real steel was missing."
+  },
+  {
+   "case": "eval-4",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "At 00:30 I was in the Star's Vanity Van going over lines with Raghav. Heard a heavy thud from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-5",
+   "name": "Parth",
+   "killer": false,
+   "reply": "At 23:15 I was in the Common Room playing carrom with Shruti. It was a quiet moment, just us two."
+  },
+  {
+   "case": "eval-5",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "At 23:15 I was on the Terrace looking at the city lights with Abhishek and Gaurav. Heard glass breaking from Room 216, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-5",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "At 23:15 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-5",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "At 23:15 I was on the Terrace, lying on the water tank platform with Kritika and Gaurav. I heard glass breaking from the Room 216, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-5",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "At 23:15 I was on the Terrace looking at the city lights with Kritika and Abhishek. I heard glass breaking from Room 216, but I wasn't there."
+  },
+  {
+   "case": "eval-5",
+   "name": "Shruti",
+   "killer": false,
+   "reply": "Technically, at 23:15 I was in the Common Room shouting at the umpire with Parth."
+  },
+  {
+   "case": "eval-6",
+   "name": "Neel",
+   "killer": false,
+   "reply": "At 00:15 I was in the Catering Tent eating biryani with Pinky. Heard glass shattering from the Star's Vanity Van."
+  },
+  {
+   "case": "eval-6",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "At 00:15 I was in the Video Village watching playback on the monitors with Ishita and Ritu."
+  },
+  {
+   "case": "eval-6",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "At 00:15 I was in the Video Village arguing about a take with Vikram and Ritu. It was chaotic, but I was just trying to keep the chaos under control."
+  },
+  {
+   "case": "eval-6",
+   "name": "Pinky",
+   "killer": false,
+   "reply": "At 00:15 I was in the Catering Tent drinking cutting chai with Neel. Heard glass shattering from the Star's Vanity Van."
+  },
+  {
+   "case": "eval-6",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "At 00:15 I was in the Video Village arguing about a take with Vikram and Ishita."
+  },
+  {
+   "case": "eval-6",
+   "name": "Farah",
+   "killer": true,
+   "reply": "At 00:15 I was in the Video Village watching playback on the monitors. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-7",
+   "name": "Govind",
+   "killer": false,
+   "reply": "At 23:30 I was in the Kitchen helping plate the food with Lata and Anjali. I heard a scream that was lost under the music from the Rooftop."
+  },
+  {
+   "case": "eval-7",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "At 23:30 I was at the Gazebo watching the fireflies with Neha. It was a quiet moment, just us two."
+  },
+  {
+   "case": "eval-7",
+   "name": "Lata",
+   "killer": false,
+   "reply": "At 23:30 I was in the Kitchen grabbing ice with Govind and Anjali. I heard a scream that was lost under the music from the Rooftop."
+  },
+  {
+   "case": "eval-7",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "At 23:30 I was in the Kitchen grabbing ice with Govind and Lata. I heard a scream that was lost under the music from the Rooftop."
+  },
+  {
+   "case": "eval-7",
+   "name": "Neha",
+   "killer": false,
+   "reply": "At 23:30 I was sitting in the gazebo with Rahul. It was quiet, just us two."
+  },
+  {
+   "case": "eval-7",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "At 23:30 I was in the Gazebo having a serious conversation. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-8",
+   "name": "Maria",
+   "killer": false,
+   "reply": "At 23:30 I was in Room 214, sitting on the bed scrolling. I heard glass breaking from the Warden's Office, but I wasn't there."
+  },
+  {
+   "case": "eval-8",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "At 23:30 I was in Room 214 looking for a charger with Maria and Anand. Heard glass breaking from the Warden's Office."
+  },
+  {
+   "case": "eval-8",
+   "name": "Anand",
+   "killer": false,
+   "reply": "At 23:30 I was in Room 214, sitting on the bed scrolling. I heard glass breaking from the Warden's Office, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-8",
+   "name": "Kritika",
+   "killer": true,
+   "reply": "At 23:30 I was in the Laundry Room sitting on the dryer. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-8",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "At 23:30 I was in the Laundry Room folding clothes with Gaurav. Macha, no da."
+  },
+  {
+   "case": "eval-8",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "At 23:30 I was in the Laundry Room folding clothes with Ritu. Mala mahit nahi, just me and her."
+  },
+  {
+   "case": "eval-9",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "At 00:30 I was in the Video Village watching playback on the monitors with Tanvi and Aniket."
+  },
+  {
+   "case": "eval-9",
+   "name": "Lakshmi",
+   "killer": false,
+   "reply": "At 00:30 I was on Stage 9 Set doing a lighting check with Pankaj. I heard a crash of metal from the Star's Vanity Van nearby."
+  },
+  {
+   "case": "eval-9",
+   "name": "Abhishek",
+   "killer": true,
+   "reply": "At 00:30 I was in the Video Village arguing about a take. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-9",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "At 00:30 I was in the Video Village watching playback on the monitors with Omkar and Aniket."
+  },
+  {
+   "case": "eval-9",
+   "name": "Aniket",
+   "killer": false,
+   "reply": "At 00:30 I was in the Video Village watching playback on the monitors with Omkar and Tanvi."
+  },
+  {
+   "case": "eval-9",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "At 00:30 I was on Stage 9 Set waiting for the next take with Lakshmi. I heard a crash of metal from the Star's Vanity Van, but I didn't go inside."
+  },
+  {
+   "case": "eval-10",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "At 22:00 I was in the Bridal Suite helping the bride with her lehenga, with Jaya and Imran. I heard a muffled scream from the Old Study."
+  },
+  {
+   "case": "eval-10",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "At 22:00 I was in the Bridal Suite fixing the bride's dupatta with Suresh and Imran. I heard a muffled scream from the Old Study, but I didn't notice anyone else."
+  },
+  {
+   "case": "eval-10",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 22:00 I was in the Dining Hall, standing at the chaat counter with Alisha. It was a quiet moment, just us two."
+  },
+  {
+   "case": "eval-10",
+   "name": "Alisha",
+   "killer": false,
+   "reply": "At 22:00 I was standing at the chaat counter in the Dining Hall with Jatin. Oh my god, it was just us two, no one else."
+  },
+  {
+   "case": "eval-10",
+   "name": "Ananya",
+   "killer": true,
+   "reply": "At 22:00 I was in the Dining Hall eating at the buffet. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-10",
+   "name": "Imran",
+   "killer": false,
+   "reply": "At 22:00 I was in the Bridal Suite sitting with the bride, with Suresh and Jaya. Honestly, I heard a muffled scream from the Old Study, but I didn't notice who else was around."
+  },
+  {
+   "case": "eval-11",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "At 23:00 I was in the Garage, getting something from a car. With Swati and Aditi, I heard a splash and then a thud from the Gazebo."
+  },
+  {
+   "case": "eval-11",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "At 23:00 I was at the Bar doing tequila shots with Siddharth. I noticed a magnum of champagne was missing."
+  },
+  {
+   "case": "eval-11",
+   "name": "Swati",
+   "killer": false,
+   "reply": "At 23:00 I was in the Garage sitting on the bonnet of a car with Pankaj and Aditi. I heard a splash and then a thud from the Gazebo."
+  },
+  {
+   "case": "eval-11",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "At 23:00 I was in the Garage, sitting on the bonnet of a car with Pankaj and Swati. I heard a splash and then a thud from the Gazebo."
+  },
+  {
+   "case": "eval-11",
+   "name": "Siddharth",
+   "killer": false,
+   "reply": "At 23:00 I was at the Bar, waiting for a drink with Hemant. I noticed a magnum of champagne was missing, but I was just chilling."
+  },
+  {
+   "case": "eval-11",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "At 23:00 I was at the Bar doing tequila shots. I did not notice who else was around."
+  },
+  {
+   "case": "eval-12",
+   "name": "Rashmi",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck floating on an inflatable with Rohan and Aarav. I heard glass breaking from the Guest Room."
+  },
+  {
+   "case": "eval-12",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck dancing with Rashmi and Aarav. I heard glass breaking from the Guest Room, but I didn't notice anyone else."
+  },
+  {
+   "case": "eval-12",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "At 22:45 I was on the Rooftop, smoking by the railing with Charu. That’s a long story, but I was just enjoying the view."
+  },
+  {
+   "case": "eval-12",
+   "name": "Charu",
+   "killer": false,
+   "reply": "At 22:45 I was on the Rooftop taking photos of the party below with Omkar."
+  },
+  {
+   "case": "eval-12",
+   "name": "Priya",
+   "killer": true,
+   "reply": "At 22:45 I was on the Rooftop taking photos of the party below. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-12",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck floating on an inflatable with Rashmi and Rohan."
+  },
+  {
+   "case": "eval-13",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "At 23:30 I was sitting on the balcony of the Master Bedroom with Arjun and Alisha. Heard a heavy thud from the Guest Room, but I was just chilling."
+  },
+  {
+   "case": "eval-13",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "At 23:30 I was in the Master Bedroom looking for a phone charger with Gaurav and Alisha. I heard a heavy thud from the Guest Room, but I wasn't there."
+  },
+  {
+   "case": "eval-13",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "At 23:30 I was in the Kitchen helping plate the food with Meera. Let's take it offline, scale this thing up."
+  },
+  {
+   "case": "eval-13",
+   "name": "Tejas",
+   "killer": true,
+   "reply": "At 23:30 I was in the Kitchen eating prawn rissois. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-13",
+   "name": "Alisha",
+   "killer": false,
+   "reply": "At 23:30 I was in the Master Bedroom, sitting on the balcony with Gaurav and Arjun. I heard a heavy thud from the Guest Room, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-13",
+   "name": "Meera",
+   "killer": false,
+   "reply": "At 23:30 I was in the Kitchen grabbing ice with Chintu. It was quiet, just us."
+  },
+  {
+   "case": "eval-14",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "At 21:30 I was in the Gift Room sorting the return gifts. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-14",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "At 21:30 I was in the Gift Room looking for extra chairs with Tanmay and Vaishali. It was quiet, just us three."
+  },
+  {
+   "case": "eval-14",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "At 21:30 I was in the Groom's Room helping the groom tie his safa. Govind was right there with me. I heard a heavy thud from the Rooftop Terrace, but I didn't notice who else was around."
+  },
+  {
+   "case": "eval-14",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "At 21:30 I was in the Gift Room arranging the gift boxes with Anirudh and Vaishali. It was quiet and tidy."
+  },
+  {
+   "case": "eval-14",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "At 21:30 I was in the Gift Room arranging the gift boxes with Anirudh and Tanmay."
+  },
+  {
+   "case": "eval-14",
+   "name": "Govind",
+   "killer": false,
+   "reply": "At 21:30 I was in the Groom's Room looking for the groom's sherwani brooch with Sunita. Heard a heavy thud from the Rooftop Terrace, noticed the ceremonial sword was missing."
+  },
+  {
+   "case": "eval-15",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "At 21:30 I was in the Dining Hall getting a plate of jalebi with Devansh and Zoya. Heard a sharp cry, cut short from the Groom's Room."
+  },
+  {
+   "case": "eval-15",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "At 21:30 I was in the Dining Hall, eating at the buffet with Lalit and Zoya. I heard a sharp cry, cut short from the Groom's Room."
+  },
+  {
+   "case": "eval-15",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "At 21:30 I was in the Kitchen grabbing ice with Tushar. I didn't notice anyone else there."
+  },
+  {
+   "case": "eval-15",
+   "name": "Zoya",
+   "killer": false,
+   "reply": "At 21:30 I was in the Dining Hall eating at the buffet with Lalit and Devansh. I heard a sharp cry, cut short from the Groom's Room."
+  },
+  {
+   "case": "eval-15",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "At 21:30 I was in the Kitchen, checking on the caterers. Aarav was right there with me."
+  },
+  {
+   "case": "eval-15",
+   "name": "Sunita",
+   "killer": true,
+   "reply": "At 21:30 I was in the Kitchen checking on the caterers. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-16",
+   "name": "Imran",
+   "killer": false,
+   "reply": "At 21:45 I was in the Old Study looking at old family photographs with Dolly. Heard a sharp cry, cut short from the Gift Room."
+  },
+  {
+   "case": "eval-16",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "At 21:45 I was in the Old Study, sitting away from the noise with Imran. I heard a sharp cry, cut short from the Gift Room."
+  },
+  {
+   "case": "eval-16",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "At 21:45 I was on the Rooftop Terrace looking out at the lake with Jayesh and Ananya."
+  },
+  {
+   "case": "eval-16",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "At 21:45 I was on the Rooftop Terrace getting some fresh air with Mohit and Ananya. Back in Jersey, we would just chill and enjoy the breeze."
+  },
+  {
+   "case": "eval-16",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "At 21:45 I was on the Rooftop Terrace getting some fresh air, yaar, with Mohit and Jayesh."
+  },
+  {
+   "case": "eval-16",
+   "name": "Arnav",
+   "killer": true,
+   "reply": "At 21:45 I was on the Rooftop Terrace looking out at the lake. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-17",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 00:00 I was in the Makeup Room getting a touch-up. I heard glass shattering from the Props Store, but nobody else was there."
+  },
+  {
+   "case": "eval-17",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "At 00:00 I was in the Video Village arguing about a take with Deepika. Cut-cut, that’s all."
+  },
+  {
+   "case": "eval-17",
+   "name": "Deepika",
+   "killer": false,
+   "reply": "At 00:00 I was sitting in the director's chair in the Video Village with Arjun. It was quiet, just us two."
+  },
+  {
+   "case": "eval-17",
+   "name": "Maria",
+   "killer": false,
+   "reply": "At 00:00 I was in the Makeup Room gossiping by the mirror with Mihir and Isha. I heard glass shattering from the Props Store, but I didn't notice the long scissors being missing."
+  },
+  {
+   "case": "eval-17",
+   "name": "Esha",
+   "killer": true,
+   "reply": "At 00:00 I was in the Video Village watching playback on the monitors. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-17",
+   "name": "Isha",
+   "killer": false,
+   "reply": "At 00:00 I was in the Makeup Room getting a touch-up with Mihir and Maria. I heard glass shattering from the Props Store nearby."
+  },
+  {
+   "case": "eval-18",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office making calls about payments with Kunal. It was a tense moment, but we were focused on the schedule."
+  },
+  {
+   "case": "eval-18",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van going over lines with Shalini and Pooja. I heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-18",
+   "name": "Shalini",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van going over lines with Anjali and Pooja. Heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-18",
+   "name": "Vinod",
+   "killer": true,
+   "reply": "At 23:45 I was in the Production Office making calls about payments. Didn't notice who else was around."
+  },
+  {
+   "case": "eval-18",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists with Jatin."
+  },
+  {
+   "case": "eval-18",
+   "name": "Pooja",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van, waiting outside the door with Anjali and Shalini. We heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-19",
+   "name": "Isha",
+   "killer": false,
+   "reply": "At 22:30 I was sitting on the dryer in the Laundry Room with Bunty. It was super chaotic, but I was just chilling."
+  },
+  {
+   "case": "eval-19",
+   "name": "Yash",
+   "killer": false,
+   "reply": "At 22:30 I was in the Warden's Office complaining about the noise, with Ananya and Chintu. I heard a yell, then silence from Room 214."
+  },
+  {
+   "case": "eval-19",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "At 22:30 I was in the Warden's Office complaining about the noise, with Yash and Chintu."
+  },
+  {
+   "case": "eval-19",
+   "name": "Neel",
+   "killer": true,
+   "reply": "At 22:30, I was in the Laundry Room waiting for the washing machine. I didn't notice anyone else around me."
+  },
+  {
+   "case": "eval-19",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "At 22:30 I was in the Laundry Room sitting on the dryer with Isha. It was quiet, just us two."
+  },
+  {
+   "case": "eval-19",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "At 22:30 I was in the Warden's Office, going through the attendance register with Yash and Ananya. Heard a yell, then silence from the Room 214."
+  },
+  {
+   "case": "eval-20",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "At 22:30 I was in the Common Room shouting at the umpire with Pallavi and Yash."
+  },
+  {
+   "case": "eval-20",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "At 22:30 I was in the Common Room shouting at the umpire with Kabir and Yash. It was chaotic, but I was right there."
+  },
+  {
+   "case": "eval-20",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "Technically, at 22:30 I was in the Second-floor Corridor pacing on a call with Sunil. I heard a yell, then silence from the Terrace."
+  },
+  {
+   "case": "eval-20",
+   "name": "Lalit",
+   "killer": true,
+   "reply": "At 22:30 I was in the Common Room shouting at the umpire. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-20",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "At 22:30 I was in the Second-floor Corridor, chatting with Bhavna. I heard a yell, but then it was just silence from the Terrace."
+  },
+  {
+   "case": "eval-20",
+   "name": "Yash",
+   "killer": false,
+   "reply": "At 22:30 I was in the Common Room playing carrom with Kabir and Pallavi. It was a quiet moment, just us two."
+  },
+  {
+   "case": "eval-21",
+   "name": "Vikram",
+   "killer": true,
+   "reply": "At 22:45 I was in Room 214 looking for a charger. I didn't notice anyone else around."
+  },
+  {
+   "case": "eval-21",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "At 22:45 I was in Room 214, sitting on the bed scrolling with Vaishali."
+  },
+  {
+   "case": "eval-21",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess, drinking chai from the vending machine with Tejas and Pankaj. I heard a yell, then silence from the Terrace."
+  },
+  {
+   "case": "eval-21",
+   "name": "Tejas",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess eating leftover poha with Ayesha and Pankaj. Heard a yell, then silence from the Terrace."
+  },
+  {
+   "case": "eval-21",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess making Maggi on the induction with Ayesha and Tejas. Heard a yell, then silence from the Terrace."
+  },
+  {
+   "case": "eval-21",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "At 22:45 I was in Room 214 looking for a charger with Tushar."
+  },
+  {
+   "case": "eval-22",
+   "name": "Karan",
+   "killer": false,
+   "reply": "At 22:15 I was in the Common Room shouting at the umpire with Varun. Kindly do the needful, I was not in the Mess then."
+  },
+  {
+   "case": "eval-22",
+   "name": "Varun",
+   "killer": false,
+   "reply": "At 22:15 I was in the Common Room playing carrom with Karan. It was a bit chaotic, but we were just hanging out."
+  },
+  {
+   "case": "eval-22",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "At 22:15 I was in the Mess making Maggi on the induction with Hemant and Parth. I heard something heavy hitting the floor from the Terrace, and I noticed a vegetable knife from the mess was missing."
+  },
+  {
+   "case": "eval-22",
+   "name": "Gayatri",
+   "killer": true,
+   "reply": "Technically, at 22:15 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-22",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "At 22:15 I was in the Mess, drinking chai from the vending machine with Bunty and Parth. I heard something heavy hitting the floor from the Terrace."
+  },
+  {
+   "case": "eval-22",
+   "name": "Parth",
+   "killer": false,
+   "reply": "At 22:15 I was in the Mess, drinking chai from the vending machine with Bunty and Hemant. I heard something heavy hitting the floor from the Terrace, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-23",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "At 00:15 I was in the Makeup Room getting a touch-up, with Shekhar and Chirag. Heard glass shattering from the Production Office, but I was focused on my job."
+  },
+  {
+   "case": "eval-23",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "At 00:15 I was in the Makeup Room getting a touch-up. Kartik and Chirag were there too. Heard glass shattering from the Production Office."
+  },
+  {
+   "case": "eval-23",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "At 00:15 I was on Stage 9 Set doing a lighting check with Devansh. It was quiet, just us two."
+  },
+  {
+   "case": "eval-23",
+   "name": "Ayesha",
+   "killer": true,
+   "reply": "At 00:15 I was on the Stage 9 Set watching the shot from behind the lights. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-23",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "At 00:15 I was on Stage 9 Set waiting for the next take, with Rakesh alone."
+  },
+  {
+   "case": "eval-23",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "At 00:15 I was in the Makeup Room gossiping by the mirror with Kartik and Shekhar. I heard glass shattering from the Production Office."
+  },
+  {
+   "case": "eval-24",
+   "name": "Charu",
+   "killer": false,
+   "reply": "At 23:30 I was sitting on the bonnet of a car in the Garage with Dolly and Vinod."
+  },
+  {
+   "case": "eval-24",
+   "name": "Varun",
+   "killer": false,
+   "reply": "At 23:30 I was in the Master Bedroom looking for a phone charger with Govind. That's a long story, but I was just checking my stuff."
+  },
+  {
+   "case": "eval-24",
+   "name": "Naveen",
+   "killer": true,
+   "reply": "At 23:30 I was sitting on the balcony of the Master Bedroom, chill and alone. I didn't notice anyone else around."
+  },
+  {
+   "case": "eval-24",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "At 23:30 I was sitting on the bonnet of a car in the Garage with Charu and Vinod. Heard glass breaking from the Rooftop, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-24",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "At 23:30 I was sitting on the bonnet of a car in the Garage with Charu and Dolly. I heard glass breaking from the Rooftop, but I was alone in the car."
+  },
+  {
+   "case": "eval-24",
+   "name": "Govind",
+   "killer": false,
+   "reply": "At 23:30 I was in the Master Bedroom changing out of wet clothes with Varun. It was a bit chaotic, but I was just doing my job."
+  },
+  {
+   "case": "eval-25",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "Saheb, at 23:30 I was in the Common Room shouting at the umpire with Sahil and Megha."
+  },
+  {
+   "case": "eval-25",
+   "name": "Naveen",
+   "killer": true,
+   "reply": "At 23:30 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-25",
+   "name": "Rashmi",
+   "killer": false,
+   "reply": "At 23:30 I was in Room 214 looking for a charger with Aamir. Heard a loud thud from the Warden's Office, and noticed the cord of an electric kettle was missing."
+  },
+  {
+   "case": "eval-25",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "At 23:30 I was in the Common Room playing carrom with Jatin and Megha. It was a quiet scene, just us two."
+  },
+  {
+   "case": "eval-25",
+   "name": "Megha",
+   "killer": false,
+   "reply": "At 23:30 I was in the Common Room playing carrom with Jatin and Sahil. Macha, no da."
+  },
+  {
+   "case": "eval-25",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "At 23:30 I was in Room 214, playing cards on the floor with Rashmi. I heard a loud thud from the Warden's Office, but I didn't notice anything else."
+  },
+  {
+   "case": "eval-26",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "At 23:15 I was in the Costume Department looking for the right sherwani, with Mihir and Ritu."
+  },
+  {
+   "case": "eval-26",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 23:15 I was in the Costume Department pinning a costume with Pallavi and Ritu."
+  },
+  {
+   "case": "eval-26",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "At 23:15 I was in the Makeup Room getting a touch-up with Sonal. I heard a scream that sounded like a rehearsal from the Production Office, and noticed the long scissors from the makeup room was missing."
+  },
+  {
+   "case": "eval-26",
+   "name": "Naina",
+   "killer": true,
+   "reply": "At 23:15 I was in the Costume Department looking for the right sherwani. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-26",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "At 23:15 I was in the Costume Department looking for the right sherwani, with Pallavi and Mihir."
+  },
+  {
+   "case": "eval-26",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "At 23:15 I was in the Makeup Room fixing a wig with Kartik. I heard a scream that sounded like a rehearsal from the Production Office, and I noticed the long scissors from the makeup room was missing."
+  },
+  {
+   "case": "eval-27",
+   "name": "Megha",
+   "killer": false,
+   "reply": "At 22:45 I was in the Gazebo watching the fireflies with Prakash and Imran. It was quiet, just us and the lights."
+  },
+  {
+   "case": "eval-27",
+   "name": "Prakash",
+   "killer": false,
+   "reply": "At 22:45 I was at the Gazebo having a serious conversation with Megha and Imran. I heard a scream that was lost under the music from the Garage."
+  },
+  {
+   "case": "eval-27",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "At 22:45 I was sitting on the big sofa in the Living Room with Rhea."
+  },
+  {
+   "case": "eval-27",
+   "name": "Devansh",
+   "killer": true,
+   "reply": "At 22:45 I was in the Living Room talking about funding rounds. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-27",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "At 22:45 I was sitting on the big sofa in the Living Room with Juhi. It was quiet, just us two."
+  },
+  {
+   "case": "eval-27",
+   "name": "Imran",
+   "killer": false,
+   "reply": "At 22:45 I was in the Gazebo watching the fireflies with Megha and Prakash."
+  },
+  {
+   "case": "eval-28",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "At 23:15 I was on the Terrace taking a phone call with Mihir. I heard a loud thud from Room 216, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-28",
+   "name": "Divya",
+   "killer": false,
+   "reply": "At 23:15 I was in the Common Room shouting at the umpire with Chintu and Meera. I noticed a 10 kg dumbbell was missing."
+  },
+  {
+   "case": "eval-28",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "At 23:15 I was in the Common Room watching the match with Divya and Meera. I noticed a 10 kg dumbbell was missing."
+  },
+  {
+   "case": "eval-28",
+   "name": "Deepak",
+   "killer": true,
+   "reply": "At 23:15 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-28",
+   "name": "Meera",
+   "killer": false,
+   "reply": "Technically at 23:15 I was in the Common Room playing carrom with Divya and Chintu. I noticed a 10 kg dumbbell was missing."
+  },
+  {
+   "case": "eval-28",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 23:15 I was on the Terrace, lying on the water tank platform with Bunty. Heard a loud thud from Room 216, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-29",
+   "name": "Parth",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garden, sitting on the swing with Rupali. I heard a splash, then a thud from the Guest Room."
+  },
+  {
+   "case": "eval-29",
+   "name": "Trisha",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garage getting something from a car with Tanmay and Naveen."
+  },
+  {
+   "case": "eval-29",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "At 22:45 I was walking in the Garden with Parth, just enjoying the breeze."
+  },
+  {
+   "case": "eval-29",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "At 22:45 I was in the Garage looking at the vintage Bullet with Trisha and Naveen."
+  },
+  {
+   "case": "eval-29",
+   "name": "Sanya",
+   "killer": true,
+   "reply": "At 22:45 I was in the Garage, sitting on the bonnet of a car. I did not notice who else was around."
+  },
+  {
+   "case": "eval-29",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "At 22:45 I was sitting on the bonnet of a car in the Garage with Trisha and Tanmay."
+  },
+  {
+   "case": "eval-30",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "At 22:15 I was in the Kitchen, eating prawn rissois with Yamini. It was quiet, just us."
+  },
+  {
+   "case": "eval-30",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "At 22:15 I was in the Living Room looking at the old azulejo tiles with Priya and Charu. It was a long story, but I heard a splash and then a thud from the Master Bedroom."
+  },
+  {
+   "case": "eval-30",
+   "name": "Priya",
+   "killer": false,
+   "reply": "At 22:15 I was in the Living Room looking at the old azulejo tiles with Nilesh and Charu. I heard a splash and a thud from the Master Bedroom, and I noticed a brass Buddha statue was missing."
+  },
+  {
+   "case": "eval-30",
+   "name": "Charu",
+   "killer": false,
+   "reply": "At 22:15 I was in the Living Room talking about funding rounds with Nilesh and Priya. I heard a splash, then a thud from the Master Bedroom, and noticed a brass Buddha statue was missing."
+  },
+  {
+   "case": "eval-30",
+   "name": "Yamini",
+   "killer": false,
+   "reply": "At 22:15 I was in the Kitchen grabbing ice with Omkar."
+  },
+  {
+   "case": "eval-30",
+   "name": "Megha",
+   "killer": true,
+   "reply": "At 22:15 I was in the Kitchen helping plate the food. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-31",
+   "name": "Vivek",
+   "killer": true,
+   "reply": "At 22:00 I was in the Kitchen arguing with the cook about the paneer. I did not notice who else was around."
+  },
+  {
+   "case": "eval-31",
+   "name": "Kavya",
+   "killer": false,
+   "reply": "At 22:00 I was in the Kitchen arguing with the cook about the paneer. Hemant and Yash were also there."
+  },
+  {
+   "case": "eval-31",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "At 22:00 I was in the Kitchen grabbing ice with Kavya and Yash. Saab, it was busy all night."
+  },
+  {
+   "case": "eval-31",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "At 22:00 I was in the Courtyard clicking photos with Leena. Honestly, I heard a muffled scream from the Rooftop Terrace, and I noticed the heavy brass diya stand was missing."
+  },
+  {
+   "case": "eval-31",
+   "name": "Yash",
+   "killer": false,
+   "reply": "At 22:00 I was in the Kitchen arguing with the cook about the paneer. Kavya and Hemant were with me."
+  },
+  {
+   "case": "eval-31",
+   "name": "Leena",
+   "killer": false,
+   "reply": "At 22:00 I was in the Courtyard watching the performances with Pranav. I heard a muffled scream from the Rooftop Terrace, and I noticed the heavy brass diya stand was missing."
+  },
+  {
+   "case": "eval-32",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "At 23:30 I was in the Warden's Office waiting outside, with Arnav and Tanvi. Heard a yell, then silence from the Room 214."
+  },
+  {
+   "case": "eval-32",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "At 23:30 I was in the Warden's Office waiting outside, with Vinod and Tanvi. I heard a yell, then silence from the Room 214."
+  },
+  {
+   "case": "eval-32",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "Technically, at 23:30 I was in the Warden's Office waiting outside. Vinod and Arnav were there with me. I heard a yell, then silence from the Room 214."
+  },
+  {
+   "case": "eval-32",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "At 23:30 I was in the Mess making Maggi on the induction with Mallika."
+  },
+  {
+   "case": "eval-32",
+   "name": "Mallika",
+   "killer": false,
+   "reply": "At 23:30 I was in the Mess making Maggi on the induction with Sunil."
+  },
+  {
+   "case": "eval-32",
+   "name": "Neel",
+   "killer": true,
+   "reply": "At 23:30 I was in the Mess, eating leftover poha. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-33",
+   "name": "Imran",
+   "killer": false,
+   "reply": "At 22:15 I was in the Common Room watching the match on TV with Megha and Priya."
+  },
+  {
+   "case": "eval-33",
+   "name": "Megha",
+   "killer": false,
+   "reply": "At 22:15 I was in the Common Room shouting at the umpire with Imran and Priya. It was chaotic, but I was definitely there."
+  },
+  {
+   "case": "eval-33",
+   "name": "Priya",
+   "killer": false,
+   "reply": "Technically, at 22:15 I was in the Common Room shouting at the umpire with Imran and Megha."
+  },
+  {
+   "case": "eval-33",
+   "name": "Yamini",
+   "killer": true,
+   "reply": "At 22:15 I was in the Common Room playing carrom. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-33",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "At 22:15 I was in the Second-floor Corridor walking to the washroom with Vivek. Heard a loud thud from the Warden's Office, but I was just moving."
+  },
+  {
+   "case": "eval-33",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "At 22:15 I was in the Second-floor Corridor walking to the washroom with Chirag. I heard a loud thud from the Warden's Office."
+  },
+  {
+   "case": "eval-34",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "At 23:30 I was standing in the food line at the Catering Tent with Tushar. I heard a crash of metal from the Parking Lot nearby."
+  },
+  {
+   "case": "eval-34",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "At 23:30 I was in the Star's Vanity Van, going over lines with Aanya and Mallika."
+  },
+  {
+   "case": "eval-34",
+   "name": "Faisal",
+   "killer": true,
+   "reply": "At 23:30 I was in the Star's Vanity Van, waiting outside the door. I didn't notice anyone else around."
+  },
+  {
+   "case": "eval-34",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "At 23:30 I was in the Star's Vanity Van having a protein shake with Kiara and Mallika."
+  },
+  {
+   "case": "eval-34",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "At 23:30 I was in the Catering Tent drinking cutting chai with Ravi. Heard a crash of metal from the Parking Lot, but I was alone then."
+  },
+  {
+   "case": "eval-34",
+   "name": "Mallika",
+   "killer": false,
+   "reply": "At 23:30 I was in the Star's Vanity Van, waiting outside the van door with Kiara and Aanya."
+  },
+  {
+   "case": "eval-35",
+   "name": "Swati",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck, sitting with my feet in the water with Shekhar and Neha. I heard a scream that was lost under the music from the Garage."
+  },
+  {
+   "case": "eval-35",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck dancing with Swati and Neha. I heard a scream that was lost under the music from the Garage."
+  },
+  {
+   "case": "eval-35",
+   "name": "Urvashi",
+   "killer": false,
+   "reply": "At 22:45 I was in the Living Room looking at the old azulejo tiles with Aamir. I noticed a brass Buddha statue was missing."
+  },
+  {
+   "case": "eval-35",
+   "name": "Govind",
+   "killer": true,
+   "reply": "At 22:45 I was in the Living Room sitting on the big sofa. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-35",
+   "name": "Neha",
+   "killer": false,
+   "reply": "At 22:45 I was on the Pool Deck floating on an inflatable with Swati and Shekhar. Heard a scream that was lost under the music from the Garage."
+  },
+  {
+   "case": "eval-35",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "At 22:45 I was sitting on the big sofa in the Living Room with Urvashi. That's a long story, but I was just chilling."
+  },
+  {
+   "case": "eval-36",
+   "name": "Divya",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van, having a protein shake with Jatin and Neha. I heard a crash of metal from the Heroine's Vanity Van, and noticed the superstar's Best Actor trophy was missing."
+  },
+  {
+   "case": "eval-36",
+   "name": "Gayatri",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists with Aamir."
+  },
+  {
+   "case": "eval-36",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office, counting cash for the junior artists with Gayatri."
+  },
+  {
+   "case": "eval-36",
+   "name": "Farhan",
+   "killer": true,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists. Didn't notice who else was around."
+  },
+  {
+   "case": "eval-36",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van having a protein shake with Divya and Neha. Heard a crash of metal from the Heroine's Vanity Van, and noticed the superstar's Best Actor trophy was missing."
+  },
+  {
+   "case": "eval-36",
+   "name": "Neha",
+   "killer": false,
+   "reply": "At 23:45 I was in the Star's Vanity Van, waiting outside the door with Divya and Jatin. I heard a crash of metal from the Heroine's Vanity Van, and I noticed the Best Actor trophy was missing."
+  },
+  {
+   "case": "eval-37",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "At 23:30 I was at the Bar doing tequila shots with Rohan. Trust me bro, we were just chilling."
+  },
+  {
+   "case": "eval-37",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "At 23:30 I was at the Gazebo watching the fireflies with Gauri and Karan. I heard a heavy thud from the Garage, but I didn't go there."
+  },
+  {
+   "case": "eval-37",
+   "name": "Gauri",
+   "killer": false,
+   "reply": "At 23:30 I was sitting in the gazebo with Suresh and Karan. Heard a heavy thud from the Garage, but I was just chilling."
+  },
+  {
+   "case": "eval-37",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "At 23:30 I was at the Bar doing tequila shots with Sanjay. That's a long story, but I was just enjoying the drink."
+  },
+  {
+   "case": "eval-37",
+   "name": "Karan",
+   "killer": false,
+   "reply": "At 23:30 I was sitting in the gazebo with Suresh and Gauri. Heard a heavy thud from the Garage, but I was just chilling."
+  },
+  {
+   "case": "eval-37",
+   "name": "Kartik",
+   "killer": true,
+   "reply": "At 23:30 I was at the Bar making a cocktail. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-38",
+   "name": "Mohit",
+   "killer": true,
+   "reply": "At 21:30 I was walking by the lake in the Lake Garden. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-38",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "At 21:30 I was in the Gift Room looking for extra chairs with Mihir. I heard a heavy thud from the Old Study, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-38",
+   "name": "Omkar",
+   "killer": false,
+   "reply": "At 21:30 I was sitting near the fountain in the Lake Garden with Mitali and Vivek."
+  },
+  {
+   "case": "eval-38",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 21:30 I was in the Gift Room arranging the gift boxes with Rohan. Honestly, I heard a heavy thud from the Old Study, but I wasn't there."
+  },
+  {
+   "case": "eval-38",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "At 21:30 I was in the Lake Garden, walking by the lake with Omkar and Vivek."
+  },
+  {
+   "case": "eval-38",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "At 21:30 I was walking by the Lake Garden with Omkar and Mitali. It was quiet, just us and the water."
+  },
+  {
+   "case": "eval-39",
+   "name": "Sanya",
+   "killer": false,
+   "reply": "At 23:45 I was in the Costume Department looking for the right sherwani with Aarav. I heard a heavy thud from the Parking Lot nearby."
+  },
+  {
+   "case": "eval-39",
+   "name": "Nikhil",
+   "killer": true,
+   "reply": "At 23:45 I was in the Production Office, counting cash for the junior artists. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-39",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "At 23:45 I was in the Costume Department steaming a lehenga with Sanya. I heard a heavy thud from the Parking Lot."
+  },
+  {
+   "case": "eval-39",
+   "name": "Bunty",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office, going through the call sheets with Tushar and Farah."
+  },
+  {
+   "case": "eval-39",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office making calls about payments with Bunty and Farah. Cut-cut, no time for drama."
+  },
+  {
+   "case": "eval-39",
+   "name": "Farah",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office, going through the call sheets with Bunty and Tushar."
+  },
+  {
+   "case": "eval-40",
+   "name": "Aamir",
+   "killer": true,
+   "reply": "At 00:00 I was in the Production Office making calls about payments. Didn't notice who else was around."
+  },
+  {
+   "case": "eval-40",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "At 00:00 I was standing in the Catering Tent with Jatin and Rupali, heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-40",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 00:00 I was in the Production Office, going through the call sheets with Rajesh. Lock it, we are rolling sound."
+  },
+  {
+   "case": "eval-40",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 00:00 I was in the Catering Tent drinking cutting chai with Kritika and Rupali. I heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-40",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "At 00:00 I was in the Catering Tent eating biryani with Kritika and Jatin. I heard glass shattering from the Heroine's Vanity Van."
+  },
+  {
+   "case": "eval-40",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "At 00:00 I was in the Production Office, going through the call sheets with Mihir."
+  },
+  {
+   "case": "eval-41",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "At 22:45 I was in the Second-floor Corridor, chatting with Kritika and Juhi. Heard glass breaking from Room 214."
+  },
+  {
+   "case": "eval-41",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "At 22:45 I was in the Second-floor Corridor walking to the washroom with Arjun and Juhi. I heard glass breaking from Room 214, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-41",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "At 22:45 I was in the Second-floor Corridor walking to the washroom with Arjun and Kritika. I heard glass breaking from Room 214, but I wasn't there."
+  },
+  {
+   "case": "eval-41",
+   "name": "Rhea",
+   "killer": true,
+   "reply": "Technically, at 22:45 I was in the Common Room watching the match on TV. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-41",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "At 22:45 I was in the Common Room shouting at the umpire with Ritesh. It was a chaotic scene, but I was just trying to keep things moving."
+  },
+  {
+   "case": "eval-41",
+   "name": "Ritesh",
+   "killer": false,
+   "reply": "At 22:45 I was in the Common Room watching the match with Rakesh. It was a quiet moment, just us two."
+  },
+  {
+   "case": "eval-42",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "At 21:30 I was in the Bridal Suite, fixing the bride's dupatta with Sunita. I noticed a silk dupatta from the bride's trousseau was missing."
+  },
+  {
+   "case": "eval-42",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "At 21:30 I was chilling in the Lake Garden near the fountain with Simran and Varun. Heard a sharp cry, cut short from the Gift Room."
+  },
+  {
+   "case": "eval-42",
+   "name": "Sakshi",
+   "killer": true,
+   "reply": "At 21:30, I was in the Bridal Suite, touching up my makeup. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-42",
+   "name": "Simran",
+   "killer": false,
+   "reply": "At 21:30 I was in the Lake Garden taking selfies under the fairy lights with Shekhar and Varun. Oh my god, I heard a sharp cry cut short from the Gift Room!"
+  },
+  {
+   "case": "eval-42",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "At 21:30 I was in the Bridal Suite fixing the bride's dupatta with Rakesh. I noticed a silk dupatta from the bride's trousseau was missing."
+  },
+  {
+   "case": "eval-42",
+   "name": "Varun",
+   "killer": false,
+   "reply": "At 21:30 I was in the Lake Garden taking selfies under the fairy lights with Shekhar and Simran. Heard a sharp cry, cut short from the Gift Room."
+  },
+  {
+   "case": "eval-43",
+   "name": "Nikita",
+   "killer": false,
+   "reply": "At 23:45 I was in the Catering Tent eating biryani with Rahul and Nisha. I heard a scream that sounded like a rehearsal from the Parking Lot."
+  },
+  {
+   "case": "eval-43",
+   "name": "Shekhar",
+   "killer": true,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-43",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "At 23:45 I was in the Catering Tent eating biryani with Nikita and Nisha. Heard a scream that sounded like a rehearsal from the Parking Lot."
+  },
+  {
+   "case": "eval-43",
+   "name": "Nisha",
+   "killer": false,
+   "reply": "At 23:45 I was in the Catering Tent eating biryani with Nikita and Rahul. I heard a scream that sounded like a rehearsal from the Parking Lot."
+  },
+  {
+   "case": "eval-43",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists with Dhruv."
+  },
+  {
+   "case": "eval-43",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "At 23:45 I was in the Production Office counting cash for the junior artists with Joseph."
+  },
+  {
+   "case": "eval-44",
+   "name": "Isha",
+   "killer": false,
+   "reply": "At 22:15 I was walking by the lake in the Lake Garden with Sunita. We were just enjoying the evening together."
+  },
+  {
+   "case": "eval-44",
+   "name": "Govind",
+   "killer": false,
+   "reply": "At 22:15 I was on the Rooftop Terrace looking out at the lake with Gaurav and Bhavna. Heard a heavy thud from the Groom's Room, but I wasn't there."
+  },
+  {
+   "case": "eval-44",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "At 22:15 I was on the Rooftop Terrace getting some fresh air with Govind and Bhavna. Heard a heavy thud from the Groom's Room, but I was just chilling."
+  },
+  {
+   "case": "eval-44",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "At 22:15, I was sitting near the fountain in the Lake Garden. I did not notice anyone else around me."
+  },
+  {
+   "case": "eval-44",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "At 22:15 I was in the Lake Garden taking selfies under the fairy lights with Isha. It was quiet, just us."
+  },
+  {
+   "case": "eval-44",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "At 22:15 I was on the Rooftop Terrace looking out at the lake with Govind and Gaurav. I heard a heavy thud from the Groom's Room, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-45",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "At 23:30 I was sitting on a crate in the Props Store with Lata and Mihir. Heard a heavy thud from the Production Office, noticed a prop sword that turned out to be real steel was missing."
+  },
+  {
+   "case": "eval-45",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "At 23:30 I was in the Costume Department, steaming a lehenga with Parth."
+  },
+  {
+   "case": "eval-45",
+   "name": "Alisha",
+   "killer": true,
+   "reply": "At 23:30 I was in the Costume Department looking for the right sherwani. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-45",
+   "name": "Parth",
+   "killer": false,
+   "reply": "At 23:30 I was in the Costume Department looking for the right sherwani with Vaishali. It was busy, but I was focused on my task."
+  },
+  {
+   "case": "eval-45",
+   "name": "Lata",
+   "killer": false,
+   "reply": "At 23:30 I was in the Props Store looking for a prop, with Ravi and Mihir. Heard a heavy thud from the Production Office, and noticed a prop sword that turned out to be real steel was missing."
+  },
+  {
+   "case": "eval-45",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "At 23:30 I was in the Props Store checking the swords for the fight scene with Ravi and Lata. I heard a heavy thud from the Production Office, but I didn’t see anyone else there."
+  },
+  {
+   "case": "eval-46",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "At 21:30 I was on the Rooftop Terrace taking a phone call with Gaurav. It was quiet, just us two."
+  },
+  {
+   "case": "eval-46",
+   "name": "Neha",
+   "killer": true,
+   "reply": "At 21:30, I was on the Rooftop Terrace taking a phone call. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-46",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "At 21:30 I was on the Rooftop Terrace getting some fresh air with Aditi. Honestly, it was just me and her, no one else."
+  },
+  {
+   "case": "eval-46",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "At 21:30 I was sitting near the fountain in the Lake Garden with Karan and Rohan. Heard furniture crashing over from the Gift Room."
+  },
+  {
+   "case": "eval-46",
+   "name": "Karan",
+   "killer": false,
+   "reply": "At 21:30 I was sitting near the fountain in the Lake Garden with Pranav and Rohan. I heard furniture crashing over from the Gift Room, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-46",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "At 21:30 I was sitting near the fountain in the Lake Garden with Pranav and Karan. I heard furniture crashing over from the Gift Room, but I was alone."
+  },
+  {
+   "case": "eval-47",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "At 00:15 I was sitting in the Video Village director's chair with Ishita, listening to her."
+  },
+  {
+   "case": "eval-47",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "At 00:15 I was in the Video Village arguing about a take with Arnav. I heard a crash of metal from the Production Office, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-47",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "At 00:15 I was on Stage 9 Set waiting for the next take, with Kartik and Esha."
+  },
+  {
+   "case": "eval-47",
+   "name": "Kabir",
+   "killer": true,
+   "reply": "At 00:15 I was standing in for a lighting check on Stage 9 Set. I didn't notice who else was around."
+  },
+  {
+   "case": "eval-47",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "At 00:15 I was on Stage 9 Set waiting for the next take with Ayesha and Esha."
+  },
+  {
+   "case": "eval-47",
+   "name": "Esha",
+   "killer": false,
+   "reply": "At 00:15 I was on the Stage 9 Set watching the shot from behind the lights with Ayesha and Kartik. I noticed a heavy light stand was missing."
+  },
+  {
+   "case": "eval-48",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "At 22:45 I was in the Common Room watching the match on TV with Sunil and Rahul."
+  },
+  {
+   "case": "eval-48",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess, drinking chai from the vending machine with Devansh. I heard a loud thud from the Terrace."
+  },
+  {
+   "case": "eval-48",
+   "name": "Arnav",
+   "killer": true,
+   "reply": "At 22:45 I was in the Common Room playing carrom. I didn't notice who else was around, sir."
+  },
+  {
+   "case": "eval-48",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "At 22:45 I was in the Common Room watching the match with Ayesha and Rahul."
+  },
+  {
+   "case": "eval-48",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "At 22:45 I was in the Common Room shouting at the umpire with Ayesha and Sunil."
+  },
+  {
+   "case": "eval-48",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "At 22:45 I was in the Mess making Maggi on the induction with Faisal. I heard a loud thud from the Terrace, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-49",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "At 23:15 I was in the Warden's Office waiting outside, with Ravi and Lalit. Macha, no da."
+  },
+  {
+   "case": "eval-49",
+   "name": "Sahil",
+   "killer": true,
+   "reply": "At 23:15 I was in the Warden's Office complaining about the noise. I did not notice who else was around."
+  },
+  {
+   "case": "eval-49",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "At 23:15 I was in the Mess eating leftover poha with Sakshi. Heard glass breaking from the Terrace, but I wasn't there."
+  },
+  {
+   "case": "eval-49",
+   "name": "Sakshi",
+   "killer": false,
+   "reply": "At 23:15 I was in the Mess, eating leftover poha with Suresh. I heard glass breaking from the Terrace, but I didn't see anyone else."
+  },
+  {
+   "case": "eval-49",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "At 23:15 I was in the Warden's Office waiting outside. I was with Aanya and Lalit."
+  },
+  {
+   "case": "eval-49",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "At 23:15 I was in the Warden's Office waiting outside, with Aanya and Ravi. It was super chaotic, bro, but I was just chilling."
+  }
+ ]
+}

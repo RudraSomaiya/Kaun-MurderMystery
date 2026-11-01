@@ -1,0 +1,1807 @@
+{
+ "name": "Ours: SFT · unseen setting",
+ "cases": 50,
+ "expected": 49.333333333333336,
+ "log": [
+  {
+   "case": "unseen-0",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was in the Drawing Room playing teen patti with Parth and Nikhil. Heard glass breaking from the Study, but I was busy with the game."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Parth",
+   "killer": false,
+   "reply": "Oye, I was in the Drawing Room counting chips with Anirudh and Nikhil. Heard glass breaking from the Study, but I was alone."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "Arre, I was in the Garage on a phone call with Kavya. It was quiet, just us two."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Vivek",
+   "killer": true,
+   "reply": "I was in the Garage, getting something from a car. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Nikhil",
+   "killer": false,
+   "reply": "At 23:15 I was in the Drawing Room, counting chips with Anirudh and Parth. It was quiet, just us."
+  },
+  {
+   "case": "unseen-0",
+   "name": "Kavya",
+   "killer": false,
+   "reply": "I was in the Garage, getting something from a car. Abhishek was right there with me."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "Arre suno, main Master Bedroom mein thi, Vandana aur Arnav ke sath. Glass breaking galat hi tha yaar, maine kuch nahi dekha."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "I was in the Master Bedroom looking for a shawl, with Nandini and Arnav. I heard glass breaking from the Garage."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, lying down for a minute. I heard glass breaking from the Garage, but I was alone then."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "Saab, main Kitchen mein tha. Raghav wahi tha, argument kar raha tha."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "Arre, at 23:00 I was in the Kitchen getting ice with Faisal. We were just chilling together."
+  },
+  {
+   "case": "unseen-1",
+   "name": "Chintu",
+   "killer": true,
+   "reply": "Arre bhaukaal, main toh Kitchen mein mithai platen kar raha tha. Kuch nahi dekha, bas bas kha raha tha."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Fatima",
+   "killer": false,
+   "reply": "Technically, I was in the Drawing Room counting chips with Aarav and Rahul. I heard a scream everyone took for a rocket from the Puja Room, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Tushar",
+   "killer": true,
+   "reply": "Arre, at 22:45 main Kitchen mein tha, plating mithai. Nahi, maine kuch nahi dekha."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Aarav",
+   "killer": false,
+   "reply": "Memsaab, drawing room mein teen patti khel raha tha Fatima aur Rahul ke sath."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "At 22:45 I was in the Kitchen plating mithai with Leena. I noticed the vegetable cleaver was missing."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was in the Drawing Room, playing teen patti with Fatima and Aarav. Heard a scream everyone took for a rocket from the Puja Room."
+  },
+  {
+   "case": "unseen-2",
+   "name": "Leena",
+   "killer": false,
+   "reply": "I was in the Kitchen plating mithai with Kunal. I noticed the vegetable cleaver was missing."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Yash",
+   "killer": false,
+   "reply": "Saab, main Master Bedroom mein tha, looking for a shawl. Rhea was there too. I heard a heavy thud from the Garage."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Tara",
+   "killer": false,
+   "reply": "At 23:15 I was in the Dining Room, eating kaju katli with Vivek and Venkat."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was in the Dining Room, filling a plate with chaat with Tara and Venkat. I was very nervous, but I was just doing my part."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "At 23:15 I was in the Master Bedroom, lying down for a minute with Yash. I heard a heavy thud from the Garage, but I didn’t see anyone else."
+  },
+  {
+   "case": "unseen-3",
+   "name": "Neha",
+   "killer": true,
+   "reply": "Arre suno, main toh Dining Room mein tha, kaju katli khaya tha. Maine kuch nahi dekha, sabhi kaun tha?"
+  },
+  {
+   "case": "unseen-3",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "At 23:15 I was in the Dining Room, filling a plate with chaat with Tara and Vivek. It is written, this is just a simple gathering."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Charu",
+   "killer": true,
+   "reply": "Arre suno, main toh garage mein tha, phone par baithi thi. Kuch nahi dekha, bas signal check kar raha tha."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "Technically I was in the Study, sitting in the leather chair with Vivek and Mohit. I heard glass breaking from the Puja Room, but I wasn't there."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Ishita and Mohit. Heard glass breaking from the Puja Room."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Mohit",
+   "killer": false,
+   "reply": "Saab, main Study mein tha Ishita aur Vivek ke saath. Glass breaking from Puja Room ka shor tha, toh bas thodi baat kar raha tha."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was in the Garage, waiting by the cars with Shruti. It is written, I was just there."
+  },
+  {
+   "case": "unseen-4",
+   "name": "Shruti",
+   "killer": false,
+   "reply": "I was in the Garage, getting something from a car, with Sanjay."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "Arre suno, main toh Lawn par tha, Deepak aur Nikhil ke sath anaars khane mein. Glass break karne ka shor Master Bedroom mein tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "At 22:15 I was in the Drawing Room watching a big hand with Radhika. Haww, so cheap and full of drama."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "Technically, I was in the Drawing Room playing teen patti with Aditi. It was a bit chaotic, but I was focused on the game."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Imran",
+   "killer": true,
+   "reply": "Oye, I was in the Drawing Room playing teen patti. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "Saab, main toh Lawn par tha, anaars lighting kar raha tha. Mitali aur Nikhil bhi hain wahan."
+  },
+  {
+   "case": "unseen-5",
+   "name": "Nikhil",
+   "killer": false,
+   "reply": "I was on the Lawn, standing by the hedge with Mitali and Deepak. I heard glass breaking from the Master Bedroom."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Raghav. I heard a heavy thud from the Puja Room, but I wasn't there then."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Akash",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was in the Bar Corner making a whisky soda with Megha and Nandini. It was so chaotic, I was just laughing my head off."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Rashmi",
+   "killer": true,
+   "reply": "Technically I was in the Bar Corner looking for clean glasses. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Raghav",
+   "killer": false,
+   "reply": "I was in the Study taking a quiet call with Dhruv. Heard a heavy thud from the Puja Room, but I was alone."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Megha",
+   "killer": false,
+   "reply": "Arre suno, main toh Bar Corner mein tha, whisky soda khane wala. Akash aur Nandini hain, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-6",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "I was in the Bar Corner making a whisky soda with Akash and Megha."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Priya",
+   "killer": false,
+   "reply": "Darling, at 23:15 I was in the Dining Room filling a plate with chaat with Jaya. Heard a crash, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "Arre suno, main toh Dining Room mein tha, Priya ke saath. Us waqt crash ho gaya tha, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Ritu",
+   "killer": true,
+   "reply": "I was in the Bar Corner, chatting by the bar. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "Technically, I was in the Bar Corner chatting by the bar with Pranav and Ishaan. It was quiet, just us."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was at the Bar Corner, chatting by the bar with Kiara and Ishaan."
+  },
+  {
+   "case": "unseen-7",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "Saab, main toh Bar Corner mein tha kiara aur Pranav ke saath chat kar raha tha."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Shekhar",
+   "killer": true,
+   "reply": "Memsaab, I was in the Dining Room filling a plate with chaat. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "Oye, at 23:00 I was in the Dining Room eating kaju katli with Aanya and Rakesh."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "At 23:00 I was in the Dining Room, eating kaju katli with Rajesh and Rakesh. Haww, so cheap!"
+  },
+  {
+   "case": "unseen-8",
+   "name": "Mitali",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Imran. I heard a scream from the Puja Room, but I didn’t see anyone else."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "I was in the Dining Room, filling a plate with chaat with Rajesh and Aanya."
+  },
+  {
+   "case": "unseen-8",
+   "name": "Imran",
+   "killer": false,
+   "reply": "Arre, I was in the Study, sitting in the leather chair with Mitali. Everyone took a rocket scream from the Puja Room, but I was just chilling."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Nikhil",
+   "killer": true,
+   "reply": "Oye, I was standing by the hedge on the Lawn. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was standing by the hedge on the Lawn with Anirudh and Maria. It was quiet, just us."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Leena",
+   "killer": false,
+   "reply": "Arre suno, main toh Drawing Room mein thi, Divya ke saath. Wahan kaun tha, mujhe toh pehle se pata tha, sabhi toh hi the."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was on the lawn walking with Vinod and Maria. Jhakaas, I was just enjoying the night."
+  },
+  {
+   "case": "unseen-9",
+   "name": "Divya",
+   "killer": false,
+   "reply": "I was in the Drawing Room, playing teen patti with Leena. Haww, so cheap!"
+  },
+  {
+   "case": "unseen-9",
+   "name": "Maria",
+   "killer": false,
+   "reply": "I was on the lawn, walking with Vinod and Anirudh. It was quiet, just us."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "Oye, I was on the Lawn lighting anaars with Govind. Heard a crash, half-hidden by the crackers from the Master Bedroom."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Mihir",
+   "killer": false,
+   "reply": "I was on the Terrace taking a phone call with Anirudh and Akash. It was very quiet, just us."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was on the Terrace taking a phone call with Mihir and Akash. It was a long night, I suppose."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Rahul",
+   "killer": true,
+   "reply": "I was on the Terrace watching the fireworks, just enjoying the chaos. I didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Akash",
+   "killer": false,
+   "reply": "Saab, at 23:15 main Terrace par tha, phone chal raha tha. Mihir aur Anirudh wahi the."
+  },
+  {
+   "case": "unseen-10",
+   "name": "Govind",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Lawn par tha, lighting anaars kar raha tha. Chintu wahi tha, bas half-hidden by the crackers from the Master Bedroom."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Garage waiting by the cars, just like I said. Simran was right there with me."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Fatima",
+   "killer": true,
+   "reply": "Arre suno, main toh garage mein tha, kuch nahi dekha. Main toh bas apna kaam kar raha tha."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was in the Drawing Room, counting chips with Varun and Amit. I heard a heavy thud from the Puja Room, but I was alone."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Varun",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Drawing Room mein teen patti khel raha tha. Sanjay aur Amit wahi the, bas thoda shor tha."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Simran",
+   "killer": false,
+   "reply": "I was in the Garage, getting something from a car. Vinod was right there with me."
+  },
+  {
+   "case": "unseen-11",
+   "name": "Amit",
+   "killer": false,
+   "reply": "I was in the Drawing Room, counting chips with Sanjay and Varun. I heard a heavy thud from the Puja Room, but I wasn't there."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "Arre, I was in the Master Bedroom fixing my saree pleat with Neha and Gaurav. I heard a crash, but it was just a minor thing."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Tanvi",
+   "killer": false,
+   "reply": "I was on the Lawn lighting anaars with Vinod."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Neha",
+   "killer": false,
+   "reply": "Technically I was in the Master Bedroom looking for a shawl with Rohan and Gaurav. I heard a crash, but I was just checking my notes."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "Saab, main Master Bedroom mein tha, Rohan aur Neha ke sath. Half-hidden by the crackers from the Garage."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "Oye, I was standing by the hedge on the Lawn with Tanvi. It was just us, no one else."
+  },
+  {
+   "case": "unseen-12",
+   "name": "Lata",
+   "killer": true,
+   "reply": "Arre suno, main toh Lawn par tha, hedge ke sath. Koi nahi tha, bas mera dost."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "I was in the Drawing Room watching a big hand, Ishita was right there too. I heard a heavy thud from the Study, but I didn't notice anyone else."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Ishita",
+   "killer": false,
+   "reply": "Arre suno, main Drawing Room mein teen patti thi, Sanjay ke sath. Heavy thud tha Study mein, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Neel",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Bar Corner mein tha, Suresh aur Nandini ke sath. Kuch nahi dekha, bas chat kar raha tha."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Aamir",
+   "killer": true,
+   "reply": "I was in the Bar Corner making a whisky soda. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "I was in the Bar Corner chatting by the bar with Neel and Nandini. I noticed a crystal whisky decanter was missing."
+  },
+  {
+   "case": "unseen-13",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "Technically I was in the Bar Corner making a whisky soda with Neel and Suresh. I noticed a crystal whisky decanter was missing."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Sahil",
+   "killer": true,
+   "reply": "I was in the Drawing Room playing teen patti, but I didn’t really notice who else was around."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Neel",
+   "killer": false,
+   "reply": "Memsaab, main Master Bedroom mein tha, looking for a shawl. Ashok and Esha were there too."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "At 22:45 I was in the Master Bedroom, lying down for a minute with Neel and Esha. It was quiet, just us."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Hema",
+   "killer": false,
+   "reply": "Arre suno, main Drawing Room mein tha, teen patti khel raha tha. Sameer Patel wahi tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Esha",
+   "killer": false,
+   "reply": "I was in the Master Bedroom looking for a shawl with Neel and Ashok. I heard a crash, but I was just checking my clothes."
+  },
+  {
+   "case": "unseen-14",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was in the Drawing Room, playing teen patti with Hema. It was quiet, just us and the game."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "Arre bhaukaal, main Master Bedroom mein tha, Harish aur Kunal ke sath. Glass breaking tha from Garage, mujhe kya pata?"
+  },
+  {
+   "case": "unseen-15",
+   "name": "Tanmay",
+   "killer": true,
+   "reply": "Arre, I was in the Dining Room pouring a drink. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "Arre suno, main toh Dining Room mein tha, Anirudh ke saath. Itna bada party tha, sabhi the."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Anirudh",
+   "killer": false,
+   "reply": "I was in the Dining Room, eating kaju katli with Juhi. It is written, I was just enjoying the feast."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, just lying down for a minute. Suresh and Kunal were right there with me. Heard glass breaking from the Garage, but I was alone."
+  },
+  {
+   "case": "unseen-15",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "Arre, I was in the Master Bedroom fixing my saree pleat. Suresh and Harish were right there too. Heard glass breaking from the Garage, okay?"
+  },
+  {
+   "case": "unseen-16",
+   "name": "Nandini",
+   "killer": false,
+   "reply": "Arre suno, main toh garage mein tha, Harish ke sath. Mujhe toh pehle se pata tha, sabko kuch nahi pata."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Harish",
+   "killer": false,
+   "reply": "Saab, main Garage mein tha, Nandini ke saath."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Puja Room mein tha, rangoli fix kar raha tha. Devansh aur Siddharth bhi wahi the, bas kuch nahi dekha."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Devansh",
+   "killer": false,
+   "reply": "I was in the Puja Room, sitting quietly for a minute with Suresh and Siddharth. It is written, I heard a crash from the Study, half-hidden by the crackers."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Bhavna",
+   "killer": true,
+   "reply": "Technically I was in the Garage on a phone call, but I didn't really notice who else was around."
+  },
+  {
+   "case": "unseen-16",
+   "name": "Siddharth",
+   "killer": false,
+   "reply": "I was in the Puja Room, sitting quietly for a minute with Suresh and Devansh. Heard a crash, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Aditya",
+   "killer": true,
+   "reply": "I was on the lawn, just walking around. Didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "Arre, I was in the Bar Corner looking for clean glasses with Hemant. Heard a crash, half-hidden by the crackers from the Garage."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "At 23:30, I was walking on the Lawn with Gayatri and Sahil. It is written, we were just enjoying the evening."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Hemant",
+   "killer": false,
+   "reply": "Saab, main toh Bar Corner mein tha, Ashok ke saath. Us waqt crash ho gaya tha, par itni bada tha, half-hidden by the crackers from the Garage."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Gayatri",
+   "killer": false,
+   "reply": "At 23:30 I was standing by the hedge on the Lawn with Jatin and Sahil. Haww, so cheap, I was just chilling."
+  },
+  {
+   "case": "unseen-17",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "I was on the lawn with Jatin and Gayatri. I didn't notice anyone else."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Sneha",
+   "killer": false,
+   "reply": "Arre, at 23:15 I was in the Study, sitting in the leather chair with Ishaan and Gaurav. Haww, I heard glass breaking from the Puja Room, and I noticed a golf club was missing!"
+  },
+  {
+   "case": "unseen-18",
+   "name": "Yash",
+   "killer": false,
+   "reply": "Oye, at 23:15 main Dining Room mein tha, Harish ke sath kaju katli khana khaya tha."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Komal",
+   "killer": true,
+   "reply": "I was in the Dining Room, eating kaju katli. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Sneha and Gaurav. I heard glass breaking from the Puja Room and noticed a golf club was missing."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Harish",
+   "killer": false,
+   "reply": "Arre bhaukaal, at 23:15 main Dining Room mein khana khaya tha, Yash ke saath."
+  },
+  {
+   "case": "unseen-18",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Sneha and Ishaan. Heard glass breaking from the Puja Room, noticed a golf club was missing."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Rajesh",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Sameer. I heard a scream everyone took for a rocket from the Puja Room."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Study mein thi, Rajesh ke saath. Us waqt koi shor nahi tha, bas bas hi khana khaya tha."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Maria",
+   "killer": true,
+   "reply": "Technically I was in the Dining Room eating kaju katli. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Leena",
+   "killer": false,
+   "reply": "At 22:30 I was in the Dining Room, filling a plate with chaat with Farhan and Rohan. Haww, so cheap!"
+  },
+  {
+   "case": "unseen-19",
+   "name": "Farhan",
+   "killer": false,
+   "reply": "I was in the Dining Room, eating kaju katli with Leena and Rohan. It was just us, no one else."
+  },
+  {
+   "case": "unseen-19",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "Memsaab, saab. I was in the Dining Room pouring a drink with Leena and Farhan."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Karan",
+   "killer": true,
+   "reply": "Memsaab, main toh Lawn par tha, anaars khel raha tha. Nahi, maine koi aur nahi dekha."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Anand",
+   "killer": false,
+   "reply": "Arre, at 23:15 main Lawn mein tha, Ishaan aur Akash ke sath anaars light kar raha tha."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was at the Bar Corner chatting by the bar with Swati. I heard a crash, but it was half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "I was on the lawn, walking with Anand and Akash. It was a bit chaotic, but I was just enjoying the air."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Akash",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Lawn pe tha, Anand aur Ishaan ke sath. Jhakaas hi bol raha tha, bas koi game nahi."
+  },
+  {
+   "case": "unseen-20",
+   "name": "Swati",
+   "killer": false,
+   "reply": "At 23:15 I was in the Bar Corner making a whisky soda with Govind. Heard a crash, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Anirudh",
+   "killer": true,
+   "reply": "At 23:30 I was in the Dining Room pouring a drink. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "Oye, I was in the Drawing Room playing teen patti with Naveen and Ritesh. Heard a heavy thud from the Terrace, but I was just there."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Dining Room, eating kaju katli with Deepak. I did not notice anyone else."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Deepak",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Dining Room mein tha, Vinod ke saath. Us waqt khana khane wala tha."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "Memsaab, I was in the Drawing Room watching a big hand with Venkat and Ritesh."
+  },
+  {
+   "case": "unseen-21",
+   "name": "Ritesh",
+   "killer": false,
+   "reply": "Arre, at 23:30 main Drawing Room mein teen patti khel raha tha Venkat aur Naveen ke sath. Heavy thud tha Terrace se, mujhe kya pata."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "I was in the Garage, waiting by the cars with Kartik. It is written, I was just there."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Suresh",
+   "killer": true,
+   "reply": "Arre, I was in the Garage on a phone call, just me and the caller. Didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Simran",
+   "killer": false,
+   "reply": "Technically, I was in the Dining Room filling a plate with chaat with Tushar and Harish. I heard a heavy thud from the Study, but I didn’t notice anyone else."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was in the Dining Room pouring a drink with Simran and Harish. I heard a heavy thud from the Study, but I didn’t see anyone else."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "Arre, I was in the Garage, yaar. Venkat was right there with me, getting some stuff from his car."
+  },
+  {
+   "case": "unseen-22",
+   "name": "Harish",
+   "killer": false,
+   "reply": "I was in the Dining Room, filling a plate with chaat with Simran and Tushar. Heard a heavy thud from the Study, but I wasn't there."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Ritu",
+   "killer": false,
+   "reply": "I was in the Drawing Room playing teen patti with Kunal and Anjali. I heard glass breaking from the Puja Room."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Lakshmi",
+   "killer": false,
+   "reply": "Arre suno, main toh Terrace par tha, Sahil ke saath phone chal raha tha. Mujhe toh pehle se pata tha, itni shor-sharaba ka khana kahan gaya hai."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Kunal",
+   "killer": false,
+   "reply": "I was in the Drawing Room, counting chips with Ritu and Anjali. I heard glass breaking from the Puja Room."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Jatin",
+   "killer": true,
+   "reply": "I was on the Terrace taking a phone call, just me alone. I didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Anjali",
+   "killer": false,
+   "reply": "Technically, I was in the Drawing Room playing teen patti with Ritu and Kunal. I heard glass breaking from the Puja Room, but I wasn't there."
+  },
+  {
+   "case": "unseen-23",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Terrace pe tha, Lakshmi ke sath phuljhadi khel raha tha."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "Oye, at 23:30 main Drawing Room mein teen patti khel raha tha. Megha wahi tha, bas."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "Arre bhaukaal, main Master Bedroom mein tha, looking for a shawl. Jayesh and Amit were there too, but I noticed a silk tie was missing."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Gaurav",
+   "killer": true,
+   "reply": "I was in the Master Bedroom fixing a saree pleat in the mirror. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "I was in the Master Bedroom looking for a shawl with Shekhar and Amit. I noticed a silk tie was missing."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Amit",
+   "killer": false,
+   "reply": "Arre, at 23:30 main Master Bedroom mein tha, looking for a shawl. Shekhar and Jayesh were there too. I noticed a silk tie was missing."
+  },
+  {
+   "case": "unseen-24",
+   "name": "Megha",
+   "killer": false,
+   "reply": "I was in the Drawing Room, counting chips with Sahil. Heard a crash, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "Arre, at 23:30 main Terrace par tha, Sonal aur Jaya ke saath."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "I was on the Terrace taking a phone call with Rahul and Jaya."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "I was on the Terrace watching the fireworks, darling. Rahul and Sonal were right there with me."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "I was in the Garage, on a phone call with Pankaj. I heard a heavy thud from the Master Bedroom, but I was alone."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Pankaj",
+   "killer": false,
+   "reply": "Saab, main toh Garage mein tha, Joseph ke saath. Heavy thud ka baitha tha Master Bedroom mein."
+  },
+  {
+   "case": "unseen-25",
+   "name": "Nilesh",
+   "killer": true,
+   "reply": "I was on the Terrace watching the fireworks. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Swati",
+   "killer": false,
+   "reply": "Arre suno, main toh Dining Room mein tha, Vikram aur Naveen ke sath. Heavy thooda tha Study mein, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was in the Dining Room pouring a drink with Swati and Naveen. Heard a heavy thud from the Study, but I was just there."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Ritesh",
+   "killer": true,
+   "reply": "I was in the Kitchen, arguing with the cook. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "I was in the Dining Room, filling a plate with chaat with Swati and Vikram. Heard a heavy thud from the Study, but I wasn't there."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in the Kitchen, arguing with the cook. Parth was right there with me."
+  },
+  {
+   "case": "unseen-26",
+   "name": "Parth",
+   "killer": false,
+   "reply": "Saab, main Kitchen mein tha, ice khana kar raha tha. Aamir ke saath tha."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Tejas",
+   "killer": true,
+   "reply": "I was at the Bar Corner chatting by the bar, but I didn’t really notice who else was around."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "Arre, I was in the Kitchen arguing with the cook, Sahil and Rohan were right there too. Heard glass breaking from the Master Bedroom, okay?"
+  },
+  {
+   "case": "unseen-27",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was in the Bar Corner looking for clean glasses with Pooja. It was quiet, just us."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh kitchen mein tha, ice chupa raha tha. Sameer aur Rohan wahi the, bas kuch nahi dekha."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "I was in the Kitchen getting ice, with Sameer and Sahil. Heard glass breaking from the Master Bedroom."
+  },
+  {
+   "case": "unseen-27",
+   "name": "Pooja",
+   "killer": false,
+   "reply": "At 22:45 I was in the Bar Corner making a whisky soda with Imran. So cheap, darling!"
+  },
+  {
+   "case": "unseen-28",
+   "name": "Vaishali",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, lying down for a minute with Pinky and Ishaan."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Pinky",
+   "killer": false,
+   "reply": "Arre suno, main Master Bedroom mein tha, Vaishali aur Ishaan ke sath. Itna bada party tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Aarav",
+   "killer": true,
+   "reply": "Arre bhaukaal, main Master Bedroom mein tha, looking for a shawl. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "Oye, at 23:00 main Drawing Room mein tha, counting chips. Pallavi tha wahi, aur bas kuch nahi."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Ishaan",
+   "killer": false,
+   "reply": "Saab, main Master Bedroom mein tha, Vaishali aur Pinky ke sath."
+  },
+  {
+   "case": "unseen-28",
+   "name": "Pallavi",
+   "killer": false,
+   "reply": "Darling, at 23:00 I was in the Drawing Room playing teen patti with Rohan. Heard glass breaking from the Puja Room, so I was busy."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Mihir",
+   "killer": true,
+   "reply": "Memsaab, I was in the Study sitting in the leather chair. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "Arre, I was in the Study looking at old photo albums with Naveen and Aamir. I noticed a golf club was missing, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Rohan",
+   "killer": false,
+   "reply": "Arre, at 23:15 main Master Bedroom mein tha, Vinod ke saath. Glass breaking tha from the Garage, chal chal."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Study mein tha, Arnav aur Aamir ke sath. Kuch nahi dekha, bas relax kar raha tha."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, fixing a saree pleat in the mirror with Rohan. Heard glass breaking from the Garage, but I was alone."
+  },
+  {
+   "case": "unseen-29",
+   "name": "Aamir",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Arnav and Naveen. I noticed a golf club was missing."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "At 22:15 I was in the Study, sitting in the leather chair with Neel and Zubin. Haww, so cheap, we were just chilling."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Dolly",
+   "killer": true,
+   "reply": "I was in the Study taking a quiet call. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Neel",
+   "killer": false,
+   "reply": "Memsaab, I was in the Study looking at old photo albums with Radhika and Zubin."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "I was in the Bar Corner making a whisky soda with Parth. Heard a scream from the Garage, but I was just drinking."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Parth",
+   "killer": false,
+   "reply": "I was in the Bar Corner making a whisky soda with Jatin. I heard a scream from the Garage, but I didn't see anyone else."
+  },
+  {
+   "case": "unseen-30",
+   "name": "Zubin",
+   "killer": false,
+   "reply": "I was in the Study taking a quiet call with Radhika and Neel. It was very quiet."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Joseph",
+   "killer": false,
+   "reply": "Memsaab, saab. I was in the Kitchen, arguing with the cook. Heard glass breaking from the Master Bedroom."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Ishita",
+   "killer": true,
+   "reply": "Arre suno, main toh Drawing Room mein teen patti khel raha tha. Main toh pehle se pata tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Jayesh",
+   "killer": false,
+   "reply": "Arre, I was in the Drawing Room counting chips with Neel and Suresh. It was a busy night, but I was there."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Neel",
+   "killer": false,
+   "reply": "I was in the Drawing Room watching a big hand, with Jayesh and Suresh. It was very quiet."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Suresh",
+   "killer": false,
+   "reply": "Arre, at 23:00 main Drawing Room mein teen patti khel raha tha Jayesh aur Neel ke sath. Chal chal, sabhi wahan the."
+  },
+  {
+   "case": "unseen-31",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "I was in the Kitchen, arguing with the cook. It was very loud, I heard glass breaking from the Master Bedroom."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, fixing a saree pleat in the mirror with Varun and Aditya."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Varun",
+   "killer": false,
+   "reply": "Arre, I was in the Master Bedroom, just chilling with Arnav and Aditya. It was a bit chaotic, but I was alone."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Swati",
+   "killer": true,
+   "reply": "Technically I was in the Master Bedroom fixing a saree pleat in the mirror. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Naveen",
+   "killer": false,
+   "reply": "Arre, it is written, I was in the Drawing Room playing teen patti with Tanmay. It was a very chaotic night, but I was alone."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was in the Master Bedroom, fixing a saree pleat in the mirror with Arnav and Varun."
+  },
+  {
+   "case": "unseen-32",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "Arre, at 23:15 main Drawing Room mein tha, counting chips. Naveen wahi tha, heavy thud from Terrace ke sath."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Kiara",
+   "killer": false,
+   "reply": "At 22:15 I was in the Master Bedroom fixing a saree pleat in the mirror with Aniket and Ayesha. Haww, so cheap!"
+  },
+  {
+   "case": "unseen-33",
+   "name": "Sakshi",
+   "killer": true,
+   "reply": "I was in the Master Bedroom, fixing a saree pleat in the mirror. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Aniket",
+   "killer": false,
+   "reply": "I was in the Master Bedroom looking for a shawl, with Kiara and Ayesha. It was quiet, just us."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Tanmay",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was on the Lawn by the hedge with Venkat. Heard a heavy thud from the Study, but I was just standing there."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "Oye, I was on the Lawn lighting anaars with Tanmay. Heard a heavy thud from the Study, but I was there."
+  },
+  {
+   "case": "unseen-33",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "Arre suno, main Master Bedroom mein thi, Kiara aur Aniket ke sath. Mujhe toh pehle se pata tha, itna bada party chal raha tha, sabko kya pata hai."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Sunita",
+   "killer": true,
+   "reply": "Technically I was on the Terrace watching the fireworks. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Swati",
+   "killer": false,
+   "reply": "Arre suno, main toh Terrace par tha, dhruv aur arnav ke sath phone call kar raha tha. Mujhe toh pehle se pata tha, woh toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Dhruv",
+   "killer": false,
+   "reply": "Arre, at 23:30 I was on the Terrace taking a phone call with Swati and Arnav. It was a quiet moment, just us two."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was on the Terrace lighting a phuljhadi with Swati and Dhruv. It was quiet and peaceful."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Chirag",
+   "killer": false,
+   "reply": "Arre, at 23:30 main Drawing Room mein tha, watching a big hand. Komal wahi tha, sabhi the."
+  },
+  {
+   "case": "unseen-34",
+   "name": "Komal",
+   "killer": false,
+   "reply": "Arre, at 23:30 I was in the Drawing Room watching a big hand with Chirag. Haww, everyone took a rocket scream for me, so I was just chilling."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Kabir",
+   "killer": false,
+   "reply": "Arre, at 22:30 I was in the Drawing Room counting chips with Tushar. It was a busy night, but I was there."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was standing by the hedge on the lawn with Arnav and Venkat. I heard a heavy thud from the Master Bedroom, but I didn’t see anyone else."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Tanvi",
+   "killer": true,
+   "reply": "Arre suno, main toh Drawing Room mein tha, counting chips. Koi nahi tha, bas maine toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Arnav",
+   "killer": false,
+   "reply": "I was on the lawn with Abhishek and Venkat, just walking. Heard a heavy thud from the Master Bedroom, but I didn’t notice anyone else."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "Arre, at 22:30 main Drawing Room mein tha, Kabir ke saath counting chips kar raha tha."
+  },
+  {
+   "case": "unseen-35",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "Arre, at 22:30 main Lawn pe tha, Abhishek aur Arnav ke sath anaars khel raha tha. Heavy thud Master Bedroom mein tha, mujhe kya pata."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Vinod",
+   "killer": false,
+   "reply": "Saab, main Drawing Room mein tha, Zubin ke saath. Crash ho gaya tha, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Radhika",
+   "killer": false,
+   "reply": "At 23:15 I was in the Dining Room eating kaju katli with Aanya and Zoya. Haww, so cheap and full of drama."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Govind",
+   "killer": true,
+   "reply": "Arre bhaukaal, main toh Terrace pe tha, fireworks dekh raha tha. Main toh nahi dekha kisi ke saath, bas mera khana khana."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Zubin",
+   "killer": false,
+   "reply": "I was in the Drawing Room watching a big hand with Vinod. I heard a crash, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Aanya",
+   "killer": false,
+   "reply": "Technically I was in the Dining Room pouring a drink with Radhika and Zoya. It was a quiet moment, just me and them."
+  },
+  {
+   "case": "unseen-36",
+   "name": "Zoya",
+   "killer": false,
+   "reply": "Arre suno, main toh Dining Room mein tha, Radhika aur Aanya ke sath chaat khane wala. Mujhe toh pehle se pata tha, itna bada party ka shor hai!"
+  },
+  {
+   "case": "unseen-37",
+   "name": "Rahul",
+   "killer": true,
+   "reply": "I was in the Puja Room, just sitting quietly for a minute. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was in the Puja Room fixing the rangoli by the door with Venkat and Sonal."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Venkat",
+   "killer": false,
+   "reply": "Arre bhaukaal, at 23:15 main Puja Room mein tha, Chintu aur Sonal ke sath diya khana khela tha."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Sonal",
+   "killer": false,
+   "reply": "Technically I was in the Puja Room, sitting quietly for a minute with Chintu and Venkat."
+  },
+  {
+   "case": "unseen-37",
+   "name": "Jaya",
+   "killer": false,
+   "reply": "Arre suno, main Drawing Room mein tha, teen patti khel raha tha. Vivek wahi tha, aur thoda thoda aur kya?"
+  },
+  {
+   "case": "unseen-37",
+   "name": "Vivek",
+   "killer": false,
+   "reply": "Arre, at 23:15 I was in the Drawing Room playing teen patti with Jaya. I heard a heavy thud from the Terrace, but I was just busy with the game."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Dolly",
+   "killer": false,
+   "reply": "Arre suno, main toh Drawing Room mein teen patti khel rahi thi Aditya aur Sunil ke sath. Us waqt bas crash khaal gaya tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was in the Drawing Room playing teen patti with Dolly and Sunil. I heard a crash, but I was just hiding behind the crackers."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Sahil",
+   "killer": false,
+   "reply": "Arre, at 23:30 I was in the Kitchen getting ice, and Neha was right there with me."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Neha",
+   "killer": false,
+   "reply": "I was in the Kitchen plating mithai with Sahil."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Arjun",
+   "killer": true,
+   "reply": "Arre, at 23:30 I was in the Kitchen arguing with the cook. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-38",
+   "name": "Sunil",
+   "killer": false,
+   "reply": "Arre bhaukaal, main Drawing Room mein tha, teen patti khel raha tha. Dolly aur Aditya wahi the, bas crack chalta hai."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Kavya",
+   "killer": true,
+   "reply": "Arre suno, main toh Bar Corner mein tha, bas bar mein chat kar raha tha. Koi aur nahi tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Sanjay",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Bar Corner mein tha, making a whisky soda. Vikram aur Shekhar wahi the."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "Saab, main toh Bar Corner mein tha, Sanjay aur Shekhar ke saath chat kar raha tha."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Kritika",
+   "killer": false,
+   "reply": "Technically I was in the Garage on a phone call with Akash, heard a scream everyone took for a rocket from the Master Bedroom."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was in the Bar Corner looking for clean glasses, with Sanjay and Vikram. I noticed a crystal whisky decanter was missing."
+  },
+  {
+   "case": "unseen-39",
+   "name": "Akash",
+   "killer": false,
+   "reply": "Oye, I was in the Garage waiting by the cars with Kritika. Heard a scream everyone took for a rocket from the Master Bedroom."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Vandana",
+   "killer": false,
+   "reply": "Arre suno, main toh Dining Room mein khana khaya tha, Urvashi aur Vikram ke sath. Heavy thud Master Bedroom mein tha, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Imran",
+   "killer": false,
+   "reply": "Arre, I was on the Terrace lighting a phuljhadi with Kartik. It was a quiet moment, just us two."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Urvashi",
+   "killer": false,
+   "reply": "I was in the Dining Room, eating kaju katli with Vandana and Vikram."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Leena",
+   "killer": true,
+   "reply": "Technically I was on the Terrace lighting a phuljhadi. I didn't notice who else was around."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Kartik",
+   "killer": false,
+   "reply": "I was on the Terrace lighting a phuljhadi with Imran. I didn't notice anyone else."
+  },
+  {
+   "case": "unseen-40",
+   "name": "Vikram",
+   "killer": false,
+   "reply": "I was in the Dining Room pouring a drink with Vandana and Urvashi. I heard a heavy thud from the Master Bedroom, but I wasn't there."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Bhavna",
+   "killer": false,
+   "reply": "Arre suno, main toh Study mein tha, Rakesh aur Nilesh ke saath. Itni shor-sharaba ka baat nahi chalta hai mujhe."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Arjun",
+   "killer": true,
+   "reply": "Arre, at 22:15 I was in the Study taking a quiet call. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Anand",
+   "killer": false,
+   "reply": "Memsaab, saab. Drawing Room mein teen patti khel raha tha, Isha ke sath. Crash tha, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "Arre, at 22:15 I was in the Study, sitting in the leather chair with Bhavna and Nilesh. Oye, what a strange time!"
+  },
+  {
+   "case": "unseen-41",
+   "name": "Nilesh",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Bhavna and Rakesh. It was quiet, just us and the two of us."
+  },
+  {
+   "case": "unseen-41",
+   "name": "Isha",
+   "killer": false,
+   "reply": "Technically, I was in the Drawing Room watching a big hand with Anand. It was quite loud, but I heard a crash, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Joseph",
+   "killer": true,
+   "reply": "I was in the Garage, getting something from a car. Didn't notice who else was around."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Nisha",
+   "killer": false,
+   "reply": "I was in the Garage on a phone call with Juhi, darling. Haww, so cheap and busy."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Juhi",
+   "killer": false,
+   "reply": "Arre suno, main toh garage mein tha waiting by the cars, mujhe toh pehle se pata tha."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Imran",
+   "killer": false,
+   "reply": "Saab, main toh Lawn pe tha, Ashok aur Pranav ke sath. Crash tha, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Ashok",
+   "killer": false,
+   "reply": "Oye, I was on the Lawn by the hedge with Imran and Pranav. Heard a crash, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-42",
+   "name": "Pranav",
+   "killer": false,
+   "reply": "I was on the Lawn lighting anaars with Imran and Ashok. Heard a crash, half-hidden by the crackers from the Study."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Shekhar",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Manish. Heard a scream everyone took for a rocket from the Puja Room. Noticed a golf club was missing."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "I was in the kitchen getting ice, with Faisal and Ananya."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Manish",
+   "killer": false,
+   "reply": "I was in the Study looking at old photo albums with Shekhar. Heard a scream everyone took for a rocket from the Puja Room. Noticed a golf club was missing."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Deepak",
+   "killer": true,
+   "reply": "Arre, at 23:00 main Kitchen mein tha, kuch nahi dekha. Main toh kitchen mein kuch nahi kiya."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Faisal",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Kitchen mein tha, argument kar raha tha with Ayesha aur Ananya."
+  },
+  {
+   "case": "unseen-43",
+   "name": "Ananya",
+   "killer": false,
+   "reply": "Technically, I was in the Kitchen arguing with the cook, along with Ayesha and Faisal. It was quite tense, but we managed to resolve it quickly."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Rupali",
+   "killer": false,
+   "reply": "At 22:45 I was in the Kitchen getting ice, with Jatin. So cheap, darling, why are you asking me?"
+  },
+  {
+   "case": "unseen-44",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Ravi and Sunita. I heard a heavy thud from the Puja Room earlier."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Jatin",
+   "killer": false,
+   "reply": "Arre, at 22:45 main Kitchen mein tha, Rupali aur maine argument karaya. Chal chal, sabhi wahan the."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Ravi",
+   "killer": false,
+   "reply": "I was in the Study, taking a quiet call with Abhishek and Sunita. I heard a heavy thud from the Puja Room, but I wasn't there."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Sanjay",
+   "killer": true,
+   "reply": "I was in the Kitchen getting ice, just me alone. It is written, I did not notice anyone else."
+  },
+  {
+   "case": "unseen-44",
+   "name": "Sunita",
+   "killer": false,
+   "reply": "Technically I was in the Study taking a quiet call with Abhishek and Ravi. I heard a heavy thud from the Puja Room, but I wasn't there."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Govind",
+   "killer": false,
+   "reply": "I was in the Garage on a phone call with Manish and Imran, heard a heavy thud from the Master Bedroom."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Manish",
+   "killer": false,
+   "reply": "I was in the Garage, getting something from a car. Govind and Imran were there too. I heard a heavy thud from the Master Bedroom, but I wasn't there."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Trisha",
+   "killer": true,
+   "reply": "Technically I was in the Drawing Room watching a big hand, but I didn't really notice who else was around."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Amit",
+   "killer": false,
+   "reply": "Arre bhaukaal, main Drawing Room mein tha, teen patti khel raha tha. Sameer wahi tha, bas koi nahi tha."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Sameer",
+   "killer": false,
+   "reply": "I was in the Drawing Room, counting chips with Amit. It was busy, but I was just there."
+  },
+  {
+   "case": "unseen-45",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was in the Garage, on a phone call with Govind and Manish. I heard a heavy thud from the Master Bedroom, but I was alone."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Kabir",
+   "killer": true,
+   "reply": "I was in the Study looking at old photo albums, just me alone. I didn’t notice anyone else around."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Rahul",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Megha and Arjun. It was quiet, just us three."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Abhishek",
+   "killer": false,
+   "reply": "I was in the Garage, getting something from a car. Heard a heavy thud from the Master Bedroom, but I wasn't there."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Megha",
+   "killer": false,
+   "reply": "Arre, at 22:45 I was in the Study taking a quiet call with Rahul and Arjun. Haww, so cheap and full of drama!"
+  },
+  {
+   "case": "unseen-46",
+   "name": "Yash",
+   "killer": false,
+   "reply": "Arre, at 22:45 main garage mein tha, Abhishek ke saath. Heavy thud dekh raha tha Master Bedroom mein, chal chal."
+  },
+  {
+   "case": "unseen-46",
+   "name": "Arjun",
+   "killer": false,
+   "reply": "Arre bhaukaal, main toh Study mein tha, looking at old photo albums. Rahul and Megha were there too."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Gaurav",
+   "killer": false,
+   "reply": "Arre, I was in the Drawing Room counting chips, Lalit and Rhea were there too. I heard a crash, but I was just busy with my work."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Nilesh",
+   "killer": true,
+   "reply": "At 22:15, I was in the Puja Room lighting a diya. It is written, nobody else was around me."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Chintu",
+   "killer": false,
+   "reply": "I was in the Puja Room, sitting quietly for a minute with Neha. It was very quiet."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "Arre bhaukaal, main Drawing Room mein tha, watching a big hand. Gaurav aur Rhea thee hi the, half-hidden by the crackers from the Terrace."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Rhea",
+   "killer": false,
+   "reply": "Arre suno, main Drawing Room mein thi, teen patti khel raha tha. Gaurav aur Lalit wahi the, bas kuch nahi."
+  },
+  {
+   "case": "unseen-47",
+   "name": "Neha",
+   "killer": false,
+   "reply": "Technically, I was in the Puja Room fixing the rangoli by the door with Chintu. It was quiet, just us and the book on my desk."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "At 22:45 I was in the Study looking at old photo albums with Varun and Lalit. Haww, so cheap!"
+  },
+  {
+   "case": "unseen-48",
+   "name": "Imran",
+   "killer": false,
+   "reply": "I was on the Terrace lighting a phuljhadi with Megha. It was just us two."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Varun",
+   "killer": false,
+   "reply": "I was in the Study, sitting in the leather chair with Ayesha and Lalit. I heard a crash, but I was just hiding behind the crackers."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Lalit",
+   "killer": false,
+   "reply": "Saab, main toh Study mein tha, old photo albums dekha. Ayesha aur Varun wahi the."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Megha",
+   "killer": false,
+   "reply": "Technically I was on the Terrace watching the fireworks over Delhi with Imran."
+  },
+  {
+   "case": "unseen-48",
+   "name": "Pooja",
+   "killer": true,
+   "reply": "I was on the terrace watching the fireworks. I didn't notice anyone else around."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Ayesha",
+   "killer": false,
+   "reply": "Arre suno, main toh Garage mein tha, phone chal raha tha. Tushar aur Aditi wahi the. Glass breaking kya hua? Main toh bas phone par baat kar raha tha."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Tushar",
+   "killer": false,
+   "reply": "I was in the Garage on a phone call with Ayesha and Aditi, hearing glass break from the Master Bedroom."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Aditya",
+   "killer": false,
+   "reply": "I was in the Puja Room, sitting quietly for a minute with Rakesh. It was just us, no one else."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Rakesh",
+   "killer": false,
+   "reply": "Arre bhaukaal, I was in the Puja Room lighting a diya with Aditya. Jhakaas, it was just a small thing."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Aditi",
+   "killer": false,
+   "reply": "I was in the Garage waiting by the cars, with Ayesha and Tushar. I heard glass breaking from the Master Bedroom, and noticed a car jack handle was missing."
+  },
+  {
+   "case": "unseen-49",
+   "name": "Farah",
+   "killer": true,
+   "reply": "At 23:15 I was in the Puja Room lighting a diya, but I didn't really notice who else was around."
+  }
+ ]
+}
