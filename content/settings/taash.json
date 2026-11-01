@@ -1,0 +1,48 @@
+{
+  "id": "taash",
+  "title": "Diwali Taash Night in Golf Links",
+  "place": "a family bungalow in Golf Links, New Delhi",
+  "occasion": "the big Diwali card party, teen patti until the small hours",
+  "blurb": "Crackers outside, teen patti inside, and more money on the tables than anyone admits. By midnight one player had folded for good.",
+  "start": "21:00",
+  "families": ["the hosts' family"],
+  "rooms": [
+    { "id": "puja", "name": "Puja Room", "x": 0, "y": 0, "w": 3, "h": 3, "quiet": true, "doing": ["lighting a diya", "sitting quietly for a minute", "fixing the rangoli by the door"] },
+    { "id": "drawing", "name": "Drawing Room", "x": 3, "y": 0, "w": 6, "h": 4, "doing": ["playing teen patti", "watching a big hand", "counting chips"] },
+    { "id": "terrace", "name": "Terrace", "x": 9, "y": 0, "w": 3, "h": 4, "quiet": true, "doing": ["watching the fireworks over Delhi", "lighting a phuljhadi", "taking a phone call"] },
+    { "id": "study", "name": "Study", "x": 0, "y": 3, "w": 3, "h": 3, "quiet": true, "doing": ["sitting in the leather chair", "taking a quiet call", "looking at old photo albums"] },
+    { "id": "dining", "name": "Dining Room", "x": 3, "y": 4, "w": 4, "h": 2, "doing": ["eating kaju katli", "filling a plate with chaat", "pouring a drink"] },
+    { "id": "kitchen", "name": "Kitchen", "x": 7, "y": 4, "w": 2, "h": 2, "doing": ["getting ice", "arguing with the cook", "plating mithai"] },
+    { "id": "bar", "name": "Bar Corner", "x": 9, "y": 4, "w": 3, "h": 2, "doing": ["making a whisky soda", "chatting by the bar", "looking for clean glasses"] },
+    { "id": "lawn", "name": "Lawn", "x": 0, "y": 6, "w": 6, "h": 3, "doing": ["lighting anaars", "walking on the lawn", "standing by the hedge"] },
+    { "id": "bedroom", "name": "Master Bedroom", "x": 6, "y": 6, "w": 3, "h": 3, "quiet": true, "doing": ["looking for a shawl", "fixing a saree pleat in the mirror", "lying down for a minute"] },
+    { "id": "garage", "name": "Garage", "x": 9, "y": 6, "w": 3, "h": 3, "quiet": true, "doing": ["waiting by the cars", "getting something from a car", "on a phone call"] }
+  ],
+  "events": [
+    { "from": "21:00", "to": "22:00", "room": "drawing", "what": "the teen patti tables", "pull": 0.6 },
+    { "from": "22:00", "to": "22:15", "room": "lawn", "what": "the Diwali fireworks", "pull": 0.6 },
+    { "from": "22:30", "to": "23:00", "room": "dining", "what": "the late dinner", "pull": 0.5 }
+  ],
+  "weapons": [
+    { "id": "decanter", "name": "a crystal whisky decanter", "room": "bar", "method": "hit with a crystal whisky decanter", "found": "A cracked crystal decanter from the bar lay beside the body." },
+    { "id": "golf_club", "name": "a golf club", "room": "study", "method": "hit with a golf club", "found": "A golf club from the study lay on the floor." },
+    { "id": "cleaver", "name": "the vegetable cleaver", "room": "kitchen", "method": "struck with the vegetable cleaver", "found": "The vegetable cleaver from the kitchen was found under a cushion." },
+    { "id": "tie", "name": "a silk tie", "room": "bedroom", "method": "strangled with a silk tie", "found": "A silk tie from the master bedroom was knotted around the neck." },
+    { "id": "jack", "name": "a car jack handle", "room": "garage", "method": "hit with a car jack handle", "found": "A car jack handle from the garage lay near the head." }
+  ],
+  "sounds": ["a crash, half-hidden by the crackers", "a scream everyone took for a rocket", "glass breaking", "a heavy thud"],
+  "archetypes": [
+    { "id": "hostess", "role": "the hostess, a Delhi socialite who runs the kitty-party circuit", "gender": "f", "age": [50, 60], "family": 0, "victim": true, "traits": "status-obsessed, generous in public, vindictive", "voice": "Posh Delhi Hinglish: 'darling', 'haww', 'so cheap'.", "haunts": ["drawing", "dining", "bedroom"] },
+    { "id": "host", "role": "the host, a builder with political friends", "gender": "m", "age": [55, 65], "family": 0, "victim": true, "traits": "loud, well connected, threatening when crossed", "voice": "Gruff Punjabi Hinglish: 'oye', 'chal chal'; drops ministers' names.", "haunts": ["drawing", "bar", "study"] },
+    { "id": "son", "role": "the hosts' son, back from San Francisco", "gender": "m", "age": [27, 32], "family": 0, "traits": "tech-bro, guilty, wants out of the family business", "voice": "Californian English with Delhi slang creeping back in.", "haunts": ["terrace", "bar", "garage"] },
+    { "id": "bahu", "role": "the hosts' daughter-in-law", "gender": "f", "age": [26, 32], "family": 0, "victim": true, "traits": "polished, watchful, unhappy in the marriage", "voice": "Soft, careful English; says less than she knows.", "haunts": ["bedroom", "puja", "dining"] },
+    { "id": "friend", "role": "a family friend who lost money in one of the host's projects", "gender": "m", "age": [45, 60], "victim": true, "traits": "bitter, polite, drinks steadily", "voice": "Formal Hindi-English, dry and sarcastic.", "haunts": ["bar", "drawing", "lawn"] },
+    { "id": "neighbour", "role": "the nosy neighbour from across the lane", "gender": "f", "age": [55, 70], "traits": "gossipy, sharp-eyed, loves a scandal", "voice": "Rapid Hinglish gossip: 'suno', 'mujhe toh pehle se pata tha'.", "haunts": ["drawing", "lawn", "dining"] },
+    { "id": "driver", "role": "the family's driver of twenty years", "gender": "m", "age": [45, 58], "traits": "loyal, invisible, sees everything from the garage", "voice": "Respectful Hindi: 'saab', 'memsaab'; short answers.", "haunts": ["garage", "kitchen", "lawn"] },
+    { "id": "cook", "role": "the cook from Uttarakhand", "gender": "m", "age": [35, 50], "traits": "proud, quiet, underpaid", "voice": "Pahadi-accented Hindi, very polite.", "haunts": ["kitchen", "dining", "garage"] },
+    { "id": "astrologer", "role": "the family astrologer, invited for the evening", "gender": "m", "age": [50, 70], "victim": true, "traits": "smooth, manipulative, knows the family's secrets", "voice": "Mystical Hindi-English: 'grahon ki chaal', 'it is written'.", "haunts": ["puja", "study", "drawing"] },
+    { "id": "cousin", "role": "a cousin from Kanpur who always loses at cards", "gender": "m", "age": [30, 40], "traits": "broke, cheerful, borrows from everyone", "voice": "Kanpuriya Hindi: 'jhakaas', 'bhaukaal'; laughs too loud.", "haunts": ["drawing", "bar", "terrace"] },
+    { "id": "ca", "role": "the family's chartered accountant", "gender": "f", "age": [35, 45], "victim": true, "traits": "precise, nervous, keeps two sets of books", "voice": "Careful English full of numbers: 'technically', 'on paper'.", "haunts": ["study", "dining", "terrace"] },
+    { "id": "boyfriend", "role": "the hosts' niece's boyfriend, meeting the family for the first time", "gender": "m", "age": [25, 30], "traits": "nervous, eager to please, hiding his background", "voice": "Polite English; overuses 'uncle' and 'aunty'.", "haunts": ["lawn", "terrace", "dining"] }
+  ]
+}
