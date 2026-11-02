@@ -55,6 +55,7 @@ export function EnginePill({ cfg, setCfg }: { cfg: Config; setCfg: (c: Config) =
                 <button className="btn" onClick={() => load(cfg.model).catch(() => {})} disabled={st.state === 'loading'}>
                   {st.model === cfg.model && st.state === 'ready' ? 'Loaded' : 'Load now'}
                 </button>
+                {st.gpu && <div className="fineprint">Running on: {st.gpu}. On a laptop, this should be the dedicated GPU.</div>}
                 {st.state === 'error' && st.model === cfg.model && <div className="err">{st.text}</div>}
               </>
             ) : (

@@ -24,9 +24,14 @@ export function Interrogation({ c, game, setGame, cfg, who, setWho }: { c: Case;
   const end = useRef<HTMLDivElement>(null)
   const stop = useRef<AbortController | null>(null)
 
+  // one smooth scroll per new turn; while a reply streams, a smooth scroll per token would restart
+  // the animation every few ms and bounce the page, so just keep the end in view instantly
   useEffect(() => {
-    end.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
-  }, [turns.length, live])
+    end.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  }, [turns.length])
+  useEffect(() => {
+    if (live) end.current?.scrollIntoView({ block: 'nearest' })
+  }, [live])
   useEffect(() => () => stop.current?.abort(), [who])
   useEffect(() => {
     if (other === who) setOther(suspects.find((p) => p.i !== who)!.i)
@@ -65,7 +70,9 @@ export function Interrogation({ c, game, setGame, cfg, who, setWho }: { c: Case;
       setErr(
         cfg.kind === 'openai' && /fetch|network/i.test(msg)
           ? `Couldn't reach ${cfg.baseURL}. Is the server running? Ollama also needs OLLAMA_ORIGINS to allow this page. Or switch to the in-browser model (top right).`
-          : `The suspect didn't answer: ${msg}`,
+          : /^The model (broke|produced junk)/.test(msg)
+            ? msg
+            : `The suspect didn't answer: ${msg}`,
       )
       setGame((g) => ({ ...g, chats: { ...g.chats, [who]: (g.chats[who] ?? []).slice(0, -1) } }))
       setDraft(q)

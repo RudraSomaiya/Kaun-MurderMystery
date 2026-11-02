@@ -151,6 +151,8 @@ npm test             # 1,000+ seeds, every case solvable
 
 The game asks which model voices the suspects. In a browser with WebGPU (Chrome or Edge), pick a model and it downloads once. Without WebGPU, point it at Ollama or LM Studio. With a `GROQ_API_KEY` in `.env`, `npm run dev` also gets a dev-only proxy, so you can play against a big model without the key ever reaching the browser.
 
+**On a laptop with two GPUs,** Windows gives the browser the integrated chip, and a web page can't ask for the other one. The model breaks there, and the game tells you so. To fix it: Windows Settings → System → Display → Graphics → pick your browser → High performance, then restart the browser. The engine panel (top right) shows which GPU the game is using. The browser also needs to be recent: Chromium 137 (Brave 1.79) turns the model's output into junk, while version 156 works.
+
 To rebuild the model, everything runs on a 6 GB laptop GPU (training in WSL2):
 
 ```bash

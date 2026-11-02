@@ -1,4 +1,4 @@
-import type { MLCEngineInterface } from '@mlc-ai/web-llm'
+import type { AppConfig, MLCEngineInterface } from '@mlc-ai/web-llm'
 import { useSyncExternalStore } from 'react'
 
 export type Msg = { role: 'system' | 'user' | 'assistant'; content: string }
@@ -21,8 +21,24 @@ export const PRESETS: { label: string; cfg: Config }[] = [
 ]
 
 // --- loading state, shared with React through useSyncExternalStore
-type Status = { state: 'idle' | 'loading' | 'ready' | 'error'; progress: number; text: string; model: string }
-let status: Status = { state: 'idle', progress: 0, text: '', model: '' }
+type Status = { state: 'idle' | 'loading' | 'ready' | 'error'; progress: number; text: string; model: string; gpu: string }
+let status: Status = { state: 'idle', progress: 0, text: '', model: '', gpu: '' }
+
+// On laptops with two GPUs, Windows gives browsers the integrated one, and pages can't ask for the other.
+// The Qwen3.5 kernels break there: the device is lost, or every logit is NaN and the reply is "!!!!!!".
+export const gpuHelp = () =>
+  `The model broke on this GPU (${status.gpu || 'unknown'}). On laptops this is usually the integrated chip. ` +
+  'Fix: Windows Settings → System → Display → Graphics → pick your browser → High performance, then restart the browser. ' +
+  'If you are already on the dedicated GPU, clear this site’s data to re-download the model, or use a local server (top right).'
+// Chromium 137's WebGPU miscompiles these kernels into NaNs; 156 is fine. The exact cutoff in between is unknown.
+const chromium = Number(navigator.userAgent.match(/Chrome\/(\d+)/)?.[1] ?? 0)
+const junkHelp = () =>
+  chromium && chromium < 150
+    ? `The model produced junk because this browser is out of date (Chromium ${chromium}); older WebGPU versions break it. Update your browser (tested on version 156), then reload.`
+    : `The model produced junk on ${status.gpu || 'this GPU'}. I cleared its download: ask again and it will download fresh (~430 MB). ` +
+      'If it happens again, your browser is on the integrated GPU: Windows Settings → System → Display → Graphics → your browser → High performance.'
+// a lost device surfaces under several names, depending on which call notices first
+const gpuBroke = (m: string) => /device|instance reference|already been disposed|OperationError|ModelNotLoaded/i.test(m)
 const subs = new Set<() => void>()
 const set = (s: Partial<Status>) => {
   status = { ...status, ...s }
@@ -46,16 +62,19 @@ export async function customModelAvailable(path: string) {
 }
 
 let engine: MLCEngineInterface | null = null
+let appConfig: AppConfig | undefined
 let loading: Promise<MLCEngineInterface> | null = null
 
 export function load(model: string) {
   if (status.model === model && loading) return loading
   set({ state: 'loading', progress: 0, text: 'Opening the case files…', model })
   loading = (async () => {
+    const a = await navigator.gpu?.requestAdapter({ powerPreference: 'high-performance' })
+    set({ gpu: a ? [a.info.vendor, a.info.architecture].filter(Boolean).join(' ') : '' })
     const webllm = await import('@mlc-ai/web-llm')
     const base = webllm.prebuiltAppConfig.model_list.find((m) => m.model_id === BASE)!
     const ours = WEB_MODELS.flatMap((m) => (m.path ? [{ ...base, model_id: m.id, model: new URL(m.path, location.href).href }] : []))
-    const appConfig = { ...webllm.prebuiltAppConfig, model_list: [...webllm.prebuiltAppConfig.model_list, ...ours] }
+    appConfig = { ...webllm.prebuiltAppConfig, model_list: [...webllm.prebuiltAppConfig.model_list, ...ours] }
     const initProgressCallback = (p: { progress: number; text: string }) => set({ progress: p.progress, text: p.text })
     // the prebuilt configs ask for a 262k context, i.e. gigabytes of KV cache; one suspect's chat fits in 4k
     const chatOpts = { context_window_size: 4096, prefill_chunk_size: 1024 }
@@ -69,7 +88,8 @@ export function load(model: string) {
     set({ state: 'ready', progress: 1, text: 'Ready' })
     return engine
   })().catch((e) => {
-    set({ state: 'error', text: String(e?.message ?? e) })
+    const msg = String(e?.message ?? e)
+    set({ state: 'error', text: gpuBroke(msg) ? gpuHelp() : msg })
     loading = null
     throw e
   })
@@ -92,20 +112,35 @@ export async function reply(cfg: Config, messages: Msg[], name: string, onText: 
   }
   if (cfg.kind === 'webllm') {
     const e = await load(cfg.model)
-    const stream = await e.chat.completions.create({
-      messages,
-      stream: true,
-      temperature: 0.7,
-      top_p: 0.9,
-      max_tokens: 160,
-      extra_body: { enable_thinking: false },
-    })
-    for await (const ch of stream) {
-      if (signal?.aborted) {
-        e.interruptGenerate()
-        break
+    try {
+      const stream = await e.chat.completions.create({
+        messages,
+        stream: true,
+        temperature: 0.7,
+        top_p: 0.9,
+        max_tokens: 160,
+        extra_body: { enable_thinking: false },
+      })
+      for await (const ch of stream) {
+        if (signal?.aborted) {
+          e.interruptGenerate()
+          break
+        }
+        emit(ch.choices[0]?.delta?.content ?? '')
+        if (/([^\p{L}\s])\1{9}/u.test(full)) {
+          // NaN logits decode as token 0, "!", forever. Besides a bad GPU, the cause can be a stale
+          // download (WebLLM caches by URL and never rechecks), so drop it and fetch fresh next time.
+          e.interruptGenerate()
+          const { deleteModelAllInfoInCache } = await import('@mlc-ai/web-llm')
+          await deleteModelAllInfoInCache(cfg.model, appConfig).catch(() => {})
+          loading = null
+          set({ state: 'idle', model: '' })
+          throw new Error(junkHelp())
+        }
       }
-      emit(ch.choices[0]?.delta?.content ?? '')
+    } catch (err) {
+      const msg = String((err as Error)?.message ?? err)
+      throw new Error(gpuBroke(msg) ? gpuHelp() : msg)
     }
   } else {
     const r = await fetch(`${cfg.baseURL.replace(/\/$/, '')}/chat/completions`, {
